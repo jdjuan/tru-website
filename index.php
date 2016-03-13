@@ -133,7 +133,7 @@ $rowsSlider = $db -> select("SELECT * FROM `sliders` order by orden");
 	<!-- SERVICIOS -->
 	<div class="container servicios">
 		<div class="wrapperTitle">
-			<h1 class="titleH1Servicios title" >SERVICIOS</h1>
+			<h1 class="titleSection title">Inspiración</h1>
 		</div>
 		<div class="row">
 		<!-- SERVICIO #1 -->
