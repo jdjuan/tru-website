@@ -1,0 +1,9 @@
+/* line 1, ../sass/backend.scss */
+.imageFull {
+  width: 30em;
+}
+
+/* line 5, ../sass/backend.scss */
+img.backEndImage {
+  width: 4em;
+}

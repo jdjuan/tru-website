@@ -1,0 +1,12 @@
+//Google Font
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600);
+
+// Variables to quickly and easily change the accent colour across the site.
+$lightGreen: lighten(green,20%);
+$lightBlue: lighten(blue,10%);
+$darkBlue: darken(blue,30%);
+$navMargin: 9vw;
+$navBarBreak: 885px;
+
+//Include-Media mixin variables
+$breakpoints: (very-small: 590px, small: 740px, navBarBreak: 885px, medium: 1000px, medium-large:1100px, large: 1200px);
