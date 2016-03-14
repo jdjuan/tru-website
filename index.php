@@ -3,6 +3,7 @@ include dirname(__FILE__) . '/admin/Db.php';
 $db = new Db();   
 $rowsSlider = $db -> select("SELECT * FROM `sliders` order by orden");
 $rowsProyectos = $db -> select("SELECT * FROM `proyectos` order by orden");
+$rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 ?>
 
 <!DOCTYPE html>
@@ -26,6 +27,7 @@ $rowsProyectos = $db -> select("SELECT * FROM `proyectos` order by orden");
 	<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
 	<!-- Main Custom Styles -->
 	<link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
+	<!-- <link href="stylesheets/clientes.css" rel="stylesheet" type="text/css" /> -->
 	<!--[if IE]><link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css"/><![endif]-->
 
 	<!-- Jquery CDN -->
@@ -213,78 +215,57 @@ $rowsProyectos = $db -> select("SELECT * FROM `proyectos` order by orden");
 	</div>
 	<!-- END SERVICIOS -->
 	<!-- PROYECTOS -->
-	<div class="container ">
+	<div class="container proyectos">
 		<div class="wrapperTitle upper">
 			<h1 class="titleSection title">Líneas de Negocio</h1>
 		</div>
-		<div class="sliderProyectos">
+		<div id="sliderClientes" class="sliderProyectos">
 			<ul id="owl-example" class="nav nav-pills owl-carousel">
 				<?php
-				for ($i=0; $i < count($rowsProyectos); $i++) { 
-					$row = $rowsProyectos[$i];
+				for ($i=0; $i < count($rowsClientes); $i++) { 
+					$row = $rowsClientes[$i];
 					if ($i==0) {
-						echo "<li class='active proyectosLi'><a class='proyectosA' data-toggle='pill' href='#menu".($i+1)."'>".$row["tituloCorto"]."</a></li>";
+						echo "<li class='proyecto active'><a class='proyectosA' data-toggle='pill' href='#menu".($i)."'>";
+						echo "<div style=\"";
+						echo "background:transparent url('admin/clientes/uploads/". $row["imagen"] ."') center top no-repeat; background-size: 9em;  -webkit-filter: grayscale(100%);  filter: grayscale(100%);";
+						echo "\" class='col-md-2 col-centered proyectoImg'></div>";
+						echo "</a></li>";
 					}else{
-						echo "<li class='proyectosLi'><a class='proyectosA' data-toggle='pill' href='#menu".($i+1)."'>".$row["tituloCorto"]."</a></li>";
+						echo "<li class='proyecto'><a class='proyectosA' data-toggle='pill' href='#menu".($i)."'>";
+						echo "<div style=\"";
+						echo "background:transparent url('admin/clientes/uploads/". $row["imagen"] ."') center top no-repeat; background-size: 9em;  -webkit-filter: grayscale(100%);  filter: grayscale(100%);";
+						echo "\" class='col-md-2 col-centered proyectoImg'></div>";
+						echo "</a></li>";
 					}
 				}
 				?>
 			</ul>
-		</div>
-		<div class="tab-content">
-			<?php
-			for ($i=0; $i < count($rowsProyectos); $i++) { 
-				$row = $rowsProyectos[$i];
-				if ($i==0) {
-					echo "<div id='menu".($i+1)."' class='tab-pane fade in active'>";
-				}else{
-					echo "<div id='menu".($i+1)."' class='tab-pane fade'>";
-				}
-				echo "<img src='images/linea".($i+1).".png'>";
-				// echo "<div class='col-md-12 servicios'>";
-				// echo "<div class='slider'>";
-				// echo "<div id='myCarousel".($i+2)."' class='carousel slide proyectosCarousel' data-interval='false' data-ride='carousel'>";
-				// echo "<div class='serviciosInfo fullscreen'>";
-				// echo "<h1 class='serviciosTitle fullscreen'>".$row["tituloLargo"];
-				// echo "<div class='masDiv fullscreen'><a id='serviciosMas".($i+5)."' class='mas fullscreen' onclick='displayServicio(".($i+5).");'>+</a></div></h1>";
-				// echo "<div id='servicio".($i+5)."' class='serviciosText fullscreen' style='display:none;'>";
-				// echo "<h1 class='serviciosDescription fullscreen'>".$row["info"]."</h1></div></div>";
-				// echo "<ol class='carousel-indicators'>";
-				// $rowsSlidersProyectos = $db -> select("SELECT * FROM `slidersproyectos` 
-				// 	WHERE idproyecto = ".$row["id"]." order by orden");
-				// for ($j=0; $j < count($rowsSlidersProyectos); $j++) { 
-				// 	if ($j==0) {
-				// 		echo "<li data-target='#myCarousel".($i+2)."' data-slide-to='".($j)."' class='active'></li>";
-				// 	}else{
-				// 		echo "<li data-target='#myCarousel".($i+2)."' data-slide-to='".($j)."'></li>";
-				// 	}
-				// }
-				// echo "</ol>";
-				// echo "<div class='carousel-inner' role='listbox'>";
-				// for ($k=0; $k < count($rowsSlidersProyectos); $k++) { 
-				// 	$rowSlider = $rowsSlidersProyectos[$k];
-				// 	if ($k==0) {
-				// 		echo "<div class='item active'>";
-				// 	}else{
-				// 		echo "<div class='item'>";
-				// 	}
-				// 	echo "<img src='admin/slidersproyectos/uploads/".$rowSlider["imagen"]."' class='proyectoImageSlider'>";
-				// 	echo "<div class='carousel-caption'></div></div>";
-				// }
-				// echo "</div>";
-				// echo "<a class='left carousel-control' href='#myCarousel".($i+2)."' role='button' data-slide='prev'>
-				// <span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span>
-				// <span class='sr-only'>Previous</span></a>";
-				// echo "<a class='right carousel-control' href='#myCarousel".($i+2)."' role='button' data-slide='next'>
-				// <span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>
-				// <span class='sr-only'>Next</span></a>";
-				echo "</div>";
-			}
-			?>
-
+			<div class="tab-content">
+				<div id="menu0" class="tab-pane fade in active">
+					<h3>HOME</h3>
+					<p>Some content.</p>
+				</div>
+				<div id="menu1" class="tab-pane fade">
+					<h3>Menu 1</h3>
+					<p>Some content in menu 1.</p>
+				</div>
+				<div id="menu2" class="tab-pane fade">
+					<h3>Menu 2</h3>
+					<p>Some content in menu 2.</p>
+				</div>
+				<div id="menu3" class="tab-pane fade">
+					<h3>Menu 1</h3>
+					<p>Some content in menu 1.</p>
+				</div>
+				<div id="menu4" class="tab-pane fade">
+					<h3>Menu 2</h3>
+					<p>Some content in menu 2.</p>
+				</div>
+			</div>
 		</div>
 	</div>
-	<!-- END PROYECTOS -->
+</div>
+<!-- END PROYECTOS -->
 </div>
 </body>
 </html>

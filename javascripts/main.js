@@ -15,10 +15,6 @@ $(function () {
 		e.preventDefault();
 	});
 
-	$('li.proyectosLi').click(function(){
-		$('li.proyectosLi').removeClass('active');
-	});
-
 	$("#owl-example").owlCarousel({
 		items : 5,
 		navigation : true,
@@ -36,18 +32,14 @@ $(function () {
 		$(".owl-item.active").next().children(":first").children(":first").trigger( "click" );
 	});
 
-	// $("#owl-example2").owlCarousel({
-	// 	items : 4,
-	// 	navigation : true,
-	// 	navigationText : ["",""],
-	// 	pagination : false, 
-	// 	rewindSpeed : 2000
-	// });
-
 	$(".owl-prev").addClass('glyphicon glyphicon-chevron-left');
 	$(".owl-next").addClass('glyphicon glyphicon-chevron-right');
 	$(".owl-prev").css('color','#6CA31C');
 	$(".owl-next").css('color','#6CA31C');
+
+	$('li.proyecto').click(function(){
+		$('li.proyecto').removeClass('active');
+	});
 });
 
 function displayServicio(n){

@@ -235,7 +235,7 @@ li.slideImg, .carousel-indicators li.active {
 }
 
 /* line 139, ../sass/style.scss */
-.container.servicios {
+.container {
   margin-left: 0;
   padding-left: 0;
   margin-right: 0;
@@ -386,342 +386,44 @@ h1.titleSection {
 }
 
 /* line 253, ../sass/style.scss */
-.proyectoImageSlider {
-  width: 100%;
+.sliderProyectos {
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 255, ../sass/style.scss */
+ul#owl-example {
+  width: 80%;
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* line 257, ../sass/style.scss */
-.serviciosInfo.fullscreen {
-  position: absolute;
-  left: 5%;
-  top: 7%;
-  z-index: 1000;
-  width: 90%;
-  padding: 5px;
-  color: #FFFFFF;
-  font-weight: bold;
+.cliente:hover {
+  -webkit-filter: grayscale(0%) !important;
+  filter: grayscale(0%) !important;
 }
 
-/* line 268, ../sass/style.scss */
-h1.serviciosTitle.fullscreen {
-  padding: 0.5em;
-  width: auto;
-  margin-bottom: 0.3em;
-  font-size: 1.7em;
+/* line 262, ../sass/style.scss */
+.col-centered {
+  float: none;
+  margin: 0 auto;
 }
 
-/* line 275, ../sass/style.scss */
-h1.serviciosDescription.fullscreen {
-  font-size: 1em;
-  margin-top: 0;
-  padding: 1em;
+/* line 267, ../sass/style.scss */
+.proyectoImg {
+  height: 10em;
+  width: 11em;
 }
 
-/* line 285, ../sass/style.scss */
-.proyectosA {
-  font-size: 1.2em;
-  height: 4.5em;
-  font-weight: 500 !important;
-  display: table-cell;
-  vertical-align: middle;
-}
-
-/* line 292, ../sass/style.scss */
-.proyectosDiv {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* line 297, ../sass/style.scss */
-.sliderProyectos {
-  text-align: -moz-center;
-  text-align: -webkit-center;
-}
-
-/* line 302, ../sass/style.scss */
-.owl-item {
-  height: 5.4em;
-}
-
-/* line 306, ../sass/style.scss */
-.clientesDiv .owl-item {
-  height: 9em;
-}
-
-/* line 310, ../sass/style.scss */
-.col-md-12.servicios {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* line 315, ../sass/style.scss */
-li.active .background {
-  height: inherit;
-  background-color: #6CA31C;
-  background-clip: content-box;
-  padding-left: 7em;
-  padding-right: 7em;
-}
-
-/* line 323, ../sass/style.scss */
-ul#owl-example, ul#owl-example2, ul#owl-example3 {
-  width: 80%;
-}
-
-/* line 327, ../sass/style.scss */
-ul.owl-carousel li {
-  width: 15em;
-}
-
-/* line 331, ../sass/style.scss */
-ul.owl-carousel img {
-  display: block;
-  padding-top: 1.5em;
-  width: 3em;
-}
-
-/* line 337, ../sass/style.scss */
-.owl-theme .owl-controls .owl-buttons div {
-  font-size: 3em !important;
-  background: none !important;
-  opacity: 1 !important;
-  font-weight: 700;
-  padding-bottom: 5px !important;
-}
-
-/* line 345, ../sass/style.scss */
-.owl-controls.clickable {
-  position: absolute;
-  top: 0.2em;
-  width: 100%;
-  z-index: 5;
-}
-
-/* line 352, ../sass/style.scss */
-ul#owl-example2 div.owl-controls.clickable {
-  top: 1.2em;
-}
-
-/* line 356, ../sass/style.scss */
-.owl-prev {
-  float: left;
-  margin-left: -1em !important;
-}
-
-/* line 361, ../sass/style.scss */
-.owl-next {
-  float: right;
-  margin-right: -1em !important;
-}
-
-/* line 366, ../sass/style.scss */
-.owl-wrapper {
-  position: relative;
-  z-index: 10;
-}
-
-/* line 371, ../sass/style.scss */
-li.proyectosLi {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-/* line 376, ../sass/style.scss */
-li.proyectosLi.active {
-  background-color: #6CA31C;
-}
-
-/* line 379, ../sass/style.scss */
-li.proyectosLi.active a {
-  color: white !important;
-}
-
-/* line 382, ../sass/style.scss */
-li.proyectosLi a:hover {
-  text-decoration: blink;
-}
-
-@media screen and (min-width: 850px) {
-  /* line 388, ../sass/style.scss */
-  .owl-buttons {
-    margin-left: -3em;
-    margin-right: -3em;
-  }
-}
-@media screen and (max-width: 1550px) {
-  /* line 395, ../sass/style.scss */
-  li.active .background {
-    padding-left: 5em;
-    padding-right: 5em;
-  }
-
-  /* line 399, ../sass/style.scss */
-  h1.serviciosTitle.fullscreen {
-    font-size: 1.4em;
-    /*width: 20em;*/
-  }
-}
-@media screen and (max-width: 1350px) {
-  /* line 406, ../sass/style.scss */
-  h1.serviciosDescription.fullscreen {
-    font-size: 1.1em;
-    padding: 0.7em;
-  }
-}
-@media screen and (max-width: 1300px) {
-  /* line 413, ../sass/style.scss */
-  h1.serviciosTitle.fullscreen {
-    font-size: 1.2em;
-  }
-
-  /* line 416, ../sass/style.scss */
-  li.active .background {
-    padding-left: 4em;
-    padding-right: 4em;
-  }
-
-  /* line 420, ../sass/style.scss */
-  .owl-theme .owl-controls .owl-buttons div {
-    font-size: 2.3em !important;
-  }
-
-  /* line 423, ../sass/style.scss */
-  h1.serviciosDescription.fullscreen {
-    font-size: 0.8em;
-  }
-}
-@media screen and (max-width: 1050px) {
-  /* line 428, ../sass/style.scss */
-  h1.serviciosTitle.fullscreen {
-    font-size: 1.1em;
-  }
-
-  /* line 431, ../sass/style.scss */
-  h1.serviciosDescription.fullscreen {
-    font-size: 0.7em;
-  }
-}
-@media screen and (max-width: 995px) {
-  /* line 436, ../sass/style.scss */
-  li.active .background {
-    padding-left: 7em;
-    padding-right: 7em;
-  }
-
-  /* line 440, ../sass/style.scss */
-  .proyectosA {
-    font-size: 1.3em;
-  }
-
-  /* line 443, ../sass/style.scss */
-  h1.serviciosTitle.fullscreen {
-    font-size: 1.2em;
-    margin-top: 5px;
-  }
-
-  /* line 447, ../sass/style.scss */
-  .serviciosInfo.fullscreen {
-    left: 2%;
-    top: 0.5%;
-    width: 95%;
-  }
-}
-@media screen and (max-width: 839px) {
-  /* line 454, ../sass/style.scss */
-  .proyectosA {
-    font-size: 1.1em;
-    height: 4em;
-  }
-
-  /* line 458, ../sass/style.scss */
-  .titleH1Proyectos {
-    margin-bottom: 1em;
-  }
-
-  /* line 461, ../sass/style.scss */
-  h1.serviciosTitle.fullscreen {
-    font-size: 1.1em;
-  }
-
-  /* line 464, ../sass/style.scss */
-  .serviciosInfo.fullscreen {
-    display: none;
-    /*left: 1%;
-    top: 0%;
-    width: 98%;*/
-  }
-
-  /* line 470, ../sass/style.scss */
-  h1.serviciosDescription.fullscreen {
-    font-size: 0.6em;
-  }
-
-  /* line 473, ../sass/style.scss */
-  .owl-item {
-    height: 9em;
-  }
-}
-@media screen and (max-width: 685px) {
-  /* line 480, ../sass/style.scss */
-  .owl-theme .owl-controls {
-    margin-top: -7em !important;
-  }
-
-  /* line 484, ../sass/style.scss */
-  ul.owl-carousel li {
-    padding-top: 1em;
-  }
-
-  /* line 487, ../sass/style.scss */
-  .titleH1Proyectos {
-    margin-bottom: 0em;
-  }
-
-  /* line 490, ../sass/style.scss */
-  h1.serviciosTitle.fullscreen {
-    font-size: 1em;
-  }
-
-  /* line 493, ../sass/style.scss */
-  h1.serviciosDescription.fullscreen {
-    font-size: 0.5em;
-  }
-
-  /* line 496, ../sass/style.scss */
-  div.aliados .owl-controls.clickable {
-    /*top: -1em;*/
-  }
-}
-@media screen and (max-width: 496px) {
-  /* line 503, ../sass/style.scss */
-  li.active .background {
-    padding-left: 9em;
-    padding-right: 9em;
-  }
-
-  /* line 507, ../sass/style.scss */
-  h1.serviciosTitle.fullscreen {
-    font-size: 0.8em;
-    width: 100%;
-  }
-
-  /* line 511, ../sass/style.scss */
-  h1.serviciosDescription.fullscreen {
-    font-size: 0.4em;
-  }
-}
-@media screen and (min-width: 700px) {
-  /* line 517, ../sass/style.scss */
-  h1.serviciosTitle .masDiv.fullscreen {
-    margin-bottom: -1em;
-    margin-right: -1.8em;
-  }
-
-  /* line 522, ../sass/style.scss */
-  h1.serviciosName.fullscreen {
-    margin: 0;
-    font-weight: 700;
-    font-size: 1.7em;
-    padding: 1em;
-  }
+/* line 272, ../sass/style.scss */
+li.active a div.proyectoImg {
+  -webkit-filter: grayscale(0%) !important;
+  filter: grayscale(0%) !important;
 }
