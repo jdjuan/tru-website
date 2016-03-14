@@ -184,13 +184,12 @@ div.serviciosTitle {
 }
 
 .mas {
-	cursor: pointer;
-	font-weight: 600;
 	background-color: #6CA31C;
-	color: white;
-	padding: 0px;
-	padding-left: 14px;
 	padding-right: 14px;
+	padding-left: 14px;
+	font-weight: 600;
+	cursor: pointer;
+	color: white;
 }
 
 h1.serviciosDescription{font-size: 1.6rem;}
@@ -206,8 +205,8 @@ h1.serviciosDescription {
 	font-weight: 500;
 	padding: 2rem;
 	@include media("<=very-small"){
-		padding: 1.5rem;
 		font-size: 1.7rem;
+		padding: 1.5rem;
 	}
 }
 
@@ -221,26 +220,309 @@ h1.serviciosDescription {
 	}
 }
 
+.wrapperTitle.upper{
+	@extend .wrapperTitle;
+	margin-top: -6rem;
+	margin-bottom: 0;
+}
+
 h1.titleSection {
 	background-color: $darkBlue;
 	display: inline-block;
-	color: $lightGreen;
-	padding: 2rem;
 	padding-right: 4rem;
 	padding-left: 4rem;
+	color: $lightGreen;
+	padding: 2rem;
 	@include media("<=very-small"){
-		padding: 1rem;
 		padding-right: 3rem;
 		padding-left: 3rem;
+		padding: 1rem;
 	}
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     @include opacity(0.7);
     background: $darkBlue;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.proyectoImageSlider{
+	width: 100%;
+}
+
+.serviciosInfo.fullscreen {
+	position: absolute;
+	left: 5%;
+	top: 7%;
+	z-index: 1000;
+	width: 90%;
+	padding: 5px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+h1.serviciosTitle.fullscreen {
+	padding: 0.5em;
+	width: auto;
+	margin-bottom: 0.3em;
+	font-size:1.7em;
+}
+
+h1.serviciosDescription.fullscreen {
+	font-size: 1em;
+	margin-top: 0;
+	padding: 1em;
+}
+
+
+.titleH1Proyectos{
+}
+
+.proyectosA{
+	font-size: 1.2em;
+	height: 4.5em;
+	font-weight: 500 !important;
+	display: table-cell;
+	vertical-align: middle;
+}
+.proyectosDiv {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.sliderProyectos{
+	text-align:-moz-center;
+	text-align:-webkit-center;
+}
+
+.owl-item{
+	height: 5.4em;
+}
+
+.clientesDiv .owl-item{
+	height: 9em;
+}
+
+.col-md-12.servicios{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+li.active .background{
+	height: inherit;
+	background-color: #6CA31C;
+	background-clip: content-box;
+	padding-left: 7em;
+	padding-right: 7em;
+}
+
+ul#owl-example, ul#owl-example2, ul#owl-example3 {
+	width: 80%;
+}
+
+ul.owl-carousel li{
+	width: 15em;
+}
+
+ul.owl-carousel img{
+	display: block;
+	padding-top: 1.5em;
+	width: 3em;
+}
+
+.owl-theme .owl-controls .owl-buttons div{
+	font-size: 3em !important;
+	background: none !important;
+	opacity: 1 !important; 
+	font-weight: 700;
+	padding-bottom: 5px !important;	
+}
+
+.owl-controls.clickable{
+	position: absolute;
+	top: 0.2em;
+	width: 100%;
+	z-index: 5;
+}
+
+ul#owl-example2 div.owl-controls.clickable{
+	top: 1.2em;
+}
+
+.owl-prev {
+	float: left;
+	margin-left: -1em !important;
+}
+
+.owl-next {
+	float: right;
+	margin-right: -1em !important;
+}
+
+.owl-wrapper {
+	position: relative;
+	z-index: 10;
+}
+
+li.proyectosLi{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+li.proyectosLi.active{
+	background-color: #6CA31C;
+}
+li.proyectosLi.active a{
+	color: white !important;
+}
+li.proyectosLi a:hover{
+	text-decoration: blink;
+}
+
+
+@media screen and (min-width: 850px) {
+	.owl-buttons {
+		margin-left: -3em;
+		margin-right: -3em;
+	}
+}
+
+@media screen and (max-width: 1550px) {
+	li.active .background{
+		padding-left: 5em;
+		padding-right: 5em;
+	}
+	h1.serviciosTitle.fullscreen {
+		font-size: 1.4em;
+		/*width: 20em;*/
+	}
+}
+
+@media screen and (max-width: 1350px) {
+	h1.serviciosDescription.fullscreen {
+		font-size: 1.1em;
+		padding: 0.7em;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	h1.serviciosTitle.fullscreen {
+		font-size: 1.2em;
+	}
+	li.active .background{
+		padding-left: 4em;
+		padding-right: 4em;
+	}
+	.owl-theme .owl-controls .owl-buttons div{
+		font-size: 2.3em !important;
+	}
+	h1.serviciosDescription.fullscreen {
+		font-size: 0.8em;
+	}
+}
+@media screen and (max-width: 1050px) {
+	h1.serviciosTitle.fullscreen {
+		font-size: 1.1em;
+	}
+	h1.serviciosDescription.fullscreen {
+		font-size: 0.7em;
+	}
+}
+@media screen and (max-width: 995px) {
+	li.active .background{
+		padding-left: 7em;
+		padding-right: 7em;
+	}
+	.proyectosA{
+		font-size: 1.3em;
+	}
+	h1.serviciosTitle.fullscreen {
+		font-size: 1.2em;
+		margin-top: 5px;
+	}
+	.serviciosInfo.fullscreen {
+		left: 2%;
+		top: 0.5%;
+		width: 95%;
+	}
+}
+@media screen and (max-width: 839px) {
+	.proyectosA{
+		font-size: 1.1em;
+		height: 4em;
+	}
+	.titleH1Proyectos{
+		margin-bottom: 1em;
+	}
+	h1.serviciosTitle.fullscreen {
+		font-size: 1.1em;
+	}
+	.serviciosInfo.fullscreen {
+		display: none;
+		/*left: 1%;
+		top: 0%;
+		width: 98%;*/
+	}
+	h1.serviciosDescription.fullscreen {
+		font-size: 0.6em;
+	}
+	.owl-item{
+		height: 9em;
+	}
+
+}
+
+@media screen and (max-width: 685px) {
+	.owl-theme .owl-controls {
+		margin-top: -7em !important;
+	}
+	
+	ul.owl-carousel li {
+		padding-top: 1em;
+	}
+	.titleH1Proyectos {
+		margin-bottom: 0em;
+	}
+	h1.serviciosTitle.fullscreen {
+		font-size: 1em;
+	}
+	h1.serviciosDescription.fullscreen {
+		font-size: 0.5em;
+	}
+	div.aliados .owl-controls.clickable{
+		/*top: -1em;*/
+	}
+}
+
+
+@media screen and (max-width: 496px) {
+	li.active .background{
+		padding-left: 9em;
+		padding-right: 9em;
+	}
+	h1.serviciosTitle.fullscreen {
+		font-size: 0.8em;
+		width: 100%;
+	}
+	h1.serviciosDescription.fullscreen {
+		font-size: 0.4em;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	h1.serviciosTitle .masDiv.fullscreen{
+		margin-bottom: -1em;
+		margin-right: -1.8em;
+	}
+
+	h1.serviciosName.fullscreen {
+		margin: 0;
+		font-weight: 700;
+		font-size: 1.7em;
+		padding: 1em;
+	}
 }
