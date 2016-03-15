@@ -223,6 +223,11 @@ h1.serviciosDescription {
 	margin-bottom: 0;
 }
 
+.wrapperTitle.bottom{
+	@extend .wrapperTitle.upper;
+	margin-bottom: -5rem;
+}
+
 h1.titleSection {
 	background-color: $darkBlue;
 	font-family: 'Kohinoor';
@@ -346,6 +351,7 @@ li.active a div.proyectoImg{
 }
 
 h2.titleTextInside{
+	font-family: 'Kohinoor';
 	margin: 0;
 	margin-bottom: 3rem;
 	color: red;

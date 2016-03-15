@@ -336,7 +336,7 @@ h1.serviciosDescription {
 }
 
 /* line 210, ../sass/style.scss */
-.wrapperTitle, .wrapperTitle.upper {
+.wrapperTitle, .wrapperTitle.upper, .wrapperTitle.bottom {
   margin-bottom: -5rem;
   position: relative;
   text-align: center;
@@ -344,18 +344,23 @@ h1.serviciosDescription {
 }
 @media (max-width: 590px) {
   /* line 210, ../sass/style.scss */
-  .wrapperTitle, .wrapperTitle.upper {
+  .wrapperTitle, .wrapperTitle.upper, .wrapperTitle.bottom {
     margin-bottom: -4rem;
   }
 }
 
 /* line 220, ../sass/style.scss */
-.wrapperTitle.upper {
+.wrapperTitle.upper, .wrapperTitle.bottom {
   margin-top: -6rem;
   margin-bottom: 0;
 }
 
 /* line 226, ../sass/style.scss */
+.wrapperTitle.bottom {
+  margin-bottom: -5rem;
+}
+
+/* line 231, ../sass/style.scss */
 h1.titleSection {
   background-color: #09324f;
   font-family: 'Kohinoor';
@@ -366,7 +371,7 @@ h1.titleSection {
   padding: 2rem;
 }
 @media (max-width: 590px) {
-  /* line 226, ../sass/style.scss */
+  /* line 231, ../sass/style.scss */
   h1.titleSection {
     padding-right: 3rem;
     padding-left: 3rem;
@@ -374,7 +379,7 @@ h1.titleSection {
   }
 }
 
-/* line 241, ../sass/style.scss */
+/* line 246, ../sass/style.scss */
 .overlay {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
@@ -386,7 +391,7 @@ h1.titleSection {
   top: 0;
 }
 
-/* line 251, ../sass/style.scss */
+/* line 256, ../sass/style.scss */
 .sliderProyectos {
   text-align: center;
   text-align: -moz-center;
@@ -395,7 +400,7 @@ h1.titleSection {
   margin-right: auto;
 }
 
-/* line 253, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 ul#owl-example {
   width: 80%;
   text-align: center;
@@ -405,25 +410,25 @@ ul#owl-example {
   margin-right: auto;
 }
 
-/* line 255, ../sass/style.scss */
+/* line 260, ../sass/style.scss */
 .cliente:hover {
   -webkit-filter: grayscale(0%) !important;
   filter: grayscale(0%) !important;
 }
 
-/* line 260, ../sass/style.scss */
+/* line 265, ../sass/style.scss */
 .col-centered {
   float: none;
   margin: 0 auto;
 }
 
-/* line 265, ../sass/style.scss */
+/* line 270, ../sass/style.scss */
 .proyectoImg {
   height: 10em;
   width: 11em;
 }
 
-/* line 270, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 li.active a div.proyectoImg {
   -webkit-filter: grayscale(0%) !important;
   filter: grayscale(0%) !important;
@@ -432,12 +437,12 @@ li.active a div.proyectoImg {
   border-bottom-width: 10px;
 }
 
-/* line 278, ../sass/style.scss */
+/* line 283, ../sass/style.scss */
 .owl-wrapper-outer {
   z-index: 20;
 }
 
-/* line 281, ../sass/style.scss */
+/* line 286, ../sass/style.scss */
 .owl-buttons {
   position: absolute !important;
   top: 5.5rem !important;
@@ -445,21 +450,21 @@ li.active a div.proyectoImg {
   z-index: 0;
 }
 @media (max-width: 1200px) {
-  /* line 281, ../sass/style.scss */
+  /* line 286, ../sass/style.scss */
   .owl-buttons {
     padding-left: 1.5vw;
     padding-right: 1.5vw;
   }
 }
 @media (max-width: 1000px) {
-  /* line 281, ../sass/style.scss */
+  /* line 286, ../sass/style.scss */
   .owl-buttons {
     padding-left: 0vw;
     padding-right: 0vw;
   }
 }
 
-/* line 296, ../sass/style.scss */
+/* line 301, ../sass/style.scss */
 .owl-prev, .owl-next {
   font-size: 3rem !important;
   font-weight: 600 !important;
@@ -469,22 +474,22 @@ li.active a div.proyectoImg {
   float: left;
 }
 
-/* line 305, ../sass/style.scss */
+/* line 310, ../sass/style.scss */
 .owl-next {
   float: right;
   margin-right: -2.5rem;
 }
 
-/* line 311, ../sass/style.scss */
+/* line 316, ../sass/style.scss */
 .tab-pane {
   position: relative;
 }
-/* line 313, ../sass/style.scss */
+/* line 318, ../sass/style.scss */
 .tab-pane img {
   width: 100%;
 }
 
-/* line 318, ../sass/style.scss */
+/* line 323, ../sass/style.scss */
 .textInside {
   text-align: left;
   text-align: -moz-left;
@@ -498,7 +503,7 @@ li.active a div.proyectoImg {
   left: 50%;
 }
 @media (max-width: 1000px) {
-  /* line 318, ../sass/style.scss */
+  /* line 323, ../sass/style.scss */
   .textInside {
     left: 30%;
     padding: 2rem;
@@ -506,7 +511,7 @@ li.active a div.proyectoImg {
   }
 }
 @media (max-width: 740px) {
-  /* line 318, ../sass/style.scss */
+  /* line 323, ../sass/style.scss */
   .textInside {
     left: 5%;
     top: 4rem;
@@ -514,7 +519,7 @@ li.active a div.proyectoImg {
   }
 }
 @media (max-width: 640px) {
-  /* line 318, ../sass/style.scss */
+  /* line 323, ../sass/style.scss */
   .textInside {
     font-size: 1.2rem;
     left: 2%;
@@ -523,20 +528,21 @@ li.active a div.proyectoImg {
   }
 }
 @media (max-width: 590px) {
-  /* line 318, ../sass/style.scss */
+  /* line 323, ../sass/style.scss */
   .textInside {
     display: none;
   }
 }
 
-/* line 348, ../sass/style.scss */
+/* line 353, ../sass/style.scss */
 h2.titleTextInside {
+  font-family: 'Kohinoor';
   margin: 0;
   margin-bottom: 3rem;
   color: red;
 }
 @media (max-width: 640px) {
-  /* line 348, ../sass/style.scss */
+  /* line 353, ../sass/style.scss */
   h2.titleTextInside {
     font-size: 2.5rem;
     margin-bottom: 1rem;
