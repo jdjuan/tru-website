@@ -54,17 +54,17 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 						<span class="icon-bar"></span> 
 					</button>
 					<a class="navbar-brand" href="#">
-						<img alt="TRU Digital Media" class="logo" src="images/logo.png">
+						<a id="linkSlider" style="cursor:pointer"><img alt="TRU Digital Media" class="logo" src="images/logo.png"></a>
 					</a>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav navLinks">
-						<li class="active"><a href="#">Filosofía</a></li>
-						<li><a href="#">Servicios</a></li> 
-						<li><a href="#">Proyectos</a></li> 
-						<li><a href="#">Equipo</a></li> 
-						<li><a href="#">Aliados</a></li> 
-						<li><a href="#">Contacto</a></li> 
+						<li class="active"><a id="linkNosotros" href="#">Filosofía</a></li>
+						<li><a id="linkServicios" href="#">Servicios</a></li> 
+						<li><a id="linkProyectos" href="#">Proyectos</a></li> 
+						<li><a id="linkEquipo" href="#">Equipo</a></li> 
+						<li><a id="linkAliados" href="#">Aliados</a></li> 
+						<li><a id="linkContacto" href="#">Contacto</a></li> 
 					</ul>
 					<ul class="nav navbar-nav navbar-right navSocial">
 						<li><a href="#"><span class="fa fa-facebook"></span></a></li>
@@ -225,13 +225,13 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 				for ($i=0; $i < count($rowsClientes); $i++) { 
 					$row = $rowsClientes[$i];
 					if ($i==0) {
-						echo "<li class='proyecto active'><a class='proyectosA' data-toggle='pill' href='#menu".($i)."'>";
+						echo "<li class='proyecto active'><a data-toggle='pill' href='#menu".($i)."'>";
 						echo "<div style=\"";
 						echo "background:transparent url('admin/clientes/uploads/". $row["imagen"] ."') center top no-repeat; background-size: 9em;  -webkit-filter: grayscale(100%);  filter: grayscale(100%);";
 						echo "\" class='col-md-2 col-centered proyectoImg'></div>";
 						echo "</a></li>";
 					}else{
-						echo "<li class='proyecto'><a class='proyectosA' data-toggle='pill' href='#menu".($i)."'>";
+						echo "<li class='proyecto'><a data-toggle='pill' href='#menu".($i)."'>";
 						echo "<div style=\"";
 						echo "background:transparent url('admin/clientes/uploads/". $row["imagen"] ."') center top no-repeat; background-size: 9em;  -webkit-filter: grayscale(100%);  filter: grayscale(100%);";
 						echo "\" class='col-md-2 col-centered proyectoImg'></div>";
@@ -242,24 +242,39 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 			</ul>
 			<div class="tab-content">
 				<div id="menu0" class="tab-pane fade in active">
-					<h3>HOME</h3>
-					<p>Some content.</p>
+					<div class="textInside">
+						<h2 class="titleTextInside">Branding</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus minus veniam neque ipsam incidunt harum possimus inventore sapiente, aliquam laboriosam! Vel, eligendi provident nostrum itaque voluptate! Est totam, distinctio! Explicabo omnis labore, eveniet alias quos, libero aspernatur reiciendis. Laudantium, est.</p>
+					</div>
+					<img src="images/linea1.png" alt="">
 				</div>
 				<div id="menu1" class="tab-pane fade">
-					<h3>Menu 1</h3>
-					<p>Some content in menu 1.</p>
+					<div class="textInside">
+						<h2 class="titleTextInside">Branding</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus minus veniam neque ipsam incidunt harum possimus inventore sapiente, aliquam laboriosam! Vel, eligendi provident nostrum itaque voluptate! Est totam, distinctio! Explicabo omnis labore, eveniet alias quos, libero aspernatur reiciendis. Laudantium, est.</p>
+					</div>
+					<img src="images/linea2.png" alt="">
 				</div>
 				<div id="menu2" class="tab-pane fade">
-					<h3>Menu 2</h3>
-					<p>Some content in menu 2.</p>
+					<div class="textInside">
+						<h2 class="titleTextInside">Branding</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus minus veniam neque ipsam incidunt harum possimus inventore sapiente, aliquam laboriosam! Vel, eligendi provident nostrum itaque voluptate! Est totam, distinctio! Explicabo omnis labore, eveniet alias quos, libero aspernatur reiciendis. Laudantium, est.</p>
+					</div>
+					<img src="images/linea3.png" alt="">
 				</div>
 				<div id="menu3" class="tab-pane fade">
-					<h3>Menu 1</h3>
-					<p>Some content in menu 1.</p>
+					<div class="textInside">
+						<h2 class="titleTextInside">Branding</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus minus veniam neque ipsam incidunt harum possimus inventore sapiente, aliquam laboriosam! Vel, eligendi provident nostrum itaque voluptate! Est totam, distinctio! Explicabo omnis labore, eveniet alias quos, libero aspernatur reiciendis. Laudantium, est.</p>
+					</div>
+					<img src="images/linea4.png" alt="">
 				</div>
 				<div id="menu4" class="tab-pane fade">
-					<h3>Menu 2</h3>
-					<p>Some content in menu 2.</p>
+					<div class="textInside">
+						<h2 class="titleTextInside">Branding</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus minus veniam neque ipsam incidunt harum possimus inventore sapiente, aliquam laboriosam! Vel, eligendi provident nostrum itaque voluptate! Est totam, distinctio! Explicabo omnis labore, eveniet alias quos, libero aspernatur reiciendis. Laudantium, est.</p>
+					</div>
+					<img src="images/linea5.png" alt="">
 				</div>
 			</div>
 		</div>

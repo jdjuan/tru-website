@@ -4,7 +4,7 @@
 @import "compass/utilities";
 @import "include-media";
 
-body { padding-top: 70px; }
+body { padding-top: 70px; font-family: 'Roboto';}
 
 .navbar-fixed-top{ background-color: white}
 
@@ -17,8 +17,6 @@ body { padding-top: 70px; }
 div#myNavbar { text-align: center;}
 
 .navbar-brand{padding: 0;}
-
-nav.navbar.navbar-inverse { padding-bottom: 2rem;}
 
 ul.nav.navbar-nav {
 	float: none;
@@ -166,6 +164,7 @@ li.slideImg {
 
 div.serviciosTitle {
 	background-color: $lightGreen;
+	font-family: 'Kohinoor';
 	display: inline-block;
 	color: $darkBlue;
 	font-size: 3rem;
@@ -191,8 +190,6 @@ div.serviciosTitle {
 	cursor: pointer;
 	color: white;
 }
-
-h1.serviciosDescription{font-size: 1.6rem;}
 
 .serviciosText {
 	background-color: rgba(255, 255, 255, 0.7);
@@ -228,6 +225,7 @@ h1.serviciosDescription {
 
 h1.titleSection {
 	background-color: $darkBlue;
+	font-family: 'Kohinoor';
 	display: inline-block;
 	padding-right: 4rem;
 	padding-left: 4rem;
@@ -272,4 +270,87 @@ ul#owl-example{ width: 80%;@include center-aligner();}
 li.active a div.proyectoImg{
 	-webkit-filter: grayscale(0%) !important;
 	filter: grayscale(0%) !important;
+	border-bottom-color: $darkBlue;
+	border-bottom-style: solid;
+	border-bottom-width: 10px;
+}
+
+.owl-wrapper-outer{
+	z-index: 20;
+}
+.owl-buttons {
+	position: absolute !important;
+	top: 5.5rem !important;
+	width: 100%;
+	z-index: 0;
+	@include media("<=large"){
+		padding-left: 1.5vw;
+		padding-right: 1.5vw;
+	}
+	@include media("<=medium"){
+		padding-left: 0vw;
+		padding-right: 0vw;
+	}
+}
+
+.owl-prev {
+	font-size: 3rem !important;
+	font-weight: 600 !important;
+	margin-left: -2.5rem;
+	position: relative;
+	z-index: 40;
+	float: left;
+}
+
+.owl-next {
+	@extend .owl-prev;
+	float: right;
+	margin-right: -2.5rem;
+}
+
+.tab-pane {
+	position: relative;
+	img{
+		width: 100%;
+	}
+}
+
+.textInside {
+	@include left-aligner();
+	background-color: white;
+	position: absolute;
+	padding: 4rem;
+	color: $lightBlue;
+	width: 40rem;
+	top: 7rem;
+	left: 50%;
+	@include media("<=medium"){
+		left: 30%;
+		padding: 2rem;
+		top: 5rem;
+	}
+	@include media("<=small"){
+		left: 5%;
+		top: 4rem;
+		width: 55rem;
+	}
+	@include media("<=640px"){
+		font-size: 1.2rem;
+		left: 2%;
+		top: 2rem;
+		width: 50rem;
+	}
+	@include media("<=very-small"){
+		display: none;
+	}
+}
+
+h2.titleTextInside{
+	margin: 0;
+	margin-bottom: 3rem;
+	color: red;
+	@include media("<=640px"){
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
 }

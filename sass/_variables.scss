@@ -1,12 +1,19 @@
 //Google Font
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600);
-
+@font-face {
+    font-family: Kohinoor;
+    src: url(../fonts/KohinoorDevanagari-Medium.ttf) format('truetype');
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Light.ttf) format('truetype');
+}
 // Variables to quickly and easily change the accent colour across the site.
-$lightGreen: lighten(green,20%);
-$lightBlue: lighten(blue,10%);
-$darkBlue: darken(blue,30%);
+$lightGreen: #96c83c;
+$darkBlue: #09324f;
+$lightBlue: lighten($darkBlue,10%);
 $navMargin: 9vw;
-$navBarBreak: 885px;
+$navBarBreak: 900px;
 
 //Include-Media mixin variables
-$breakpoints: (very-small: 590px, small: 740px, navBarBreak: 885px, medium: 1000px, medium-large:1100px, large: 1200px);
+$breakpoints: (very-small: 590px, small: 740px, navBarBreak: $navBarBreak, medium: 1000px, medium-large:1100px, large: 1200px);

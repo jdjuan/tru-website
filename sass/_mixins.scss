@@ -22,3 +22,9 @@
   text-align: -moz-right;
   text-align: -webkit-right;
 }
+
+@mixin left-aligner(){
+  text-align: left;
+  text-align: -moz-left;
+  text-align: -webkit-left;
+}

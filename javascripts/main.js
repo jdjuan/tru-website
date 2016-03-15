@@ -1,9 +1,20 @@
 $(function () {
+	var scrolling=false;
+	$(document).on("scroll", onScroll);
 
 	//NAVBAR COLLAPSE
 	$("ul.navbar-nav li").click(function() {
 		$(".navbar-collapse").collapse('hide');
 	});
+
+	//NAV SCROLL
+	navScroll("#linkSlider", ".slider");
+	navScroll("#linkNosotros", ".container.nosotros");
+	navScroll("#linkServicios", ".container.servicios");
+	navScroll("#linkProyectos", ".container.proyectos");
+	// navScroll("#linkEquipo", ".container.equipoDiv");
+	// navScroll("#linkAliados", ".container.contactoDiv");
+	// navScroll("#linkContacto", ".container.contactoDiv");
 
 	//NAVBAR
 	$('ul.navbar-nav li').click(function(e) {
@@ -15,6 +26,7 @@ $(function () {
 		e.preventDefault();
 	});
 
+	//PROYECTOS
 	$("#owl-example").owlCarousel({
 		items : 5,
 		navigation : true,
@@ -28,8 +40,23 @@ $(function () {
 		$(".owl-item.active").children(":first").children(":first").trigger( "click" );
 	});
 
-	$(".owl-next, .owl-prev").on('touchstart', function(){
-		$(".owl-item.active").next().children(":first").children(":first").trigger( "click" );
+	$(".owl-next").on('touchstart', function(){
+		var nextElement=$(".owl-item.active").next();
+		if(nextElement.length){
+			nextElement.children(":first").children(":first").trigger( "click" );
+		}else{
+			$(".owl-item").children(":first").children(":first").trigger( "click" );
+		}
+	});
+
+	$(".owl-prev").on('touchstart', function(){
+		var prevElement=$(".owl-item.active").prev();
+		if(prevElement.length){
+			prevElement.children(":first").children(":first").trigger( "click" );
+		}else{
+			$(".owl-item:last").children(":first").children(":first").trigger( "click" );
+		}
+		
 	});
 
 	$(".owl-prev").addClass('glyphicon glyphicon-chevron-left');
@@ -40,6 +67,37 @@ $(function () {
 	$('li.proyecto').click(function(){
 		$('li.proyecto').removeClass('active');
 	});
+
+	function navScroll(linkID, className){
+		$(linkID).click(function() {
+			scrolling=true;
+			offset = 70;
+			if (linkID == "#linkNosotros") {
+				offset = 140;
+			}
+			if (linkID == "#linkProyectos") {
+				offset = 130;
+			}
+			$('html,body').animate({
+				scrollTop: $(className).offset().top-offset},
+				'slow', function(){
+					scrolling=false;
+					if ("#linkSlider" == linkID) {
+						$('.navbar li.active').removeClass('active');
+						$(".navLinks li:first").addClass('active');
+					}
+				});
+		});
+	}
+
+	function onScroll(event){
+		if (!scrolling) {
+			var scrollPos = $(document).scrollTop();
+			if (scrollPos > 5) {
+			}
+		}
+	}
+
 });
 
 function displayServicio(n){
