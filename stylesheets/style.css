@@ -557,7 +557,7 @@ ul#owl-example {
 }
 
 /* line 350, ../sass/style.scss */
-.cliente:hover {
+.cliente:hover, .aliado:hover {
   -webkit-filter: grayscale(0%) !important;
   filter: grayscale(0%) !important;
 }
@@ -785,21 +785,26 @@ div#menu4 div h2 {
 }
 
 /* line 496, ../sass/style.scss */
-.clienteRow {
+.clienteRow, .aliadoRow {
   text-align: center;
   margin: 8rem;
   margin-top: 4rem;
 }
 @media (max-width: 1000px) {
   /* line 496, ../sass/style.scss */
-  .clienteRow {
+  .clienteRow, .aliadoRow {
     margin-left: 2rem;
     margin-right: 2rem;
   }
 }
 
-/* line 506, ../sass/style.scss */
-.cliente {
+/* line 505, ../sass/style.scss */
+.aliadoRow {
+  margin-bottom: 2rem;
+}
+
+/* line 509, ../sass/style.scss */
+.cliente, .aliado {
   display: inline-block;
   width: 16.66666667%;
   margin: 0 auto;
@@ -807,103 +812,121 @@ div#menu4 div h2 {
   float: none;
 }
 @media (max-width: 1000px) {
-  /* line 506, ../sass/style.scss */
-  .cliente {
+  /* line 509, ../sass/style.scss */
+  .cliente, .aliado {
     width: 20%;
   }
 }
 @media (max-width: 740px) {
-  /* line 506, ../sass/style.scss */
-  .cliente {
+  /* line 509, ../sass/style.scss */
+  .cliente, .aliado {
     width: 30%;
   }
 }
 @media (max-width: 440px) {
-  /* line 506, ../sass/style.scss */
-  .cliente {
+  /* line 509, ../sass/style.scss */
+  .cliente, .aliado {
     width: 45%;
   }
 }
 
-/* line 522, ../sass/style.scss */
+/* line 525, ../sass/style.scss */
 #cliente1 {
   background: url("../images/cliente01.png") center top no-repeat;
   background-size: 9em;
 }
 
-/* line 523, ../sass/style.scss */
+/* line 526, ../sass/style.scss */
 #cliente2 {
   background: url("../images/cliente02.png") center top no-repeat;
   background-size: 9em;
 }
 
-/* line 524, ../sass/style.scss */
+/* line 527, ../sass/style.scss */
 #cliente3 {
   background: url("../images/cliente03.png") center top no-repeat;
   background-size: 9em;
 }
 
-/* line 525, ../sass/style.scss */
+/* line 528, ../sass/style.scss */
 #cliente4 {
   background: url("../images/cliente04.png") center top no-repeat;
   background-size: 9em;
 }
 
-/* line 526, ../sass/style.scss */
+/* line 529, ../sass/style.scss */
 #cliente5 {
   background: url("../images/cliente05.png") center top no-repeat;
   background-size: 9em;
 }
 
-/* line 527, ../sass/style.scss */
+/* line 530, ../sass/style.scss */
 #cliente6 {
   background: url("../images/cliente06.png") center top no-repeat;
   background-size: 9em;
 }
 
-/* line 528, ../sass/style.scss */
+/* line 531, ../sass/style.scss */
 #cliente7 {
   background: url("../images/cliente07.png") center top no-repeat;
   background-size: 9em;
 }
 
-/* line 529, ../sass/style.scss */
+/* line 532, ../sass/style.scss */
 #cliente8 {
   background: url("../images/cliente08.png") center top no-repeat;
   background-size: 9em;
 }
 
-/* line 530, ../sass/style.scss */
+/* line 533, ../sass/style.scss */
 #cliente9 {
   background: url("../images/cliente09.png") center top no-repeat;
   background-size: 9em;
 }
 
-/* line 531, ../sass/style.scss */
+/* line 534, ../sass/style.scss */
 #cliente10 {
   background: url("../images/cliente10.png") center top no-repeat;
   background-size: 9em;
 }
 
-/* line 532, ../sass/style.scss */
+/* line 535, ../sass/style.scss */
 #cliente11 {
   background: url("../images/cliente11.png") center top no-repeat;
   background-size: 9em;
 }
 
-/* line 533, ../sass/style.scss */
+/* line 536, ../sass/style.scss */
 #cliente12 {
   background: url("../images/cliente12.png") center top no-repeat;
   background-size: 9em;
 }
 
-/* line 534, ../sass/style.scss */
+/* line 537, ../sass/style.scss */
 #cliente13 {
   background: url("../images/cliente13.png") center top no-repeat;
   background-size: 9em;
 }
 
-/* line 537, ../sass/style.scss */
+/* line 539, ../sass/style.scss */
+#aliado1 {
+  background: url("../images/aliado01.png") center top no-repeat;
+  background-size: 9em;
+}
+
+/* line 540, ../sass/style.scss */
+#aliado2 {
+  background: url("../images/aliado02.png") center top no-repeat;
+  background-size: 9em;
+}
+
+/* line 541, ../sass/style.scss */
+#aliado3 {
+  background: url("../images/aliado03.png") center top no-repeat;
+  background-size: 9em;
+}
+
+/* line 543, ../sass/style.scss */
 .container.equipo {
   width: 100%;
   text-align: center;
@@ -913,7 +936,7 @@ div#menu4 div h2 {
   margin-right: auto;
 }
 
-/* line 542, ../sass/style.scss */
+/* line 548, ../sass/style.scss */
 .equipo {
   display: inline-block;
   margin: 0 auto;
@@ -923,56 +946,192 @@ div#menu4 div h2 {
   padding: 0;
 }
 @media (max-width: 993px) {
-  /* line 542, ../sass/style.scss */
+  /* line 548, ../sass/style.scss */
   .equipo {
     width: 33.33%;
     height: 33vw;
   }
 }
 @media (max-width: 740px) {
-  /* line 542, ../sass/style.scss */
+  /* line 548, ../sass/style.scss */
   .equipo {
     width: 50%;
     height: 50vw;
   }
 }
 
-/* line 559, ../sass/style.scss */
-#equipo1 {
-  background-color: #6ee22a;
-}
-
-/* line 560, ../sass/style.scss */
-#equipo2 {
-  background-color: #4c5353;
-}
-
-/* line 561, ../sass/style.scss */
-#equipo3 {
-  background-color: #408dae;
-}
-
-/* line 562, ../sass/style.scss */
-#equipo4 {
-  background-color: #13e530;
-}
-
-/* line 563, ../sass/style.scss */
-#equipo5 {
-  background-color: #e3301a;
-}
-
-/* line 564, ../sass/style.scss */
-#equipo6 {
-  background-color: #842c44;
-}
-
 /* line 565, ../sass/style.scss */
-#equipo7 {
-  background-color: #55bd9e;
+#equipo1 {
+  background-color: #24d88d;
 }
 
 /* line 566, ../sass/style.scss */
+#equipo2 {
+  background-color: #1bef52;
+}
+
+/* line 567, ../sass/style.scss */
+#equipo3 {
+  background-color: #0478fe;
+}
+
+/* line 568, ../sass/style.scss */
+#equipo4 {
+  background-color: #c12dc5;
+}
+
+/* line 569, ../sass/style.scss */
+#equipo5 {
+  background-color: #65c73e;
+}
+
+/* line 570, ../sass/style.scss */
+#equipo6 {
+  background-color: #a07040;
+}
+
+/* line 571, ../sass/style.scss */
+#equipo7 {
+  background-color: #e8d24e;
+}
+
+/* line 572, ../sass/style.scss */
 #equipo8 {
-  background-color: #e91a59;
+  background-color: #d6092d;
+}
+
+/* line 574, ../sass/style.scss */
+.row.contactoRow {
+  background-color: #09324f;
+  height: 45em;
+}
+
+/* line 579, ../sass/style.scss */
+.titleH1Contacto.derecha {
+  display: none;
+}
+@media (max-width: 990px) {
+  /* line 579, ../sass/style.scss */
+  .titleH1Contacto.derecha {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+}
+
+/* line 587, ../sass/style.scss */
+.titleH1Contacto {
+  color: white;
+  margin-top: 22%;
+  text-align: center;
+  font-weight: 800;
+  font-size: 4em;
+}
+@media (max-width: 1200px) {
+  /* line 587, ../sass/style.scss */
+  .titleH1Contacto {
+    margin-top: 30%;
+  }
+}
+@media (max-width: 990px) {
+  /* line 587, ../sass/style.scss */
+  .titleH1Contacto {
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+}
+
+/* line 602, ../sass/style.scss */
+.columnaContacto {
+  z-index: 200;
+  height: 100%;
+  color: white;
+}
+
+/* line 608, ../sass/style.scss */
+.formulario {
+  height: auto;
+  padding: 3em;
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  margin-top: 10%;
+}
+@media (max-width: 1300px) {
+  /* line 608, ../sass/style.scss */
+  .formulario {
+    width: 90%;
+  }
+}
+@media (max-width: 1200px) {
+  /* line 608, ../sass/style.scss */
+  .formulario {
+    margin-top: 15%;
+  }
+}
+@media (max-width: 1050px) {
+  /* line 608, ../sass/style.scss */
+  .formulario {
+    width: 100%;
+  }
+}
+@media (max-width: 990px) {
+  /* line 608, ../sass/style.scss */
+  .formulario {
+    margin-top: 8em !important;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 550px) {
+  /* line 608, ../sass/style.scss */
+  .formulario {
+    width: 100%;
+  }
+}
+
+/* line 634, ../sass/style.scss */
+.form-control {
+  background-color: #eee;
+}
+
+/* line 638, ../sass/style.scss */
+.buttonWrapper {
+  text-align: right;
+}
+
+/* line 642, ../sass/style.scss */
+.contactoMoreInfo {
+  margin-left: 3em;
+  margin-top: 3em;
+  text-align: center;
+}
+@media (max-width: 1300px) {
+  /* line 642, ../sass/style.scss */
+  .contactoMoreInfo {
+    margin-left: 0em;
+  }
+}
+
+/* line 651, ../sass/style.scss */
+.col-md-4.contacto {
+  width: 31%;
+}
+@media (max-width: 990px) {
+  /* line 651, ../sass/style.scss */
+  .col-md-4.contacto {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  /* line 659, ../sass/style.scss */
+  .col-md-6.columnaContacto {
+    width: 100%;
+    position: absolute;
+  }
+
+  /* line 663, ../sass/style.scss */
+  ul.footerLi {
+    font-size: 10px !important;
+  }
 }

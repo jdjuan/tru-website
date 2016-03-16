@@ -27,7 +27,6 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 	<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
 	<!-- Main Custom Styles -->
 	<link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
-	<!-- <link href="stylesheets/clientes.css" rel="stylesheet" type="text/css" /> -->
 	<!--[if IE]><link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css"/><![endif]-->
 
 	<!-- Jquery CDN -->
@@ -327,5 +326,67 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 		</div>
 	</div>
 	<!-- END EQUIPO -->
+	<!-- NUESTROS ALIADOS -->
+	<div class="container aliados">
+		<div class="wrapperTitle down">
+			<h1 class="titleSection title">Nuestros Aliados</h1>
+		</div> 
+		<div class="row aliadoRow">
+			<div class="col-md-2 aliado" id="aliado1"></div>
+			<div class="col-md-2 aliado" id="aliado2"></div>
+			<div class="col-md-2 aliado" id="aliado3"></div>
+		</div>
+	</div>
+	<!-- END NUESTROS CLIENTES -->
+	<!-- CONTACTO -->
+	<div class="contacto container">
+		<div class="row contactoRow">
+			<div class="col-md-6 columnaContacto izquierda">
+				<div class="wrapTitleContacto"><h1 class="titleH1Contacto">Escríbenos.</h1></div>
+				<div class="emailContacto" style="color: white;font-weight: 600;text-align: center;">comercial.urbangreen@gmail.com</div>
+				<div class="contactoMoreInfo">
+					<div class="col-md-4 contacto">
+						<ul class="footerLi">
+							<li><strong>Bogotá:</strong></li>
+							<li>Tel: (57) 3206285779</li>
+						</ul>
+					</div>
+					<div class="col-md-4 contacto">
+						<ul class="footerLi">
+							<li><strong>Manizales:</strong></li>
+							<li>Tel: 3136494180</li>
+						</ul>
+					</div>
+					<div class="col-md-4 contacto">
+						<ul class="footerLi">
+							<li><strong>Lima:</strong></li>
+							<li>Tel: (51) 950 4444320</li>
+						</ul>
+					</div> 
+				</div>
+			</div>
+			<div class="col-md-6 columnaContacto">
+				<h1 class="titleH1Contacto derecha">Escríbenos.</h1>
+				<form role="form" class="formulario" action="admin/mail.php" method="post">
+					<div class="form-group">
+						<input name="nombre" type="text" class="form-control" id="email" placeholder="Nombre Completo" required="">
+					</div>
+					<div class="form-group">
+						<input name="email" type="email" class="form-control" id="email" placeholder="Email" required="">
+					</div>
+					<div class="form-group">
+						<input name="telefono" type="text" class="form-control" id="email" placeholder="Teléfono" required="">
+					</div>
+					<div class="form-group">
+						<textarea name="mensaje" class="form-control" rows="5" id="comment" placeholder="Mensaje" required=""></textarea>
+					</div>
+					<div class="buttonWrapper">
+						<button type="submit" class="btn btn-default">ENVIAR</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- END CONTACTO -->
 </body>
 </html>
