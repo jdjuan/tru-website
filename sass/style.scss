@@ -322,31 +322,27 @@ li.active a div.proyectoImg{
 
 .textInside {
 	@include left-aligner();
-	background-color: white;
 	position: absolute;
+	color: $white;
 	padding: 4rem;
-	color: $lightBlue;
 	width: 40rem;
 	top: 7rem;
 	left: 50%;
 	@include media("<=medium"){
 		left: 30%;
 		padding: 2rem;
-		top: 5rem;
+		top: 3rem;
 	}
 	@include media("<=small"){
-		left: 5%;
-		top: 4rem;
-		width: 55rem;
-	}
-	@include media("<=640px"){
-		font-size: 1.2rem;
-		left: 2%;
-		top: 2rem;
-		width: 50rem;
+		left: 20%;
 	}
 	@include media("<=very-small"){
-		display: none;
+		left: 10%;
+	}
+	@include media("<=465px"){
+		left: 5%;
+		font-size: 1.2rem;
+		width: 90%;
 	}
 }
 
@@ -354,9 +350,93 @@ h2.titleTextInside{
 	font-family: 'Kohinoor';
 	margin: 0;
 	margin-bottom: 3rem;
-	color: red;
 	@include media("<=640px"){
 		font-size: 2.5rem;
 		margin-bottom: 1rem;
 	}
 }
+
+.linea {
+	width: 100%;
+	height: 53rem;
+	background-size: cover;
+	background-position: center top no-repeat;
+	@include media("<=medium"){
+		height: 33rem;
+	}
+}
+
+#linea1{
+	background-image: url('../images/linea1.png');
+	@include media("<=medium"){
+		background: $icono1;
+	}
+}
+#linea2{
+	background-image: url('../images/linea2.png');
+	@include media("<=medium"){
+		background: $icono2;
+	}
+}
+#linea3{
+	background-image: url('../images/linea3.png');
+	@include media("<=medium"){
+		background: $icono3;
+	}
+}
+#linea4{
+	background-image: url('../images/linea4.png');
+	@include media("<=medium"){
+		background: $icono4;
+	}
+}
+#linea5{
+	background-image: url('../images/linea5.png');
+	@include media("<=medium"){
+		background: $icono5;
+	}
+}
+
+div#menu0 div h2 { color: $white}
+div#menu1 div h2 { color: $white}
+div#menu2 div h2 { color: $white}
+div#menu3 div h2 { color: $white}
+div#menu4 div h2 { color: $white}
+
+.clienteRow{
+	text-align: center;
+	margin: 8rem;
+	margin-top: 4rem;
+	@include media("<=medium"){
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+}
+
+.cliente{
+	display: inline-block;
+	width: 16.66666667%;
+	margin: 0 auto;
+	height: 10rem;
+	float: none;
+	@include media("<=medium"){
+		width: 15%;
+	}
+	@include media("<=small"){
+		width: 20%;
+	}
+}
+.cliente1{background: url('../images/cliente01.png') center top no-repeat; background-size: 9em;}
+.cliente2{background: url('../images/cliente02.png') center top no-repeat; background-size: 9em;}
+.cliente3{background: url('../images/cliente03.png') center top no-repeat; background-size: 9em;}
+.cliente4{background: url('../images/cliente04.png') center top no-repeat; background-size: 9em;}
+.cliente5{background: url('../images/cliente05.png') center top no-repeat; background-size: 9em;}
+.cliente6{background: url('../images/cliente06.png') center top no-repeat; background-size: 9em;}
+.cliente7{background: url('../images/cliente07.png') center top no-repeat; background-size: 9em;}
+.cliente8{background: url('../images/cliente08.png') center top no-repeat; background-size: 9em;}
+.cliente9{background: url('../images/cliente09.png') center top no-repeat; background-size: 9em;}
+.cliente10{background: url('../images/cliente10.png') center top no-repeat; background-size: 9em;}
+.cliente11{background: url('../images/cliente11.png') center top no-repeat; background-size: 9em;}
+.cliente12{background: url('../images/cliente12.png') center top no-repeat; background-size: 9em;}
+.cliente13{background: url('../images/cliente13.png') center top no-repeat; background-size: 9em;}
+

@@ -11,9 +11,16 @@
 // Variables to quickly and easily change the accent colour across the site.
 $lightGreen: #96c83c;
 $darkBlue: #09324f;
+$white: #FFF;
 $lightBlue: lighten($darkBlue,10%);
+$icono1: #443b9d;
+$icono2: #2a4fa8;
+$icono3: #0b9ada;
+$icono4: #2fba91;
+$icono5: #37b75c;
 $navMargin: 9vw;
 $navBarBreak: 900px;
+$serviciosBreak: 993px;
 
 //Include-Media mixin variables
-$breakpoints: (very-small: 590px, small: 740px, navBarBreak: $navBarBreak, medium: 1000px, medium-large:1100px, large: 1200px);
+$breakpoints: (very-small: 590px, small: 740px, navBarBreak: $navBarBreak, serviciosBreak: $serviciosBreak, medium: 1000px, medium-large:1100px, large: 1200px);

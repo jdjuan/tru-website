@@ -246,35 +246,35 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 						<h2 class="titleTextInside">Branding</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus minus veniam neque ipsam incidunt harum possimus inventore sapiente, aliquam laboriosam! Vel, eligendi provident nostrum itaque voluptate! Est totam, distinctio! Explicabo omnis labore, eveniet alias quos, libero aspernatur reiciendis. Laudantium, est.</p>
 					</div>
-					<img src="images/linea1.png" alt="">
+					<div id="linea1" class="linea"></div>
 				</div>
 				<div id="menu1" class="tab-pane fade">
 					<div class="textInside">
 						<h2 class="titleTextInside">Branding</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus minus veniam neque ipsam incidunt harum possimus inventore sapiente, aliquam laboriosam! Vel, eligendi provident nostrum itaque voluptate! Est totam, distinctio! Explicabo omnis labore, eveniet alias quos, libero aspernatur reiciendis. Laudantium, est.</p>
 					</div>
-					<img src="images/linea2.png" alt="">
+					<div id="linea2" class="linea"></div>
 				</div>
 				<div id="menu2" class="tab-pane fade">
 					<div class="textInside">
 						<h2 class="titleTextInside">Branding</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus minus veniam neque ipsam incidunt harum possimus inventore sapiente, aliquam laboriosam! Vel, eligendi provident nostrum itaque voluptate! Est totam, distinctio! Explicabo omnis labore, eveniet alias quos, libero aspernatur reiciendis. Laudantium, est.</p>
 					</div>
-					<img src="images/linea3.png" alt="">
+					<div id="linea3" class="linea"></div>
 				</div>
 				<div id="menu3" class="tab-pane fade">
 					<div class="textInside">
 						<h2 class="titleTextInside">Branding</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus minus veniam neque ipsam incidunt harum possimus inventore sapiente, aliquam laboriosam! Vel, eligendi provident nostrum itaque voluptate! Est totam, distinctio! Explicabo omnis labore, eveniet alias quos, libero aspernatur reiciendis. Laudantium, est.</p>
 					</div>
-					<img src="images/linea4.png" alt="">
+					<div id="linea4" class="linea"></div>
 				</div>
 				<div id="menu4" class="tab-pane fade">
 					<div class="textInside">
 						<h2 class="titleTextInside">Branding</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus minus veniam neque ipsam incidunt harum possimus inventore sapiente, aliquam laboriosam! Vel, eligendi provident nostrum itaque voluptate! Est totam, distinctio! Explicabo omnis labore, eveniet alias quos, libero aspernatur reiciendis. Laudantium, est.</p>
 					</div>
-					<img src="images/linea5.png" alt="">
+					<div id="linea5" class="linea"></div>
 				</div>
 			</div>
 		</div>
@@ -310,10 +310,25 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 		</div>
 	</div>
 	<!-- END NUESTRO TRABAJO -->
-	<!-- NUESTRO TRABAJO -->
-	<div class="container trabajos">
+	<!-- NUESTROS CLIENTES -->
+	<div class="container clientes">
 		<div class="wrapperTitle upper">
 			<h1 class="titleSection title">Nuestros Clientes</h1>
+		</div>
+		<div class="row clienteRow">
+			<div class="col-md-2 cliente cliente1"></div>
+			<div class="col-md-2 cliente cliente2"></div>
+			<div class="col-md-2 cliente cliente3"></div>
+			<div class="col-md-2 cliente cliente4"></div>
+			<div class="col-md-2 cliente cliente5"></div>
+			<div class="col-md-2 cliente cliente6"></div>
+			<div class="col-md-2 cliente cliente7"></div>
+			<div class="col-md-2 cliente cliente8"></div>
+			<div class="col-md-2 cliente cliente9"></div>
+			<div class="col-md-2 cliente cliente10"></div>
+			<div class="col-md-2 cliente cliente11"></div>
+			<div class="col-md-2 cliente cliente12"></div>
+			<div class="col-md-2 cliente cliente13"></div>
 		</div>
 	</div>
 </body>

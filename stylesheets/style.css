@@ -494,10 +494,9 @@ li.active a div.proyectoImg {
   text-align: left;
   text-align: -moz-left;
   text-align: -webkit-left;
-  background-color: white;
   position: absolute;
+  color: #FFF;
   padding: 4rem;
-  color: #0e4f7d;
   width: 40rem;
   top: 7rem;
   left: 50%;
@@ -507,44 +506,247 @@ li.active a div.proyectoImg {
   .textInside {
     left: 30%;
     padding: 2rem;
-    top: 5rem;
+    top: 3rem;
   }
 }
 @media (max-width: 740px) {
   /* line 323, ../sass/style.scss */
   .textInside {
-    left: 5%;
-    top: 4rem;
-    width: 55rem;
-  }
-}
-@media (max-width: 640px) {
-  /* line 323, ../sass/style.scss */
-  .textInside {
-    font-size: 1.2rem;
-    left: 2%;
-    top: 2rem;
-    width: 50rem;
+    left: 20%;
   }
 }
 @media (max-width: 590px) {
   /* line 323, ../sass/style.scss */
   .textInside {
-    display: none;
+    left: 10%;
+  }
+}
+@media (max-width: 465px) {
+  /* line 323, ../sass/style.scss */
+  .textInside {
+    left: 5%;
+    font-size: 1.2rem;
+    width: 90%;
   }
 }
 
-/* line 353, ../sass/style.scss */
+/* line 349, ../sass/style.scss */
 h2.titleTextInside {
   font-family: 'Kohinoor';
   margin: 0;
   margin-bottom: 3rem;
-  color: red;
 }
 @media (max-width: 640px) {
-  /* line 353, ../sass/style.scss */
+  /* line 349, ../sass/style.scss */
   h2.titleTextInside {
     font-size: 2.5rem;
     margin-bottom: 1rem;
   }
+}
+
+/* line 359, ../sass/style.scss */
+.linea {
+  width: 100%;
+  height: 53rem;
+  background-size: cover;
+  background-position: center top no-repeat;
+}
+@media (max-width: 1000px) {
+  /* line 359, ../sass/style.scss */
+  .linea {
+    height: 33rem;
+  }
+}
+
+/* line 369, ../sass/style.scss */
+#linea1 {
+  background-image: url("../images/linea1.png");
+}
+@media (max-width: 1000px) {
+  /* line 369, ../sass/style.scss */
+  #linea1 {
+    background: #443b9d;
+  }
+}
+
+/* line 375, ../sass/style.scss */
+#linea2 {
+  background-image: url("../images/linea2.png");
+}
+@media (max-width: 1000px) {
+  /* line 375, ../sass/style.scss */
+  #linea2 {
+    background: #2a4fa8;
+  }
+}
+
+/* line 381, ../sass/style.scss */
+#linea3 {
+  background-image: url("../images/linea3.png");
+}
+@media (max-width: 1000px) {
+  /* line 381, ../sass/style.scss */
+  #linea3 {
+    background: #0b9ada;
+  }
+}
+
+/* line 387, ../sass/style.scss */
+#linea4 {
+  background-image: url("../images/linea4.png");
+}
+@media (max-width: 1000px) {
+  /* line 387, ../sass/style.scss */
+  #linea4 {
+    background: #2fba91;
+  }
+}
+
+/* line 393, ../sass/style.scss */
+#linea5 {
+  background-image: url("../images/linea5.png");
+}
+@media (max-width: 1000px) {
+  /* line 393, ../sass/style.scss */
+  #linea5 {
+    background: #37b75c;
+  }
+}
+
+/* line 400, ../sass/style.scss */
+div#menu0 div h2 {
+  color: #FFF;
+}
+
+/* line 401, ../sass/style.scss */
+div#menu1 div h2 {
+  color: #FFF;
+}
+
+/* line 402, ../sass/style.scss */
+div#menu2 div h2 {
+  color: #FFF;
+}
+
+/* line 403, ../sass/style.scss */
+div#menu3 div h2 {
+  color: #FFF;
+}
+
+/* line 404, ../sass/style.scss */
+div#menu4 div h2 {
+  color: #FFF;
+}
+
+/* line 406, ../sass/style.scss */
+.clienteRow {
+  text-align: center;
+  margin: 8rem;
+  margin-top: 4rem;
+}
+@media (max-width: 1000px) {
+  /* line 406, ../sass/style.scss */
+  .clienteRow {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+/* line 416, ../sass/style.scss */
+.cliente {
+  display: inline-block;
+  width: 16.66666667%;
+  margin: 0 auto;
+  height: 10rem;
+  float: none;
+}
+@media (max-width: 1000px) {
+  /* line 416, ../sass/style.scss */
+  .cliente {
+    width: 15%;
+  }
+}
+@media (max-width: 740px) {
+  /* line 416, ../sass/style.scss */
+  .cliente {
+    width: 20%;
+  }
+}
+
+/* line 429, ../sass/style.scss */
+.cliente1 {
+  background: url("../images/cliente01.png") center top no-repeat;
+  background-size: 9em;
+}
+
+/* line 430, ../sass/style.scss */
+.cliente2 {
+  background: url("../images/cliente02.png") center top no-repeat;
+  background-size: 9em;
+}
+
+/* line 431, ../sass/style.scss */
+.cliente3 {
+  background: url("../images/cliente03.png") center top no-repeat;
+  background-size: 9em;
+}
+
+/* line 432, ../sass/style.scss */
+.cliente4 {
+  background: url("../images/cliente04.png") center top no-repeat;
+  background-size: 9em;
+}
+
+/* line 433, ../sass/style.scss */
+.cliente5 {
+  background: url("../images/cliente05.png") center top no-repeat;
+  background-size: 9em;
+}
+
+/* line 434, ../sass/style.scss */
+.cliente6 {
+  background: url("../images/cliente06.png") center top no-repeat;
+  background-size: 9em;
+}
+
+/* line 435, ../sass/style.scss */
+.cliente7 {
+  background: url("../images/cliente07.png") center top no-repeat;
+  background-size: 9em;
+}
+
+/* line 436, ../sass/style.scss */
+.cliente8 {
+  background: url("../images/cliente08.png") center top no-repeat;
+  background-size: 9em;
+}
+
+/* line 437, ../sass/style.scss */
+.cliente9 {
+  background: url("../images/cliente09.png") center top no-repeat;
+  background-size: 9em;
+}
+
+/* line 438, ../sass/style.scss */
+.cliente10 {
+  background: url("../images/cliente10.png") center top no-repeat;
+  background-size: 9em;
+}
+
+/* line 439, ../sass/style.scss */
+.cliente11 {
+  background: url("../images/cliente11.png") center top no-repeat;
+  background-size: 9em;
+}
+
+/* line 440, ../sass/style.scss */
+.cliente12 {
+  background: url("../images/cliente12.png") center top no-repeat;
+  background-size: 9em;
+}
+
+/* line 441, ../sass/style.scss */
+.cliente13 {
+  background: url("../images/cliente13.png") center top no-repeat;
+  background-size: 9em;
 }
