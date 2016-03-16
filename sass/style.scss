@@ -75,11 +75,59 @@ ul.navbar-nav li.active{
 }
 
 .carousel-control.left, .carousel-control.right{background-image: none;}
-
 .carousel-control .glyphicon-chevron-left{margin-left: -2.5vw;}
 .carousel-control .glyphicon-chevron-right{margin-right: -2.5vw;}
 .carousel-control{opacity: 1;}
-li.slideImg {
+
+#myCarousel .carousel-inner .item{
+	width: 100%;
+	height: 58rem;
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+	@include media("<=sliderBreak"){
+		height: 86vw;
+	}
+}
+
+#slider1{
+	background-image: url('../images/slider1.png');
+	@include media("<=sliderBreak"){
+		background-image: url('../images/sliderc1.png');
+	}
+}
+#slider2{
+	background-image: url('../images/slider2.png');
+	@include media("<=sliderBreak"){
+		background-image: url('../images/sliderc2.png');
+	}
+}
+#slider3{
+	background-image: url('../images/slider3.png');
+	@include media("<=sliderBreak"){
+		background-image: url('../images/sliderc3.png');
+	}
+}
+#slider4{
+	background-image: url('../images/slider4.png');
+	@include media("<=sliderBreak"){
+		background-image: url('../images/sliderc4.png');
+	}
+}
+#slider5{
+	background-image: url('../images/slider5.png');
+	@include media("<=sliderBreak"){
+		background-image: url('../images/sliderc5.png');
+	}
+}
+#slider6{
+	background-image: url('../images/slider6.png');
+	@include media("<=sliderBreak"){
+		background-image: url('../images/sliderc6.png');
+	}
+}
+
+li.control {
 	@include border-radius(2rem);
 	background-color: white;
 	margin-right: 1rem;
@@ -98,8 +146,8 @@ li.slideImg {
 		height: 2.5vw;
 	}
 }
-.carousel-indicators li.active {
-	@extend li.slideImg;
+li.control.active {
+	@extend li.control;
 	background-color: $lightGreen;
 	margin-bottom: 1px;
 }
@@ -121,16 +169,19 @@ li.slideImg {
 	vertical-align: middle;
 	display: table-cell;
 	text-align: justify;
+	font-size: 1.8rem;
 	padding: 5rem;
 	color: $darkBlue;
 	@include media("<=small"){
 		padding-top: 3.5rem;
 		padding-left: 2rem;
 		padding-right: 2rem;
+		font-size: 1.6rem;
 	}
 	@include media("<=very-small"){
 		padding-left: 1rem;
 		padding-right: 1rem;
+		font-size: 1.4rem;
 	}
 }
 
@@ -206,12 +257,20 @@ div.serviciosTitle {
 		padding: 1.4rem;
 		height: 6rem;
 	}
+	@include media("<=very-small"){
+		font-size: 2rem;
+		padding: 1rem;
+		height: 5rem;
+	}
 }
 
 .serviciosText {
 	background-color: rgba(255, 255, 255, 0.7);
 	margin-top: 2rem;
 	color: #004c9a;
+	@include media("<=small"){
+		margin-top: 0rem;
+	}
 }
 
 h1.serviciosDescription {
@@ -222,6 +281,10 @@ h1.serviciosDescription {
 	@include media("<=very-small"){
 		font-size: 1.7rem;
 		padding: 1.5rem;
+	}
+	@include media("<=380px"){
+		font-size: 1.3rem;
+		padding: 1.3rem;
 	}
 }
 
@@ -242,8 +305,16 @@ h1.serviciosDescription {
 }
 
 .wrapperTitle.bottom{
-	@extend .wrapperTitle.upper;
+	@extend .wrapperTitle;
+	margin-top: -6rem;
 	margin-bottom: -5rem;
+}
+
+.wrapperTitle.down{
+	@extend .wrapperTitle.bottom;
+	@include media("<=small"){
+		margin-top: -2rem;
+	}
 }
 
 h1.titleSection {
@@ -380,7 +451,7 @@ h2.titleTextInside{
 	background-size: cover;
 	background-position: center top no-repeat;
 	@include media("<=medium"){
-		height: 33rem;
+		height: 28rem;
 	}
 }
 

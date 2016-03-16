@@ -21,6 +21,9 @@ $icono5: #37b75c;
 $navMargin: 9vw;
 $navBarBreak: 900px;
 $serviciosBreak: 993px;
+$sliderBreak: 800px;
 
 //Include-Media mixin variables
-$breakpoints: (very-small: 590px, small: 740px, navBarBreak: $navBarBreak, serviciosBreak: $serviciosBreak, medium: 1000px, medium-large:1100px, large: 1200px);
+$breakpoints: (very-small: 590px, small: 740px, sliderBreak: $sliderBreak,
+	navBarBreak: $navBarBreak, 	serviciosBreak: $serviciosBreak, 
+	medium: 1000px, medium-large:1100px, large: 1200px);

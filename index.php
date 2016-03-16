@@ -79,35 +79,24 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 	<!--END NAV BAR -->
 	<!-- SLIDER -->
 	<div class="slider">
-		<div id="myCarousel" class="carousel slide" data-ride="carousel" autoplay="false">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
-				<?php 
-				for ($i=0; $i < count($rowsSlider); $i++) { 
-					if ($i==0) {
-						echo "<li data-target='#myCarousel' data-slide-to=" . $i . " class='slideImg active'></li>";
-					}else{
-						echo "<li data-target='#myCarousel' data-slide-to=" . $i . " class='slideImg'></li>";
-					}
-				}
-				?>
+				<li data-target="#myCarousel" data-slide-to="0" class="control active"></li>
+				<li data-target="#myCarousel" data-slide-to="1" class="control"></li>
+				<li data-target="#myCarousel" data-slide-to="2" class="control"></li>
+				<li data-target="#myCarousel" data-slide-to="3" class="control"></li>
+				<li data-target="#myCarousel" data-slide-to="4" class="control"></li>
+				<li data-target="#myCarousel" data-slide-to="5" class="control"></li>
 			</ol>
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
-				<?php
-				foreach ($rowsSlider as $row) {
-					if ($row==$rowsSlider[0]) {
-						echo "<div class='item active'>";
-					}else{
-						echo "<div class='item'>";
-					}
-					echo "<img src='admin/slider/uploads/". $row["imagen"] ."'>";
-					echo "<div class='carousel-caption'>";
-					echo "<p class='sliderText'>". $row["info"] ."</p>";
-					echo "</div>";
-					echo "</div>";
-				}
-				?>
+				<div id="slider1" class="item active"></div>
+				<div id="slider2" class="item"></div>
+				<div id="slider3" class="item"></div>
+				<div id="slider4" class="item"></div>
+				<div id="slider5" class="item"></div>
+				<div id="slider6" class="item"></div>
 			</div>
 			<!-- Left and right controls -->
 			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -308,7 +297,7 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 	<!-- END NUESTRO TRABAJO -->
 	<!-- NUESTROS CLIENTES -->
 	<div class="container clientes">
-		<div class="wrapperTitle upper">
+		<div class="wrapperTitle down">
 			<h1 class="titleSection title">Nuestros Clientes</h1>
 		</div>
 		<div class="row clienteRow">
