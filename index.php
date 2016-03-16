@@ -117,8 +117,9 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 			</div>
 			<div class="col-md-6 quienesSomosRight">
 				<p class="quienesSomosP">
-					Somos una organización encargada de contribuir de manera integral en la generación de impacto social y ambiental a partir del diseño y la planificación de ciudades sostenibles.
-					En URBAN GREEN Diseñamos, planificamos y desarrollamos proyectos que generan alto valor agregado a los territorios, teniendo como base estratégica e integral la sensibilización por el manejo de los recursos naturales, la educación ambiental participativa y la planificación sostenible, promoviendo tendencias propias y diferenciadoras.
+					Creemos que los retos son el combustible que impulsa nuestras vidas. Cuando nos fijamos una meta, los retos se convierten en la inspiración, en el punto de partida; salimos de nuestra zona de confort, afrontamos nuestros miedos y desarrollamos nuevas habilidades. <br><br>
+
+					Las metas alcanzadas son el conjunto de retos superados.
 				</p>
 			</div>
 		</div>
@@ -136,9 +137,10 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 					<a class="mas" id="serviciosMas1" onclick="displayServicio(1);">+</a>
 				</div>
 				<div id="servicio1" class="serviciosInfo">
-					<div class="serviciosTitle">Construcción sostenible</div>
+					<div class="serviciosTitle">Las ideas deben inspirar</div>
 					<div class="serviciosText">
-						<h1 class="serviciosDescription">Tomamos de la arquitectura una tendencia con principios de sostenibilidad social, cultural, económica y ambiental, adecuando espacios agradables que generen soluciones óptimas y estilos de vida adaptados a las condiciones actuales.</h1>
+						<h1 class="serviciosDescription">Las marcas crean ideas poderosas que tienen la capacidad de influir en las personas. Cuando las ideas se comunican de la forma correcta pueden cambiarlo todo.<br><br>Trabajamos con marcas que aportan positivamente al mundo; creamos publicidad que inspira. 
+						</h1>
 					</div>
 				</div>
 				<img class="serviciosImg" onclick="displayServicio(1,this);" src="images/inspiracion1.png">
@@ -152,9 +154,10 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 					<a class="mas" id="serviciosMas2" onclick="displayServicio(2);">+</a>
 				</div>
 				<div id="servicio2" class="serviciosInfo">
-					<div class="serviciosTitle">Diseño sostenible</div>
+					<div class="serviciosTitle">Simplicidad</div>
 					<div class="serviciosText">
-						<h1 class="serviciosDescription">Tomamos de la arquitectura una tendencia con principios de sostenibilidad social, cultural, económica y ambiental, adecuando espacios agradables que generen soluciones óptimas y estilos de vida adaptados a las condiciones actuales.</h1>
+						<h1 class="serviciosDescription">La simplicidad implica mayores recursos creativos y más horas de trabajo; sin embargo, los pequeños detalles y el deseo de las marcas de facilitar la vida a sus clientes está profundamente relacionado al éxito.<br><br>Simplificamos la comunicación para transmitir ideas claras.
+						</h1>
 					</div>
 				</div>
 				<img class="serviciosImg" onclick="displayServicio(2);" src="images/inspiracion2.png">
@@ -170,9 +173,10 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 					<a class="mas" id="serviciosMas3" onclick="displayServicio(3);">+</a>
 				</div>
 				<div id="servicio3" class="serviciosInfo">
-					<div class="serviciosTitle">Planificación Territorial</div>
+					<div class="serviciosTitle">Clientes + Tru</div>
 					<div class="serviciosText">
-						<h1 class="serviciosDescription">Tomamos de la arquitectura una tendencia con principios de sostenibilidad social, cultural, económica y ambiental, adecuando espacios agradables que generen soluciones óptimas y estilos de vida adaptados a las condiciones actuales.</h1>
+						<h1 class="serviciosDescription">Manteniendo una comunicación cercana y constante podemos definir, desde el inicio, las necesidades y el mejor camino para llegar a la meta. El trabajo continuo y colaborativo nos permite agregar valor y alcanzar las expectativas de nuestros clientes.<br><br>Procuramos cambiar el modelo tradicional de consumo pasivo; estamos convencidos de que no se trata simplemente de obtener una aprobación final.
+						</h1>
 					</div>
 				</div>
 				<img class="serviciosImg" onclick="displayServicio(3);" src="images/inspiracion3.png">
@@ -186,9 +190,9 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 					<a class="mas" id="serviciosMas4" onclick="displayServicio(4);">+</a>
 				</div>
 				<div id="servicio4" class="serviciosInfo">
-					<div class="serviciosTitle">Educación ambiental</div>
+					<div class="serviciosTitle">Trabajar feliz es posible</div>
 					<div class="serviciosText">
-						<h1 class="serviciosDescription">Tomamos de la arquitectura una tendencia con principios de sostenibilidad social, cultural, económica y ambiental, adecuando espacios agradables que generen soluciones óptimas y estilos de vida adaptados a las condiciones actuales.</h1>
+						<h1 class="serviciosDescription">Nuestro ambiente de trabajo dinámico y creativo, nos permite disfrutar lo que hacemos para lograr los mejores resultados.<br><br>Sabemos que no hay nada mejor que trabajar feliz..</h1>
 					</div>
 				</div>
 				<img class="serviciosImg" onclick="displayServicio(4);" src="images/inspiracion4.png">
