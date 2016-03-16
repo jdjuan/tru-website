@@ -183,9 +183,9 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 
 			<!-- SERVICIO #4 -->
 			<div class="col-md-6 servicios">
-			<div class="masDiv">
-							<a class="mas" id="serviciosMas4" onclick="displayServicio(4);">+</a>
-						</div>
+				<div class="masDiv">
+					<a class="mas" id="serviciosMas4" onclick="displayServicio(4);">+</a>
+				</div>
 				<div id="servicio4" class="serviciosInfo">
 					<div class="serviciosTitle">Educación ambiental</div>
 					<div class="serviciosText">
@@ -299,22 +299,33 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 	<div class="container clientes">
 		<div class="wrapperTitle down">
 			<h1 class="titleSection title">Nuestros Clientes</h1>
-		</div>
+		</div> 
 		<div class="row clienteRow">
-			<div class="col-md-2 cliente cliente1"></div>
-			<div class="col-md-2 cliente cliente2"></div>
-			<div class="col-md-2 cliente cliente3"></div>
-			<div class="col-md-2 cliente cliente4"></div>
-			<div class="col-md-2 cliente cliente5"></div>
-			<div class="col-md-2 cliente cliente6"></div>
-			<div class="col-md-2 cliente cliente7"></div>
-			<div class="col-md-2 cliente cliente8"></div>
-			<div class="col-md-2 cliente cliente9"></div>
-			<div class="col-md-2 cliente cliente10"></div>
-			<div class="col-md-2 cliente cliente11"></div>
-			<div class="col-md-2 cliente cliente12"></div>
-			<div class="col-md-2 cliente cliente13"></div>
+			<div class="col-md-2 cliente" id="cliente1"></div>
+			<div class="col-md-2 cliente" id="cliente2"></div>
+			<div class="col-md-2 cliente" id="cliente3"></div>
+			<div class="col-md-2 cliente" id="cliente4"></div>
+			<div class="col-md-2 cliente" id="cliente5"></div>
+			<div class="col-md-2 cliente" id="cliente6"></div>
+			<div class="col-md-2 cliente" id="cliente7"></div>
+			<div class="col-md-2 cliente" id="cliente8"></div>
+			<div class="col-md-2 cliente" id="cliente9"></div>
+			<div class="col-md-2 cliente" id="cliente10"></div>
+			<div class="col-md-2 cliente" id="cliente11"></div>
+			<div class="col-md-2 cliente" id="cliente12"></div>
+			<div class="col-md-2 cliente" id="cliente13"></div>
 		</div>
 	</div>
+	<!-- END NUESTROS CLIENTES -->
+	<!-- EQUIPO -->
+	<div class="container equipo">
+		<div class="wrapperTitle upper	">
+			<h1 class="titleSection title">Nuestro Equipo</h1>
+		</div>
+		<div class="row equipoRow">
+			<div id="equipo1" class="col-md-3 equipo"></div><div id="equipo2" class="col-md-3 equipo"></div><div id="equipo3" class="col-md-3 equipo"></div><div id="equipo4" class="col-md-3 equipo"></div><div id="equipo5" class="col-md-3 equipo"></div><div id="equipo6" class="col-md-3 equipo"></div><div id="equipo7" class="col-md-3 equipo"></div><div id="equipo8" class="col-md-3 equipo"></div>
+		</div>
+	</div>
+	<!-- END EQUIPO -->
 </body>
 </html>

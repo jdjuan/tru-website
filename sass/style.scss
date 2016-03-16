@@ -312,6 +312,7 @@ h1.serviciosDescription {
 
 .wrapperTitle.down{
 	@extend .wrapperTitle.bottom;
+	margin-bottom: 0rem;
 	@include media("<=small"){
 		margin-top: -2rem;
 	}
@@ -509,23 +510,57 @@ div#menu4 div h2 { color: $white}
 	height: 10rem;
 	float: none;
 	@include media("<=medium"){
-		width: 15%;
-	}
-	@include media("<=small"){
 		width: 20%;
 	}
+	@include media("<=small"){
+		width: 30%;
+	}
+	@include media("<=440px"){
+		width: 45%;
+	}
 }
-.cliente1{background: url('../images/cliente01.png') center top no-repeat; background-size: 9em;}
-.cliente2{background: url('../images/cliente02.png') center top no-repeat; background-size: 9em;}
-.cliente3{background: url('../images/cliente03.png') center top no-repeat; background-size: 9em;}
-.cliente4{background: url('../images/cliente04.png') center top no-repeat; background-size: 9em;}
-.cliente5{background: url('../images/cliente05.png') center top no-repeat; background-size: 9em;}
-.cliente6{background: url('../images/cliente06.png') center top no-repeat; background-size: 9em;}
-.cliente7{background: url('../images/cliente07.png') center top no-repeat; background-size: 9em;}
-.cliente8{background: url('../images/cliente08.png') center top no-repeat; background-size: 9em;}
-.cliente9{background: url('../images/cliente09.png') center top no-repeat; background-size: 9em;}
-.cliente10{background: url('../images/cliente10.png') center top no-repeat; background-size: 9em;}
-.cliente11{background: url('../images/cliente11.png') center top no-repeat; background-size: 9em;}
-.cliente12{background: url('../images/cliente12.png') center top no-repeat; background-size: 9em;}
-.cliente13{background: url('../images/cliente13.png') center top no-repeat; background-size: 9em;}
+#cliente1{background: url('../images/cliente01.png') center top no-repeat; background-size: 9em;}
+#cliente2{background: url('../images/cliente02.png') center top no-repeat; background-size: 9em;}
+#cliente3{background: url('../images/cliente03.png') center top no-repeat; background-size: 9em;}
+#cliente4{background: url('../images/cliente04.png') center top no-repeat; background-size: 9em;}
+#cliente5{background: url('../images/cliente05.png') center top no-repeat; background-size: 9em;}
+#cliente6{background: url('../images/cliente06.png') center top no-repeat; background-size: 9em;}
+#cliente7{background: url('../images/cliente07.png') center top no-repeat; background-size: 9em;}
+#cliente8{background: url('../images/cliente08.png') center top no-repeat; background-size: 9em;}
+#cliente9{background: url('../images/cliente09.png') center top no-repeat; background-size: 9em;}
+#cliente10{background: url('../images/cliente10.png') center top no-repeat; background-size: 9em;}
+#cliente11{background: url('../images/cliente11.png') center top no-repeat; background-size: 9em;}
+#cliente12{background: url('../images/cliente12.png') center top no-repeat; background-size: 9em;}
+#cliente13{background: url('../images/cliente13.png') center top no-repeat; background-size: 9em;}
 
+
+.container.equipo {
+    width: 100%;
+    @include center-aligner();
+}
+
+.equipo{
+    display: inline-block;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: -6px;
+	height: 25vw;
+	padding: 0;
+	@include media("<=serviciosBreak"){
+		width: 33.33%;
+		height: 33vw;
+	}
+	@include media("<=small"){
+		width: 50%;
+		height: 50vw;
+	}
+}
+
+#equipo1{background-color: rgb(random(255),random(255),random(255));}
+#equipo2{background-color: rgb(random(255),random(255),random(255));}
+#equipo3{background-color: rgb(random(255),random(255),random(255));}
+#equipo4{background-color: rgb(random(255),random(255),random(255));}
+#equipo5{background-color: rgb(random(255),random(255),random(255));}
+#equipo6{background-color: rgb(random(255),random(255),random(255));}
+#equipo7{background-color: rgb(random(255),random(255),random(255));}
+#equipo8{background-color: rgb(random(255),random(255),random(255));}
