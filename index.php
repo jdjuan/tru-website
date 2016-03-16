@@ -144,35 +144,33 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 		<div class="row">
 			<!-- SERVICIO #1 -->
 			<div class="col-md-6 servicios">
-				<div class="serviciosInfo">
-					<div class="serviciosTitle">Construcción sostenible
-						<div class="masDiv">
-							<a class="mas" id="serviciosMas1" onclick="displayServicio(1);">+</a>
-						</div>
-					</div>
-					<div id="servicio1" class="serviciosText" style="display:none;">
-						<h1 class="serviciosDescription">Promovemos el desarrollo urbano con prácticas amigables en cuanto al manejo de los recursos naturales, utilizando residuos como una de las materias primas principales; el diseño bioclimático hace parte de nuestras alternativas, produciendo estructuras que generan alto confort a nuestros clientes.</h1>
+				<div class="masDiv">
+					<a class="mas" id="serviciosMas1" onclick="displayServicio(1);">+</a>
+				</div>
+				<div id="servicio1" class="serviciosInfo">
+					<div class="serviciosTitle">Construcción sostenible</div>
+					<div class="serviciosText">
+						<h1 class="serviciosDescription">Tomamos de la arquitectura una tendencia con principios de sostenibilidad social, cultural, económica y ambiental, adecuando espacios agradables que generen soluciones óptimas y estilos de vida adaptados a las condiciones actuales.</h1>
 					</div>
 				</div>
 				<img class="serviciosImg" onclick="displayServicio(1,this);" src="images/inspiracion1.png">
-				<div id="overlay1" class="overlay green" style="display:none;"></div>
+				<div id="overlay1" class="overlay green"></div>
 			</div>
 			<!-- END SERVICIO #1 -->
 
 			<!-- SERVICIO #2 -->
 			<div class="col-md-6 servicios">
-				<div class="serviciosInfo">
-					<div class="serviciosTitle">Diseño sostenible
-						<div class="masDiv">
-							<a class="mas" id="serviciosMas2" onclick="displayServicio(2);">+</a>
-						</div>
-					</div>
-					<div id="servicio2" class="serviciosText" style="display:none;">
+				<div class="masDiv">
+					<a class="mas" id="serviciosMas2" onclick="displayServicio(2);">+</a>
+				</div>
+				<div id="servicio2" class="serviciosInfo">
+					<div class="serviciosTitle">Diseño sostenible</div>
+					<div class="serviciosText">
 						<h1 class="serviciosDescription">Tomamos de la arquitectura una tendencia con principios de sostenibilidad social, cultural, económica y ambiental, adecuando espacios agradables que generen soluciones óptimas y estilos de vida adaptados a las condiciones actuales.</h1>
 					</div>
 				</div>
 				<img class="serviciosImg" onclick="displayServicio(2);" src="images/inspiracion2.png">
-				<div id="overlay2" class="overlay blue" style="display:none;"></div>
+				<div id="overlay2" class="overlay blue"></div>
 			</div>
 			<!-- END SERVICIO #2 -->
 		</div>
@@ -180,35 +178,33 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 		<div class="row">
 			<!-- SERVICIO #3 -->
 			<div class="col-md-6 servicios">
-				<div class="serviciosInfo">
-					<div class="serviciosTitle">Planificación Territorial
-						<div class="masDiv">
-							<a class="mas" id="serviciosMas3" onclick="displayServicio(3);">+</a>
-						</div>
-					</div>
-					<div id="servicio3" class="serviciosText" style="display:none;">
-						<h1 class="serviciosDescription">Concebimos la Planificación Territorial como una relación entre el ambiente y las prácticas de desarrollo humano, alcanzando y superando expectativas sobre calidad de vida, generando a la vez satisfacción de necesidades humanas del presente sin comprometer la capacidad de las generaciones futuras.</h1>
+				<div class="masDiv">
+					<a class="mas" id="serviciosMas3" onclick="displayServicio(3);">+</a>
+				</div>
+				<div id="servicio3" class="serviciosInfo">
+					<div class="serviciosTitle">Planificación Territorial</div>
+					<div class="serviciosText">
+						<h1 class="serviciosDescription">Tomamos de la arquitectura una tendencia con principios de sostenibilidad social, cultural, económica y ambiental, adecuando espacios agradables que generen soluciones óptimas y estilos de vida adaptados a las condiciones actuales.</h1>
 					</div>
 				</div>
 				<img class="serviciosImg" onclick="displayServicio(3);" src="images/inspiracion3.png">
-				<div id="overlay3" class="overlay blue" style="display:none;"></div>
+				<div id="overlay3" class="overlay blue"></div>
 			</div>
 			<!-- END SERVICIO #3 -->
 
 			<!-- SERVICIO #4 -->
 			<div class="col-md-6 servicios">
-				<div class="serviciosInfo">
-					<div class="serviciosTitle">Educación ambiental
-						<div class="masDiv">
+			<div class="masDiv">
 							<a class="mas" id="serviciosMas4" onclick="displayServicio(4);">+</a>
 						</div>
-					</div>
-					<div id="servicio4" class="serviciosText" style="display:none;">
-						<h1 class="serviciosDescription">Siendo conscientes de la importancia de practicar técnicas amigables con el entorno, ejecutamos proyectos con procesos diferentes a los convencionales, generando sensibilización ambiental en las personas directas e indirectamente relacionadas con los mismos, cambiando comportamientos habituales y formas de pensar.</h1>
+				<div id="servicio4" class="serviciosInfo">
+					<div class="serviciosTitle">Educación ambiental</div>
+					<div class="serviciosText">
+						<h1 class="serviciosDescription">Tomamos de la arquitectura una tendencia con principios de sostenibilidad social, cultural, económica y ambiental, adecuando espacios agradables que generen soluciones óptimas y estilos de vida adaptados a las condiciones actuales.</h1>
 					</div>
 				</div>
 				<img class="serviciosImg" onclick="displayServicio(4);" src="images/inspiracion4.png">
-				<div id="overlay4" class="overlay green" style="display:none;"></div>
+				<div id="overlay4" class="overlay green"></div>
 			</div>
 			<!-- END SERVICIO #4 -->
 		</div>

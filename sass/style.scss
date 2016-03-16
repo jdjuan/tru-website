@@ -149,6 +149,33 @@ li.slideImg {
 
 .col-md-6.servicios {padding: 0;}
 
+.serviciosInfo, .overlay{display: none}
+
+.masDiv {
+	position: absolute;
+	z-index: 21;
+	left: 4rem;
+	top: 5rem;
+	@include media("<=serviciosBreak"){
+		top: 2rem;
+		left: 1rem;
+	}
+}
+.mas {
+	background-color: #6CA31C;
+	padding: 0.5rem;
+	padding-right: 1.6rem;
+	padding-left: 1.6rem;
+	font-weight: bolder;
+	font-size: 3rem;
+	cursor: pointer;
+	color: white;
+	&:hover{
+		text-decoration: none;
+		color: $white;
+	}
+}
+
 .serviciosImg{width: 100%; cursor: pointer;}
 
 .serviciosInfo {
@@ -156,9 +183,12 @@ li.slideImg {
 	z-index: 10;
 	width: 70%;
 	left: 10%;
-	top: 15%;
+	top: 20%;
 	@include media("<=medium-large"){
 		width: 86%;
+	}
+	@include media("<=serviciosBreak"){
+		top: 15%;
 	}
 }
 
@@ -167,6 +197,7 @@ div.serviciosTitle {
 	font-family: 'Kohinoor';
 	display: inline-block;
 	color: $darkBlue;
+	margin-top: 2rem;
 	font-size: 3rem;
 	padding: 2rem;
 	height: 8rem;
@@ -177,22 +208,9 @@ div.serviciosTitle {
 	}
 }
 
-.masDiv {
-	text-align: right;
-	margin-right: -1em;
-}
-
-.mas {
-	background-color: #6CA31C;
-	padding-right: 14px;
-	padding-left: 14px;
-	font-weight: 600;
-	cursor: pointer;
-	color: white;
-}
-
 .serviciosText {
 	background-color: rgba(255, 255, 255, 0.7);
+	margin-top: 2rem;
 	color: #004c9a;
 }
 

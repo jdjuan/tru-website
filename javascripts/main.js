@@ -104,16 +104,18 @@ function displayServicio(n){
 	if ($("#serviciosMas"+n).text() === "+") {
 		$(".mas").text("+");
 		$("#serviciosMas"+n).text("-");
+		$("#serviciosMas"+n).css("padding-left","2rem");
+		$("#serviciosMas"+n).css("padding-right","2rem");
+
 	}else{
 		$("#serviciosMas"+n).text("+");
+		$("#serviciosMas"+n).css("padding-left","1.6rem");
+		$("#serviciosMas"+n).css("padding-right","1.6rem");
 	}
-	if($('#servicio'+n+':visible').length != 0){
-		$('.serviciosText').hide();
-		$('.overlay').hide();
-	}else{
-		$('.serviciosText').hide();
-		$('.overlay').hide();
-		$('#servicio'+n).show();
-		$('#overlay'+n).show();
-	}
+	var selectedService='#servicio'+n;
+	var selectedOverlay='#overlay'+n;
+	$('.serviciosInfo:not('+selectedService+')').hide();
+	$('.overlay:not('+selectedOverlay+')').hide();
+	$(selectedService).toggle("display");
+	$(selectedOverlay).toggle("display");
 }
