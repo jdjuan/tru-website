@@ -39,12 +39,10 @@ if (!empty($_GET['id'])) {
                     <img class="imageFull" src="uploads/<?php echo $data['imagen'];?>">
                 </div>
             </div>
-            <div class="control-group">
-                <label class="control-label">Info:</label>
+              <div class="control-group">
+                <label class="control-label">IMAGEN CUADRADA:</label>
                 <div class="controls">
-                    <label class="checkbox">
-                        <?php echo $data['info'];?>
-                    </label>
+                    <img class="imageFull" src="uploads/<?php echo $data['imagenCuadrada'];?>">
                 </div>
             </div>
             <div class="control-group">

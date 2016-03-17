@@ -4,6 +4,7 @@ include dirname(__FILE__) . '/../Validate.php';
 
 $id = null;
 $imagenError = null;
+$imagenCuadradaError = null;
 $validate = new Validate();
 $db = new Db();
 
@@ -15,28 +16,51 @@ if (!empty($_GET['id'])) {
 
 if (!empty($_POST)) {
     $file = $_FILES["imagen"];
-    $info = $_POST['info'];
+    $file2 = $_FILES["imagenCuadrada"];
     $orden = (!empty($_POST['orden']))?$_POST['orden']:0;
     $fileName = preg_replace("/[^a-zA-Z0-9.]/", "", basename($file["name"]));
+    $fileName2 = preg_replace("/[^a-zA-Z0-9.]/", "", basename($file2["name"]));
     if (!$validate->isFileEmpty($file)) {
-        if ($validate->validateFile($file)) {
-            $db -> query("UPDATE sliders set imagen = " . $db->quote($fileName) . 
-                ", info = " .$db->quote($info). 
-                ",  orden = " .$orden. 
-                " WHERE id = " . $id);
-            header("Location: index.php");
+        if (!$validate->isFileEmpty($file2)) {
+            if ($validate->validateFile($file)) {
+                if ($validate->validateFile($file2)) {
+                    $db -> query("UPDATE sliders set imagen = " . $db->quote($fileName) . 
+                        ", imagenCuadrada = " .$db->quote($fileName2). 
+                        ",  orden = " .$orden. 
+                        " WHERE id = " . $id);
+                    header("Location: index.php");
+                }else{
+                    $imagenCuadradaError = $validate->getFileError();
+                }
+            }else{
+                $imagenError = $validate->getFileError();
+            }
         }else{
-            $imagenError = $validate->getFileError();
+            if ($validate->validateFile($file)) {
+                $result = $db -> query("UPDATE sliders set imagen = " .$db->quote($fileName). ", orden = " .$orden. "  WHERE id = " . $id);
+                header("Location: index.php");
+            }else{
+                $imagenError = $validate->getFileError();
+            }
         }
     }else{
-        $result = $db -> query("UPDATE sliders set info = " .$db->quote($info). ", orden = " .$orden. "  WHERE id = " . $id);
-        header("Location: index.php");
+        if (!$validate->isFileEmpty($file2)) {
+            if ($validate->validateFile($file2)) {
+                $result = $db -> query("UPDATE sliders set imagenCuadrada = " .$db->quote($fileName2). ", orden = " .$orden. "  WHERE id = " . $id);
+                header("Location: index.php");
+            }else{
+                $imagenCuadradaError = $validate->getFileError();
+            }
+        }else{
+            $result = $db -> query("UPDATE sliders set orden = " .$orden. "  WHERE id = " . $id);
+            header("Location: index.php");
+        }
     }
 }
 
 $rows = $db -> select("SELECT * FROM sliders where id = " . $id);
 $imagen = $rows[0]["imagen"];
-$info = $rows[0]["info"];
+$imagenCuadrada = $rows[0]["imagenCuadrada"];
 $orden = $rows[0]["orden"];
     // echo '<pre>'; print_r($rows); echo '</pre>';
 ?>
@@ -70,10 +94,14 @@ $orden = $rows[0]["orden"];
                         <?php endif; ?>
                     </div>
                 </div>
-                <div class="control-group">
-                    <label class="control-label">Info (Usar la etiqueta &lt;br&gt; para usar el salto de línea)</label>
+                <div class="control-group <?php echo !empty($imagenCuadradaError)?'has-error':'';?>">
+                    <label class="control-label">Seleccione la imagen cuadrada a subir: (Max 5mb - JPG - JPEG - PNG)</label>
                     <div class="controls">
-                    <textarea name="info" type="text" rows="5" cols="70" placeholder="Informaciónn"><?php echo !empty($info)?$info:'';?></textarea>
+                        <input require name="imagenCuadrada" type="file">
+                        <img class="imageFull" src="uploads/<?php echo !empty($imagenCuadrada)?$imagenCuadrada:'';?>">
+                        <?php if (!empty($imagenCuadradaError)): ?>
+                            <span class="help-inline"><?php echo $imagenCuadradaError;?></span>
+                        <?php endif; ?>
                     </div>
                 </div>
                 <div class="control-group">

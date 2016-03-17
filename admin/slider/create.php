@@ -6,17 +6,27 @@ if ( !empty($_POST)) {
 	$db = new Db();
 	$validate = new Validate();
 	$imagenError = null;
+	$imagenCuadradaError = null;
 	$file = $_FILES["imagen"];
-	$info = $_POST['info'];
+	$file2 = $_FILES["imagenCuadrada"];
 	$orden = (!empty($_POST['orden']))?$_POST['orden']:0;
 	$fileName = preg_replace("/[^a-zA-Z0-9.]/", "", basename($file["name"]));
+	$fileName2 = preg_replace("/[^a-zA-Z0-9.]/", "", basename($file2["name"]));
 	if (!$validate->isFileEmpty($file)) {
-		if ($validate->validateFile($file)) {
-			$db -> query("INSERT INTO `sliders` (`imagen`,`info`,`orden`) 
-				VALUES (" . $db->quote($fileName) . "," . $db -> quote($info) . "," . $orden .")");
-			header("Location: index.php");
+		if (!$validate->isFileEmpty($file2)) {
+			if ($validate->validateFile($file)) {
+				if ($validate->validateFile($file2)) {
+					$db -> query("INSERT INTO `sliders` (`imagen`,`imagenCuadrada`,`orden`) 
+						VALUES (" . $db->quote($fileName) . "," . $db->quote($fileName2) . "," . $orden .")");
+					header("Location: index.php");
+				}else{
+					$imagenCuadradaError = $validate->getFileError();
+				}
+			}else{
+				$imagenError = $validate->getFileError();
+			}
 		}else{
-			$imagenError = $validate->getFileError();
+			$imagenCuadradaError = "Debe adjuntar una imagen";
 		}
 	}else{
 		$imagenError = "Debe adjuntar una imagen";
@@ -48,16 +58,19 @@ if ( !empty($_POST)) {
 				<div class="control-group <?php echo !empty($imagenError)?'has-error':'';?>">
 					<label class="control-label">Seleccione la imagen a subir: (Max 5mb - JPG - JPEG - PNG)</label>
 					<div class="controls">
-						<input require id="myID" name="imagen" type="file">
+						<input require name="imagen" type="file">
 						<?php if (!empty($imagenError)): ?>
 							<span class="help-inline"><?php echo $imagenError;?></span>
 						<?php endif; ?>
 					</div>
 				</div>
-				<div class="control-group">
-					<label class="control-label">Info (Usar la etiqueta &lt;br&gt; para usar el salto de línea)</label>
+				<div class="control-group <?php echo !empty($imagenCuadradaError)?'has-error':'';?>">
+					<label class="control-label">Seleccione la imagen cuadrada a subir: (Max 5mb - JPG - JPEG - PNG)</label>
 					<div class="controls">
-						<textarea name="info" type="text"  rows="5" cols="70" placeholder="Información" ><?php echo !empty($info)?$info:'';?></textarea>
+						<input require name="imagenCuadrada" type="file">
+						<?php if (!empty($imagenCuadradaError)): ?>
+							<span class="help-inline"><?php echo $imagenCuadradaError;?></span>
+						<?php endif; ?>
 					</div>
 				</div>
 				<div class="control-group">

@@ -59,7 +59,7 @@ if (empty($_SESSION["user"]) || empty($_SESSION["pass"])) {
 					<tr>
 						<th>ID</th>
 						<th>IMAGEN</th>
-						<th>INFO</th>
+						<th>IMAGEN CUADRADA</th>
 						<th>ORDEN</th>
 						<th>ACCIÓN</th>
 					</tr>
@@ -73,7 +73,7 @@ if (empty($_SESSION["user"]) || empty($_SESSION["pass"])) {
 						echo '<tr>';
 						echo '<td>'. $row['id'] . '</td>';
 						echo "<td><img class='backEndImage' src='uploads/". $row["imagen"] . "'></td>";
-						echo '<td>'. $row['info'] . '</td>';
+						echo "<td><img class='backEndImage' src='uploads/". $row["imagenCuadrada"] . "'></td>";
 						echo '<td>'. $row['orden'] . '</td>';
 						echo '<td width=250>';
 						echo '<a class="btn btn-info" href="read.php?id='.$row['id'].'">Ver</a>';

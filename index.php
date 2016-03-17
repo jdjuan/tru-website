@@ -78,7 +78,7 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 	<!--END NAV BAR -->
 	<!-- SLIDER -->
 	<div class="slider">
-		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
 				<li data-target="#myCarousel" data-slide-to="0" class="control active"></li>
@@ -274,7 +274,7 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 			<h1 class="titleSection title">Nuestro Trabajo</h1>
 		</div>
 		<div class="slider">
-			<div id="myCarousel2" class="carousel slide" data-ride="carousel" autoplay="false">
+			<div id="myCarousel2" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
 					<li data-target="#myCarousel2" data-slide-to="0" class="active control"></li>
