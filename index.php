@@ -29,6 +29,18 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 	<link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
 	<!--[if IE]><link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css"/><![endif]-->
 
+	<style>
+		<?php
+		for ($i=0; $i < count($rowsSlider); $i++) { 
+			$row=$rowsSlider[$i];
+			echo "#slider".($i+1)." {background-image: url('admin/slider/uploads/".$row["imagen"]."');}";
+			echo "@media (max-width: 800px) {";
+			echo "#slider".($i+1)." {background-image: url('admin/slider/uploads/".$row["imagenCuadrada"]."');}";
+			echo "}";
+		}
+		?>
+	</style>
+
 	<!-- Jquery CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<!-- Latest compiled and minified Bootstrap JavaScript -->
@@ -81,21 +93,34 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="control active"></li>
-				<li data-target="#myCarousel" data-slide-to="1" class="control"></li>
-				<li data-target="#myCarousel" data-slide-to="2" class="control"></li>
-				<li data-target="#myCarousel" data-slide-to="3" class="control"></li>
-				<li data-target="#myCarousel" data-slide-to="4" class="control"></li>
-				<li data-target="#myCarousel" data-slide-to="5" class="control"></li>
+				<?php 
+				for ($i=0; $i < count($rowsSlider); $i++) { 
+					if ($i==0) {
+						echo "<li data-target='#myCarousel' data-slide-to=" . $i . " class='control active'></li>";
+					}else{
+						echo "<li data-target='#myCarousel' data-slide-to=" . $i . " class='control'></li>";
+					}
+				}
+				?>
 			</ol>
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
-				<div id="slider1" class="item active"></div>
+				<?php
+				for ($i=0; $i < count($rowsSlider); $i++) { 
+					if ($i==0) {
+						echo "<div id='slider".($i+1)."' class='item active'>";
+					}else{
+						echo "<div id='slider".($i+1)."' class='item'>";
+					}
+					echo "</div>";
+				}
+				?>
+				<!-- <div id="slider1" class="item active"></div>
 				<div id="slider2" class="item"></div>
 				<div id="slider3" class="item"></div>
 				<div id="slider4" class="item"></div>
 				<div id="slider5" class="item"></div>
-				<div id="slider6" class="item"></div>
+				<div id="slider6" class="item"></div> -->
 			</div>
 			<!-- Left and right controls -->
 			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -370,10 +395,10 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 				<div class="emailContacto" style="color: white;font-weight: 600;text-align: center;">contacto@trudigitalmedia.co</div>
 				<div class="contactoMoreInfo">
 					<!-- <div class="col-md-4 contacto"> -->
-						<ul class="footerLi">
-							<li><strong>Manizales:</strong></li>
-							<li>Tel: (57) 3177006697</li>
-						</ul>
+					<ul class="footerLi">
+						<li><strong>Manizales:</strong></li>
+						<li>Tel: (57) 3177006697</li>
+					</ul>
 					<!-- </div> -->
 					<!-- <div class="col-md-4 contacto">
 						<ul class="footerLi">
