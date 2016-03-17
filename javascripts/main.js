@@ -13,7 +13,7 @@ $(function () {
 	navScroll("#linkServicios", ".container.servicios", 70);
 	navScroll("#linkProyectos", ".container.proyectos", 130);
 	navScroll("#linkEquipo", ".container.equipo", 70);
-	navScroll("#linkAliados", ".container.aliados", 90);
+	navScroll("#linkTrabajos", ".container.trabajos", 130);
 	navScroll("#linkContacto", ".container.contacto", 90);
 
 	//NAVBAR

@@ -59,10 +59,10 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav navLinks">
 						<li class="active"><a id="linkNosotros" href="#">Filosofía</a></li>
-						<li><a id="linkServicios" href="#">Servicios</a></li> 
-						<li><a id="linkProyectos" href="#">Proyectos</a></li> 
+						<li><a id="linkServicios" href="#">Inspiración</a></li> 
+						<li><a id="linkProyectos" href="#">Líneas de Negocio</a></li> 
+						<li><a id="linkTrabajos" href="#">Trabajos</a></li> 
 						<li><a id="linkEquipo" href="#">Equipo</a></li> 
-						<li><a id="linkAliados" href="#">Aliados</a></li> 
 						<li><a id="linkContacto" href="#">Contacto</a></li> 
 					</ul>
 					<ul class="nav navbar-nav navbar-right navSocial">
@@ -175,7 +175,7 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 				<div id="servicio3" class="serviciosInfo">
 					<div class="serviciosTitle">Clientes + Tru</div>
 					<div class="serviciosText">
-						<h1 class="serviciosDescription">Manteniendo una comunicación cercana y constante podemos definir, desde el inicio, las necesidades y el mejor camino para llegar a la meta. El trabajo continuo y colaborativo nos permite agregar valor y alcanzar las expectativas de nuestros clientes.<br><br>Procuramos cambiar el modelo tradicional de consumo pasivo; estamos convencidos de que no se trata simplemente de obtener una aprobación final.
+						<h1 class="serviciosDescription">Manteniendo una comunicación cercana y constante podemos definir, desde el inicio, las necesidades y el mejor camino para llegar a la meta. El trabajo continuo y colaborativo nos permite agregar valor y alcanzar las expectativas de nuestros clientes.<br>Procuramos cambiar el modelo tradicional de consumo pasivo; estamos convencidos de que no se trata simplemente de obtener una aprobación final.
 						</h1>
 					</div>
 				</div>
@@ -293,7 +293,6 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner" role="listbox">
 					<div class="item active"><img src="images/trabajo1.png" alt="Chania"></div>
-					<div class="item"><img src="images/trabajo1.png" alt=""></div>
 					<div class="item"><img src="images/trabajo2.png" alt=""></div>
 					<div class="item"><img src="images/trabajo3.png" alt=""></div>
 					<div class="item"><img src="images/trabajo4.png" alt=""></div>
@@ -357,9 +356,9 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 			<h1 class="titleSection title">Nuestros Aliados</h1>
 		</div> 
 		<div class="row aliadoRow">
-			<div class="col-md-2 aliado" id="aliado1"></div>
-			<div class="col-md-2 aliado" id="aliado2"></div>
-			<div class="col-md-2 aliado" id="aliado3"></div>
+			<a href="http://supermarciano.com/amigos" target="_blank"><div class="col-md-2 aliado" id="aliado1"></div></a>
+			<a href="http://www.parquesoftmanizales.com/" target="_blank"><div class="col-md-2 aliado" id="aliado2"></div></a>
+			<a href="http://www.cinnco.co/" target="_blank"><div class="col-md-2 aliado" id="aliado3"></div></a>
 		</div>
 	</div>
 	<!-- END NUESTROS CLIENTES -->
@@ -368,15 +367,15 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 		<div class="row contactoRow">
 			<div class="col-md-6 columnaContacto izquierda">
 				<div class="wrapTitleContacto"><h1 class="titleH1Contacto">Escríbenos.</h1></div>
-				<div class="emailContacto" style="color: white;font-weight: 600;text-align: center;">comercial.urbangreen@gmail.com</div>
+				<div class="emailContacto" style="color: white;font-weight: 600;text-align: center;">contacto@trudigitalmedia.co</div>
 				<div class="contactoMoreInfo">
-					<div class="col-md-4 contacto">
+					<!-- <div class="col-md-4 contacto"> -->
 						<ul class="footerLi">
-							<li><strong>Bogotá:</strong></li>
-							<li>Tel: (57) 3206285779</li>
+							<li><strong>Manizales:</strong></li>
+							<li>Tel: (57) 3177006697</li>
 						</ul>
-					</div>
-					<div class="col-md-4 contacto">
+					<!-- </div> -->
+					<!-- <div class="col-md-4 contacto">
 						<ul class="footerLi">
 							<li><strong>Manizales:</strong></li>
 							<li>Tel: 3136494180</li>
@@ -387,7 +386,7 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 							<li><strong>Lima:</strong></li>
 							<li>Tel: (51) 950 4444320</li>
 						</ul>
-					</div> 
+					</div>  -->
 				</div>
 			</div>
 			<div class="col-md-6 columnaContacto">

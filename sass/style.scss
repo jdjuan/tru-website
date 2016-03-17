@@ -127,6 +127,10 @@ ul.navbar-nav li.active{
 	}
 }
 
+#myCarousel2 .carousel-indicators{
+	display: none;
+}
+
 li.control {
 	@include border-radius(2rem);
 	background-color: white;
@@ -506,15 +510,18 @@ div#menu4 div h2 { color: $white}
 	}
 }
 .aliadoRow{
-	margin-bottom: 2rem;
+	margin-bottom: 4rem;
 }
 
 .cliente, .aliado{
 	display: inline-block;
-	width: 16.66666667%;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 9em;
 	margin: 0 auto;
 	height: 10rem;
 	float: none;
+	width: 16.66666667%;
 	@include media("<=medium"){
 		width: 20%;
 	}
@@ -525,23 +532,39 @@ div#menu4 div h2 { color: $white}
 		width: 45%;
 	}
 }
-#cliente1{background: url('../images/cliente01.png') center top no-repeat; background-size: 9em;}
-#cliente2{background: url('../images/cliente02.png') center top no-repeat; background-size: 9em;}
-#cliente3{background: url('../images/cliente03.png') center top no-repeat; background-size: 9em;}
-#cliente4{background: url('../images/cliente04.png') center top no-repeat; background-size: 9em;}
-#cliente5{background: url('../images/cliente05.png') center top no-repeat; background-size: 9em;}
-#cliente6{background: url('../images/cliente06.png') center top no-repeat; background-size: 9em;}
-#cliente7{background: url('../images/cliente07.png') center top no-repeat; background-size: 9em;}
-#cliente8{background: url('../images/cliente08.png') center top no-repeat; background-size: 9em;}
-#cliente9{background: url('../images/cliente09.png') center top no-repeat; background-size: 9em;}
-#cliente10{background: url('../images/cliente10.png') center top no-repeat; background-size: 9em;}
-#cliente11{background: url('../images/cliente11.png') center top no-repeat; background-size: 9em;}
-#cliente12{background: url('../images/cliente12.png') center top no-repeat; background-size: 9em;}
-#cliente13{background: url('../images/cliente13.png') center top no-repeat; background-size: 9em;}
 
-#aliado1{background: url('../images/aliado01.png') center top no-repeat; background-size: 9em;}
-#aliado2{background: url('../images/aliado02.png') center top no-repeat; background-size: 9em;}
-#aliado3{background: url('../images/aliado03.png') center top no-repeat; background-size: 9em;}
+.aliado{
+	background-size: 15em;
+	width: 33%;
+	@include media("<=medium"){
+		width: 45%;
+	}
+	@include media("<=small"){
+		width: 55%;
+	}
+	@include media("<=440px"){
+		width: 90%;
+	}
+
+}
+
+#cliente1 { background-image: url('../images/cliente01.png')}
+#cliente2 { background-image: url('../images/cliente02.png')}
+#cliente3 { background-image: url('../images/cliente03.png')}
+#cliente4 { background-image: url('../images/cliente04.png')}
+#cliente5 { background-image: url('../images/cliente05.png')}
+#cliente6 { background-image: url('../images/cliente06.png')}
+#cliente7 { background-image: url('../images/cliente07.png')}
+#cliente8 { background-image: url('../images/cliente08.png')}
+#cliente9 { background-image: url('../images/cliente09.png')}
+#cliente10 { background-image: url('../images/cliente10.png')}
+#cliente11 { background-image: url('../images/cliente11.png')}
+#cliente12 { background-image: url('../images/cliente12.png')}
+#cliente13 { background-image: url('../images/cliente13.png')}
+
+#aliado1 {background-image: url('../images/aliado01.png')}
+#aliado2 {background-image: url('../images/aliado02.png')}
+#aliado3 {background-image: url('../images/aliado03.png')}
 
 .container.equipo {
 	width: 100%;
@@ -576,7 +599,10 @@ div#menu4 div h2 { color: $white}
 
 .row.contactoRow {
 	background-color: $darkBlue;
+	height: 39em;
+	@include media("<=serviciosBreak"){
 	height: 45em;
+	}
 }
 
 .titleH1Contacto.derecha{
@@ -643,7 +669,7 @@ div#menu4 div h2 { color: $white}
 }
 
 .contactoMoreInfo {
-	margin-left: 3em;
+	// margin-left: 3em;
 	margin-top: 3em;
 	text-align: center;
 	@include media("<=1300px"){
