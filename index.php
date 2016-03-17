@@ -127,7 +127,7 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 	<!-- END QUIENES SOMOS -->
 	<!-- SERVICIOS -->
 	<div class="container servicios">
-		<div class="wrapperTitle">
+		<div class="wrapperTitle serviciosTopTitle">
 			<h1 class="titleSection title">Inspiración</h1>
 		</div>
 		<div class="row">
@@ -204,7 +204,7 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 	<!-- END SERVICIOS -->
 	<!-- PROYECTOS -->
 	<div class="container proyectos">
-		<div class="wrapperTitle upper">
+		<div class="wrapperTitle proyectosTopTitle">
 			<h1 class="titleSection title">Líneas de Negocio</h1>
 		</div>
 		<div id="sliderClientes" class="sliderProyectos">
@@ -270,20 +270,41 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 	<!-- END PROYECTOS -->
 	<!-- NUESTRO TRABAJO -->
 	<div class="container trabajos">
-		<div class="wrapperTitle bottom">
+		<div class="wrapperTitle trabajoTopTitle">
 			<h1 class="titleSection title">Nuestro Trabajo</h1>
 		</div>
 		<div class="slider">
 			<div id="myCarousel2" class="carousel slide" data-ride="carousel" autoplay="false">
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
-					<li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel2" data-slide-to="0" class="active control"></li>
+					<li data-target="#myCarousel2" data-slide-to="1" class="control"></li>
+					<li data-target="#myCarousel2" data-slide-to="2" class="control"></li>
+					<li data-target="#myCarousel2" data-slide-to="3" class="control"></li>
+					<li data-target="#myCarousel2" data-slide-to="4" class="control"></li>
+					<li data-target="#myCarousel2" data-slide-to="5" class="control"></li>
+					<li data-target="#myCarousel2" data-slide-to="6" class="control"></li>
+					<li data-target="#myCarousel2" data-slide-to="7" class="control"></li>
+					<li data-target="#myCarousel2" data-slide-to="8" class="control"></li>
+					<li data-target="#myCarousel2" data-slide-to="9" class="control"></li>
+					<li data-target="#myCarousel2" data-slide-to="10" class="control"></li>
+					<li data-target="#myCarousel2" data-slide-to="11" class="control"></li>
 				</ol>
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner" role="listbox">
-					<div class="item active">
-						<img src="images/trabajo1.png" alt="Chania">
-					</div>
+					<div class="item active"><img src="images/trabajo1.png" alt="Chania"></div>
+					<div class="item"><img src="images/trabajo1.png" alt=""></div>
+					<div class="item"><img src="images/trabajo2.png" alt=""></div>
+					<div class="item"><img src="images/trabajo3.png" alt=""></div>
+					<div class="item"><img src="images/trabajo4.png" alt=""></div>
+					<div class="item"><img src="images/trabajo5.png" alt=""></div>
+					<div class="item"><img src="images/trabajo6.png" alt=""></div>
+					<div class="item"><img src="images/trabajo7.png" alt=""></div>
+					<div class="item"><img src="images/trabajo8.png" alt=""></div>
+					<div class="item"><img src="images/trabajo9.png" alt=""></div>
+					<div class="item"><img src="images/trabajo10.png" alt=""></div>
+					<div class="item"><img src="images/trabajo11.png" alt=""></div>
+					<div class="item"><img src="images/trabajo12.png" alt=""></div>
 				</div>
 				<!-- Left and right controls -->
 				<a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
@@ -300,7 +321,7 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 	<!-- END NUESTRO TRABAJO -->
 	<!-- NUESTROS CLIENTES -->
 	<div class="container clientes">
-		<div class="wrapperTitle down">
+		<div class="wrapperTitle clientesTopTitle">
 			<h1 class="titleSection title">Nuestros Clientes</h1>
 		</div> 
 		<div class="row clienteRow">
@@ -322,7 +343,7 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 	<!-- END NUESTROS CLIENTES -->
 	<!-- EQUIPO -->
 	<div class="container equipo">
-		<div class="wrapperTitle upper	">
+		<div class="wrapperTitle equipoTopTitle">
 			<h1 class="titleSection title">Nuestro Equipo</h1>
 		</div>
 		<div class="row equipoRow">
@@ -332,7 +353,7 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 	<!-- END EQUIPO -->
 	<!-- NUESTROS ALIADOS -->
 	<div class="container aliados">
-		<div class="wrapperTitle down">
+		<div class="wrapperTitle aliadosTopTitle">
 			<h1 class="titleSection title">Nuestros Aliados</h1>
 		</div> 
 		<div class="row aliadoRow">

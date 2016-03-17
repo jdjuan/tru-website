@@ -292,30 +292,29 @@ h1.serviciosDescription {
 	margin-bottom: -5rem;
 	position: relative;
 	text-align: center;
-	z-index: 20;
+	z-index: 30;
 	@include media("<=very-small"){
 		margin-bottom: -4rem;
 	}
 }
-
-.wrapperTitle.upper{
-	@extend .wrapperTitle;
+.wrapperTitle.proyectosTopTitle {
 	margin-top: -6rem;
 	margin-bottom: 0;
-}
-
-.wrapperTitle.bottom{
-	@extend .wrapperTitle;
-	margin-top: -6rem;
-	margin-bottom: -5rem;
-}
-
-.wrapperTitle.down{
-	@extend .wrapperTitle.bottom;
-	margin-bottom: 0rem;
-	@include media("<=small"){
-		margin-top: -2rem;
+	@include media("<=very-small"){
+		margin-top: -5rem;
 	}
+}
+
+.wrapperTitle.trabajoTopTitle {
+	margin-top: -6rem;
+	@include media("<=very-small"){
+		margin-bottom: -2.9rem;
+	}
+}
+
+.wrapperTitle.clientesTopTitle, .wrapperTitle.aliadosTopTitle, {
+    margin-top: -2rem;
+    margin-bottom: 0rem;
 }
 
 h1.titleSection {
@@ -327,9 +326,9 @@ h1.titleSection {
 	color: $lightGreen;
 	padding: 2rem;
 	@include media("<=very-small"){
-		padding-right: 3rem;
-		padding-left: 3rem;
 		padding: 1rem;
+		padding-right: 1.5rem;
+		padding-left: 1.5rem;
 	}
 }
 
@@ -346,6 +345,10 @@ h1.titleSection {
 .sliderProyectos {@include center-aligner();}
 
 ul#owl-example{ width: 80%;@include center-aligner();}
+
+.row.clienteRow {
+    margin-bottom: 1rem;
+}
 
 .cliente:hover, .aliado:hover{
 	-webkit-filter: grayscale(0%) !important;

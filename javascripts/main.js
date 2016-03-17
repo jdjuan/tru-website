@@ -8,13 +8,13 @@ $(function () {
 	});
 
 	//NAV SCROLL
-	navScroll("#linkSlider", ".slider");
-	navScroll("#linkNosotros", ".container.nosotros");
-	navScroll("#linkServicios", ".container.servicios");
-	navScroll("#linkProyectos", ".container.proyectos");
-	// navScroll("#linkEquipo", ".container.equipoDiv");
-	// navScroll("#linkAliados", ".container.contactoDiv");
-	// navScroll("#linkContacto", ".container.contactoDiv");
+	navScroll("#linkSlider", ".slider", 70);
+	navScroll("#linkNosotros", ".container.nosotros", 140);
+	navScroll("#linkServicios", ".container.servicios", 70);
+	navScroll("#linkProyectos", ".container.proyectos", 130);
+	navScroll("#linkEquipo", ".container.equipo", 70);
+	navScroll("#linkAliados", ".container.aliados", 90);
+	navScroll("#linkContacto", ".container.contacto", 90);
 
 	//NAVBAR
 	$('ul.navbar-nav li').click(function(e) {
@@ -68,16 +68,9 @@ $(function () {
 		$('li.proyecto').removeClass('active');
 	});
 
-	function navScroll(linkID, className){
+	function navScroll(linkID, className, offset){
 		$(linkID).click(function() {
 			scrolling=true;
-			offset = 70;
-			if (linkID == "#linkNosotros") {
-				offset = 140;
-			}
-			if (linkID == "#linkProyectos") {
-				offset = 130;
-			}
 			$('html,body').animate({
 				scrollTop: $(className).offset().top-offset},
 				'slow', function(){
