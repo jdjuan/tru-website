@@ -17,7 +17,7 @@ $(function () {
 	navScroll("#linkContacto", ".container.contacto", 90);
 
 	//NAVBAR
-	$('ul.navbar-nav li').click(function(e) {
+	$('ul.navbar-nav li.navs').click(function(e) {
 		$('.navbar-nav li.active').removeClass('active');
 		var $this = $(this);
 		if (!$this.hasClass('active')) {

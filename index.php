@@ -70,15 +70,15 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav navLinks">
-						<li class="active"><a id="linkNosotros" href="#">Filosofía</a></li>
-						<li><a id="linkServicios" href="#">Inspiración</a></li> 
-						<li><a id="linkProyectos" href="#">Líneas de Negocio</a></li> 
-						<li><a id="linkTrabajos" href="#">Trabajos</a></li> 
-						<li><a id="linkEquipo" href="#">Equipo</a></li> 
-						<li><a id="linkContacto" href="#">Contacto</a></li> 
+						<li class="navs active"><a id="linkNosotros" href="#">Filosofía</a></li>
+						<li class="navs"><a id="linkServicios" href="#">Inspiración</a></li> 
+						<li class="navs"><a id="linkProyectos" href="#">Líneas de Negocio</a></li> 
+						<li class="navs"><a id="linkTrabajos" href="#">Trabajos</a></li> 
+						<li class="navs"><a id="linkEquipo" href="#">Equipo</a></li> 
+						<li class="navs"><a id="linkContacto" href="#">Contacto</a></li> 
 					</ul>
 					<ul class="nav navbar-nav navbar-right navSocial">
-						<li><a href="#"><span class="fa fa-facebook"></span></a></li>
+						<li><a href="https://www.facebook.com/TRUDigitalM/" target="_blank"><span class="fa fa-facebook"></span></a></li>
 						<li><a href="#"><span class="fa fa-play"></span></a></li>
 						<li><a href="#"><span class="fa fa-twitter"></span></a></li>
 						<li><a href="#"><span class="fa fa-vimeo"></span></a></li>
@@ -90,7 +90,8 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 	<!--END NAV BAR -->
 	<!-- SLIDER -->
 	<div class="slider">
-		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false"> -->
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
 				<?php 
