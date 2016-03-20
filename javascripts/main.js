@@ -84,13 +84,24 @@ $(function () {
 	}
 
 	function onScroll(event){
-		if (!scrolling) {
 			var scrollPos = $(document).scrollTop();
-			if (scrollPos > 5) {
+			console.log(scrollPos);
+			console.log("Equipo " + $(".container.equipo").offset().top);
+			$('.navbar li.active').removeClass('active');
+			if (scrollPos > $(".container.contacto").offset().top-100) {
+				$("li:has(#linkContacto)").addClass('active');
+			}else if (scrollPos > $(".container.equipo").offset().top-100) {
+				$("li:has(#linkEquipo)").addClass('active');
+			}else if (scrollPos > $(".container.trabajos").offset().top-140) {
+				$("li:has(#linkTrabajos)").addClass('active');
+			}else if (scrollPos > $(".container.proyectos").offset().top-140) {
+				$("li:has(#linkProyectos)").addClass('active');
+			}else if (scrollPos > $(".container.servicios").offset().top-80) {
+				$("li:has(#linkServicios)").addClass('active');
+			}else {
+				$("li:has(#linkNosotros)").addClass('active');
 			}
 		}
-	}
-
 });
 
 function displayServicio(n){

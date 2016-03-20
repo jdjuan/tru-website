@@ -19,6 +19,7 @@ div#myNavbar { text-align: center;}
 .navbar-brand{padding: 0;}
 
 ul.nav.navbar-nav {
+	-webkit-backface-visibility: hidden;
 	float: none;
 	display: inline-block;
 	@include media("<=navBarBreak"){
@@ -696,13 +697,13 @@ div#menu4 div h2 { color: $white}
 }
 
 img.logosEscribenos {
-    width: 30rem;
-    @include media("<=serviciosBreak"){
+	width: 30rem;
+	@include media("<=serviciosBreak"){
 		display: none;
 	}
 }
 img.logosEscribenos2 {
-    width: 38rem;
+	width: 38rem;
 	@include media(">=serviciosBreak"){
 		display: none;
 	}

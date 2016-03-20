@@ -90,7 +90,7 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 	<!--END NAV BAR -->
 	<!-- SLIDER -->
 	<div class="slider">
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
 				<?php 
@@ -382,7 +382,7 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 	</div>
 	<!-- END NUESTROS CLIENTES -->
 	<!-- CONTACTO -->
-	<div class="contacto container">
+	<div class="container contacto">
 		<div class="row contactoRow">
 			<div class="col-md-6 columnaContacto izquierda">
 				<div class="wrapTitleContacto"><h1 class="titleH1Contacto">Escríbenos.</h1></div>
