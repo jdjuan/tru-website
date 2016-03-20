@@ -317,8 +317,8 @@ h1.serviciosDescription {
 }
 
 .wrapperTitle.clientesTopTitle, .wrapperTitle.aliadosTopTitle, {
-    margin-top: -2rem;
-    margin-bottom: 0rem;
+	margin-top: -2rem;
+	margin-bottom: 0rem;
 }
 
 h1.titleSection {
@@ -351,7 +351,7 @@ h1.titleSection {
 ul#owl-example{ width: 80%;@include center-aligner();}
 
 .row.clienteRow {
-    margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 .cliente:hover, .aliado:hover{
@@ -601,7 +601,7 @@ div#menu4 div h2 { color: $white}
 	background-color: $darkBlue;
 	height: 39em;
 	@include media("<=serviciosBreak"){
-	height: 45em;
+		height: 48em;
 	}
 }
 
@@ -632,6 +632,7 @@ div#menu4 div h2 { color: $white}
 	z-index: 200;
 	height: 100%;
 	color: white;
+	text-align: center;
 }
 
 .formulario{
@@ -691,5 +692,21 @@ div#menu4 div h2 { color: $white}
 	}
 	ul.footerLi {
 		font-size: 10px !important;
+	}
+}
+
+img.logosEscribenos {
+    width: 38rem;
+    @include media("<=serviciosBreak"){
+		display: none;
+	}
+}
+img.logosEscribenos2 {
+    width: 38rem;
+	@include media(">=serviciosBreak"){
+		display: none;
+	}
+	@include media("<=450px"){
+		width: 30rem;
 	}
 }

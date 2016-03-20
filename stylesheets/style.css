@@ -989,42 +989,42 @@ div#menu4 div h2 {
 
 /* line 591, ../sass/style.scss */
 #equipo1 {
-  background-color: #bb1aa0;
+  background-color: #0eebda;
 }
 
 /* line 592, ../sass/style.scss */
 #equipo2 {
-  background-color: #d556a7;
+  background-color: #21a7ae;
 }
 
 /* line 593, ../sass/style.scss */
 #equipo3 {
-  background-color: #0bba06;
+  background-color: #75eae0;
 }
 
 /* line 594, ../sass/style.scss */
 #equipo4 {
-  background-color: #81dc2d;
+  background-color: #67bfbf;
 }
 
 /* line 595, ../sass/style.scss */
 #equipo5 {
-  background-color: #51d493;
+  background-color: #d8dfdb;
 }
 
 /* line 596, ../sass/style.scss */
 #equipo6 {
-  background-color: #e6f5f5;
+  background-color: #a36052;
 }
 
 /* line 597, ../sass/style.scss */
 #equipo7 {
-  background-color: #20ea78;
+  background-color: #cfe4ac;
 }
 
 /* line 598, ../sass/style.scss */
 #equipo8 {
-  background-color: #50c2af;
+  background-color: #d5b5e0;
 }
 
 /* line 600, ../sass/style.scss */
@@ -1035,7 +1035,7 @@ div#menu4 div h2 {
 @media (max-width: 993px) {
   /* line 600, ../sass/style.scss */
   .row.contactoRow {
-    height: 45em;
+    height: 48em;
   }
 }
 
@@ -1078,9 +1078,10 @@ div#menu4 div h2 {
   z-index: 200;
   height: 100%;
   color: white;
+  text-align: center;
 }
 
-/* line 637, ../sass/style.scss */
+/* line 638, ../sass/style.scss */
 .formulario {
   height: auto;
   padding: 3em;
@@ -1090,25 +1091,25 @@ div#menu4 div h2 {
   margin-top: 10%;
 }
 @media (max-width: 1300px) {
-  /* line 637, ../sass/style.scss */
+  /* line 638, ../sass/style.scss */
   .formulario {
     width: 90%;
   }
 }
 @media (max-width: 1200px) {
-  /* line 637, ../sass/style.scss */
+  /* line 638, ../sass/style.scss */
   .formulario {
     margin-top: 15%;
   }
 }
 @media (max-width: 1050px) {
-  /* line 637, ../sass/style.scss */
+  /* line 638, ../sass/style.scss */
   .formulario {
     width: 100%;
   }
 }
 @media (max-width: 990px) {
-  /* line 637, ../sass/style.scss */
+  /* line 638, ../sass/style.scss */
   .formulario {
     margin-top: 8em !important;
     width: 80%;
@@ -1116,54 +1117,81 @@ div#menu4 div h2 {
   }
 }
 @media (max-width: 550px) {
-  /* line 637, ../sass/style.scss */
+  /* line 638, ../sass/style.scss */
   .formulario {
     width: 100%;
   }
 }
 
-/* line 663, ../sass/style.scss */
+/* line 664, ../sass/style.scss */
 .form-control {
   background-color: #eee;
 }
 
-/* line 667, ../sass/style.scss */
+/* line 668, ../sass/style.scss */
 .buttonWrapper {
   text-align: right;
 }
 
-/* line 671, ../sass/style.scss */
+/* line 672, ../sass/style.scss */
 .contactoMoreInfo {
   margin-top: 3em;
   text-align: center;
 }
 @media (max-width: 1300px) {
-  /* line 671, ../sass/style.scss */
+  /* line 672, ../sass/style.scss */
   .contactoMoreInfo {
     margin-left: 0em;
   }
 }
 
-/* line 680, ../sass/style.scss */
+/* line 681, ../sass/style.scss */
 .col-md-4.contacto {
   width: 31%;
 }
 @media (max-width: 990px) {
-  /* line 680, ../sass/style.scss */
+  /* line 681, ../sass/style.scss */
   .col-md-4.contacto {
     display: inline-block;
   }
 }
 
 @media screen and (max-width: 990px) {
-  /* line 688, ../sass/style.scss */
+  /* line 689, ../sass/style.scss */
   .col-md-6.columnaContacto {
     width: 100%;
     position: absolute;
   }
 
-  /* line 692, ../sass/style.scss */
+  /* line 693, ../sass/style.scss */
   ul.footerLi {
     font-size: 10px !important;
+  }
+}
+/* line 698, ../sass/style.scss */
+img.logosEscribenos {
+  width: 38rem;
+}
+@media (max-width: 993px) {
+  /* line 698, ../sass/style.scss */
+  img.logosEscribenos {
+    display: none;
+  }
+}
+
+/* line 704, ../sass/style.scss */
+img.logosEscribenos2 {
+  width: 38rem;
+}
+@media (min-width: 993px) {
+  /* line 704, ../sass/style.scss */
+  img.logosEscribenos2 {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  /* line 704, ../sass/style.scss */
+  img.logosEscribenos2 {
+    width: 30rem;
   }
 }

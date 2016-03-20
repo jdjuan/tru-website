@@ -115,12 +115,6 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 					echo "</div>";
 				}
 				?>
-				<!-- <div id="slider1" class="item active"></div>
-				<div id="slider2" class="item"></div>
-				<div id="slider3" class="item"></div>
-				<div id="slider4" class="item"></div>
-				<div id="slider5" class="item"></div>
-				<div id="slider6" class="item"></div> -->
 			</div>
 			<!-- Left and right controls -->
 			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -381,9 +375,9 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 			<h1 class="titleSection title">Nuestros Aliados</h1>
 		</div> 
 		<div class="row aliadoRow">
-			<a href="http://supermarciano.com/amigos" target="_blank"><div class="col-md-2 aliado" id="aliado1"></div></a>
-			<a href="http://www.parquesoftmanizales.com/" target="_blank"><div class="col-md-2 aliado" id="aliado2"></div></a>
-			<a href="http://www.cinnco.co/" target="_blank"><div class="col-md-2 aliado" id="aliado3"></div></a>
+			<a href="http://www.cinnco.co/" target="_blank"><div class="col-md-2 aliado" id="aliado1"></div></a>
+			<a href="http://supermarciano.com/amigos" target="_blank"><div class="col-md-2 aliado" id="aliado2"></div></a>
+			<a href="http://www.parquesoftmanizales.com/" target="_blank"><div class="col-md-2 aliado" id="aliado3"></div></a>
 		</div>
 	</div>
 	<!-- END NUESTROS CLIENTES -->
@@ -394,25 +388,12 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 				<div class="wrapTitleContacto"><h1 class="titleH1Contacto">Escríbenos.</h1></div>
 				<div class="emailContacto" style="color: white;font-weight: 600;text-align: center;">contacto@trudigitalmedia.co</div>
 				<div class="contactoMoreInfo">
-					<!-- <div class="col-md-4 contacto"> -->
 					<ul class="footerLi">
 						<li><strong>Manizales:</strong></li>
 						<li>Tel: (57) 3177006697</li>
 					</ul>
-					<!-- </div> -->
-					<!-- <div class="col-md-4 contacto">
-						<ul class="footerLi">
-							<li><strong>Manizales:</strong></li>
-							<li>Tel: 3136494180</li>
-						</ul>
-					</div>
-					<div class="col-md-4 contacto">
-						<ul class="footerLi">
-							<li><strong>Lima:</strong></li>
-							<li>Tel: (51) 950 4444320</li>
-						</ul>
-					</div>  -->
 				</div>
+				<img class="logosEscribenos" src="images/escribenos.png" alt="">
 			</div>
 			<div class="col-md-6 columnaContacto">
 				<h1 class="titleH1Contacto derecha">Escríbenos.</h1>
@@ -433,6 +414,7 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 						<button type="submit" class="btn btn-default">ENVIAR</button>
 					</div>
 				</form>
+				<img class="logosEscribenos2" src="images/escribenos.png" alt="">
 			</div>
 		</div>
 	</div>
