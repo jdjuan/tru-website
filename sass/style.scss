@@ -696,7 +696,7 @@ div#menu4 div h2 { color: $white}
 }
 
 img.logosEscribenos {
-    width: 38rem;
+    width: 30rem;
     @include media("<=serviciosBreak"){
 		display: none;
 	}

@@ -989,42 +989,42 @@ div#menu4 div h2 {
 
 /* line 591, ../sass/style.scss */
 #equipo1 {
-  background-color: #0eebda;
+  background-color: #1ba693;
 }
 
 /* line 592, ../sass/style.scss */
 #equipo2 {
-  background-color: #21a7ae;
+  background-color: #dee201;
 }
 
 /* line 593, ../sass/style.scss */
 #equipo3 {
-  background-color: #75eae0;
+  background-color: #f437fc;
 }
 
 /* line 594, ../sass/style.scss */
 #equipo4 {
-  background-color: #67bfbf;
+  background-color: #3d722f;
 }
 
 /* line 595, ../sass/style.scss */
 #equipo5 {
-  background-color: #d8dfdb;
+  background-color: #eef1cc;
 }
 
 /* line 596, ../sass/style.scss */
 #equipo6 {
-  background-color: #a36052;
+  background-color: #9077e5;
 }
 
 /* line 597, ../sass/style.scss */
 #equipo7 {
-  background-color: #cfe4ac;
+  background-color: #8bc90d;
 }
 
 /* line 598, ../sass/style.scss */
 #equipo8 {
-  background-color: #d5b5e0;
+  background-color: #c35793;
 }
 
 /* line 600, ../sass/style.scss */
@@ -1170,7 +1170,7 @@ div#menu4 div h2 {
 }
 /* line 698, ../sass/style.scss */
 img.logosEscribenos {
-  width: 38rem;
+  width: 30rem;
 }
 @media (max-width: 993px) {
   /* line 698, ../sass/style.scss */

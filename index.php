@@ -393,6 +393,7 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 						<li>Tel: (57) 3177006697</li>
 					</ul>
 				</div>
+				<br><br>
 				<img class="logosEscribenos" src="images/escribenos.png" alt="">
 			</div>
 			<div class="col-md-6 columnaContacto">
@@ -414,7 +415,7 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 						<button type="submit" class="btn btn-default">ENVIAR</button>
 					</div>
 				</form>
-				<img class="logosEscribenos2" src="images/escribenos.png" alt="">
+				<!-- <img class="logosEscribenos2" src="images/escribenos.png" alt=""> -->
 			</div>
 		</div>
 	</div>
