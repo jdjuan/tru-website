@@ -4,6 +4,7 @@ $db = new Db();
 $rowsSlider = $db -> select("SELECT * FROM `sliders` order by orden");
 $rowsLineas = $db -> select("SELECT * FROM `lineas` order by orden");
 $rowsTrabajos = $db -> select("SELECT * FROM `trabajos` order by orden");
+$rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 ?>
 
 <!DOCTYPE html>
@@ -319,19 +320,11 @@ $rowsTrabajos = $db -> select("SELECT * FROM `trabajos` order by orden");
 			<h1 class="titleSection title">Nuestros Clientes</h1>
 		</div> 
 		<div class="row clienteRow">
-			<div class="col-md-2 cliente" id="cliente1"></div>
-			<div class="col-md-2 cliente" id="cliente2"></div>
-			<div class="col-md-2 cliente" id="cliente3"></div>
-			<div class="col-md-2 cliente" id="cliente4"></div>
-			<div class="col-md-2 cliente" id="cliente5"></div>
-			<div class="col-md-2 cliente" id="cliente6"></div>
-			<div class="col-md-2 cliente" id="cliente7"></div>
-			<div class="col-md-2 cliente" id="cliente8"></div>
-			<div class="col-md-2 cliente" id="cliente9"></div>
-			<div class="col-md-2 cliente" id="cliente10"></div>
-			<div class="col-md-2 cliente" id="cliente11"></div>
-			<div class="col-md-2 cliente" id="cliente12"></div>
-			<div class="col-md-2 cliente" id="cliente13"></div>
+			<?php
+			for ($i=0; $i < count($rowsClientes); $i++) { 
+				echo '<div class="col-md-2 cliente" id="cliente'.($i+1).'" style=background-image: url(\"admin/clientes/uploads/'.$rowsClientes[$i]["imagen"].'\")></div>';
+			}
+			?>
 		</div>
 	</div>
 	<!-- END NUESTROS CLIENTES -->
@@ -356,7 +349,7 @@ $rowsTrabajos = $db -> select("SELECT * FROM `trabajos` order by orden");
 			<a href="http://www.parquesoftmanizales.com/" target="_blank"><div class="col-md-2 aliado" id="aliado3"></div></a>
 		</div>
 	</div>
-	<!-- END NUESTROS CLIENTES -->
+	<!-- END NUESTROS ALIADOS -->
 	<!-- CONTACTO -->
 	<div class="container contacto">
 		<div class="row contactoRow">
