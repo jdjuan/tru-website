@@ -458,40 +458,10 @@ h2.titleTextInside{
 	width: 100%;
 	height: 53rem;
 	background-size: cover;
-	background-position: center top no-repeat;
+	background-position: center top;
+	background-repeat: no-repeat;
 	@include media("<=medium"){
 		height: 28rem;
-	}
-}
-
-#linea1{
-	background-image: url('../images/linea1.png');
-	@include media("<=medium"){
-		background: $icono1;
-	}
-}
-#linea2{
-	background-image: url('../images/linea2.png');
-	@include media("<=medium"){
-		background: $icono2;
-	}
-}
-#linea3{
-	background-image: url('../images/linea3.png');
-	@include media("<=medium"){
-		background: $icono3;
-	}
-}
-#linea4{
-	background-image: url('../images/linea4.png');
-	@include media("<=medium"){
-		background: $icono4;
-	}
-}
-#linea5{
-	background-image: url('../images/linea5.png');
-	@include media("<=medium"){
-		background: $icono5;
 	}
 }
 

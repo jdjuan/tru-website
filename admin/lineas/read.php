@@ -41,6 +41,9 @@ if (!empty($_GET['id'])) {
                 <div class="control-group"><label class="control-label">DESCRIPCIÓN:</label>
                     <div class="controls"><label class="checkbox"><?php echo $data['descripcion'];?></label></div>
                 </div>
+                <div class="control-group"><label class="control-label">COLOR:</label>
+                    <div class="controls"><input type="color" disabled value="<?php echo $data['color'];?>"></div>
+                </div>
                 <div class="control-group"><label class="control-label">Orden:</label>
                     <div class="controls"><label class="checkbox"><?php echo $data['orden'];?></label></div>
                 </div>

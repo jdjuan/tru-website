@@ -19,6 +19,7 @@ if (!empty($_POST)) {
     $file2 = $_FILES["slide"];
     $titulo = (!empty($_POST['titulo']))?$_POST['titulo']:'';
     $descripcion = (!empty($_POST['descripcion']))?$_POST['descripcion']:'';
+    $color = (!empty($_POST['color']))?$_POST['color']:'#000';
     $orden = (!empty($_POST['orden']))?$_POST['orden']:0;
     $fileName = preg_replace("/[^a-zA-Z0-9.]/", "", basename($file["name"]));
     $fileName2 = preg_replace("/[^a-zA-Z0-9.]/", "", basename($file2["name"]));
@@ -30,6 +31,7 @@ if (!empty($_POST)) {
                         ", slide = " .$db->quote($fileName2). 
                         ", titulo = " .$db->quote($titulo). 
                         ", descripcion = " .$db->quote($descripcion). 
+                        ", color = " .$db->quote($color). 
                         ",  orden = " .$orden. 
                         " WHERE id = " . $id);
                     header("Location: index.php");
@@ -44,6 +46,7 @@ if (!empty($_POST)) {
                 $result = $db -> query("UPDATE lineas set icono = " .$db->quote($fileName). 
                     ", titulo = " .$db->quote($titulo). 
                     ", descripcion = " .$db->quote($descripcion). 
+                    ", color = " .$db->quote($color). 
                     ", orden = " .$orden. 
                     "  WHERE id = " . $id);
                 header("Location: index.php");
@@ -57,6 +60,7 @@ if (!empty($_POST)) {
                 $result = $db -> query("UPDATE lineas set slide = " .$db->quote($fileName2). 
                     ", titulo = " .$db->quote($titulo). 
                     ", descripcion = " .$db->quote($descripcion). 
+                    ", color = " .$db->quote($color). 
                     ", orden = " .$orden. 
                     "  WHERE id = " . $id);
                 header("Location: index.php");
@@ -66,6 +70,7 @@ if (!empty($_POST)) {
         }else{
             $result = $db -> query("UPDATE lineas set titulo = " .$db->quote($titulo). 
                 ", descripcion = " .$db->quote($descripcion). 
+                ", color = " .$db->quote($color). 
                 ", orden = " .$orden. 
                 "  WHERE id = " . $id);
             header("Location: index.php");
@@ -78,6 +83,7 @@ $icono = $rows[0]["icono"];
 $slide = $rows[0]["slide"];
 $titulo = $rows[0]["titulo"];
 $descripcion = $rows[0]["descripcion"];
+$color = $rows[0]["color"];
 $orden = $rows[0]["orden"];
 ?>
 
@@ -133,6 +139,9 @@ $orden = $rows[0]["orden"];
                     <div class="controls">
                     <textarea name="descripcion" class="inputText" rows="15" cols="70" type="text"><?php echo !empty($descripcion)?$descripcion:'';?></textarea> 
                     </div>
+                </div>
+                <div class="control-group"><label class="control-label">COLOR:</label>
+                    <div class="controls"><input type="color" name="color" value="<?php echo !empty($color)?$color:'#000';?>"></div>
                 </div>
                 <div class="control-group">
                     <label class="control-label">Orden</label>

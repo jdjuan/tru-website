@@ -62,6 +62,7 @@ if (empty($_SESSION["user"]) || empty($_SESSION["pass"])) {
 						<th>SLIDE</th>
 						<th>TÍTULO</th>
 						<th>DESCRIPCIÓN</th>
+						<th>COLOR</th>
 						<th>ORDEN</th>
 						<th>ACCIÓN</th>
 					</tr>
@@ -78,6 +79,7 @@ if (empty($_SESSION["user"]) || empty($_SESSION["pass"])) {
 						echo "<td><img class='backEndImage' src='uploads/". $row["slide"] . "'></td>";
 						echo '<td>'. $row['titulo'] . '</td>';
 						echo '<td>'. $row['descripcion'] . '</td>';
+						echo '<td><input type="color" value="'.$row['color'].'" disabled ></td>';
 						echo '<td>'. $row['orden'] . '</td>';
 						echo '<td width=250>';
 						echo '<a class="btn btn-info" href="read.php?id='.$row['id'].'">Ver</a>';

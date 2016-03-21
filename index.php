@@ -38,6 +38,11 @@ $rowsTrabajos = $db -> select("SELECT * FROM `trabajos` order by orden");
 			echo "#slider".($i+1)." {background-image: url('admin/slider/uploads/".$row["imagenCuadrada"]."');}";
 			echo "}";
 		}
+		for ($i=0; $i < count($rowsLineas); $i++) { 
+			$row = $rowsLineas[$i];
+			echo "#linea".($i+1)."{background-image: url('admin/lineas/uploads/".$row["slide"]."');}";
+			echo "@media (max-width: 1000px) { #linea".($i+1)." {background: ".$row["color"].";}}";
+		}
 		?>
 	</style>
 

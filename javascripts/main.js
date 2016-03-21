@@ -85,8 +85,6 @@ $(function () {
 
 	function onScroll(event){
 			var scrollPos = $(document).scrollTop();
-			console.log(scrollPos);
-			console.log("Equipo " + $(".container.equipo").offset().top);
 			$('.navbar li.active').removeClass('active');
 			if (scrollPos > $(".container.contacto").offset().top-100) {
 				$("li:has(#linkContacto)").addClass('active');
