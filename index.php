@@ -325,7 +325,7 @@ $rowsAliados = $db -> select("SELECT * FROM `aliados` order by orden");
 			for ($i=0; $i < count($rowsClientes); $i++) {
 				$row = $rowsClientes[$i];
 				echo '<a href="'.$row["url"].'" target="_blank">';
-				echo '<div class="col-md-2 cliente" id="cliente'.($i+1).'" style=background-image: url(\"admin/clientes/uploads/'.$row["imagen"].'\")></div>';
+				echo '<div class="col-md-2 cliente" id="cliente'.($i+1).'" style=background-image:url(\'admin/clientes/uploads/'.$row["imagen"].'\')></div>';
 				echo '</a>';
 			}
 			?>
@@ -333,12 +333,61 @@ $rowsAliados = $db -> select("SELECT * FROM `aliados` order by orden");
 	</div>
 	<!-- END NUESTROS CLIENTES -->
 	<!-- EQUIPO -->
-	<div class="container equipo">
+	<div class="container miembros">
 		<div class="wrapperTitle equipoTopTitle">
 			<h1 class="titleSection title">Nuestro Equipo</h1>
 		</div>
 		<div class="row equipoRow">
-			<div id="equipo1" class="col-md-3 equipo"></div><div id="equipo2" class="col-md-3 equipo"></div><div id="equipo3" class="col-md-3 equipo"></div><div id="equipo4" class="col-md-3 equipo"></div><div id="equipo5" class="col-md-3 equipo"></div><div id="equipo6" class="col-md-3 equipo"></div><div id="equipo7" class="col-md-3 equipo"></div><div id="equipo8" class="col-md-3 equipo"></div>
+		<!-- #equipo$.col-md-3.equipo*8>.overlay$.overlayEquipo>.tituloEquipo{Lorem ipsum dolor.}+.descripcionEquipo{Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolor.} -->
+		<div id="equipo1" class="col-md-3 equipo">
+			<div class="overlay1 overlayEquipo">
+				<div class="tituloEquipo">Lorem ipsum dolor.</div>
+				<div class="descripcionEquipo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolor.</div>
+			</div>
+		</div><!-- 
+		 --><div id="equipo2" class="col-md-3 equipo">
+			<div class="overlay2 overlayEquipo">
+				<div class="tituloEquipo">Lorem ipsum dolor.</div>
+				<div class="descripcionEquipo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolor.</div>
+			</div>
+		</div><!-- 
+		 --><div id="equipo3" class="col-md-3 equipo">
+			<div class="overlay3 overlayEquipo">
+				<div class="tituloEquipo">Lorem ipsum dolor.</div>
+				<div class="descripcionEquipo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolor.</div>
+			</div>
+		</div><!-- 
+		 --><div id="equipo4" class="col-md-3 equipo">
+			<div class="overlay4 overlayEquipo">
+				<div class="tituloEquipo">Lorem ipsum dolor.</div>
+				<div class="descripcionEquipo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolor.</div>
+			</div>
+		</div><!-- 
+		 --><div id="equipo5" class="col-md-3 equipo">
+			<div class="overlay5 overlayEquipo">
+				<div class="tituloEquipo">Lorem ipsum dolor.</div>
+				<div class="descripcionEquipo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolor.</div>
+			</div>
+		</div><!-- 
+		 --><div id="equipo6" class="col-md-3 equipo">
+			<div class="overlay6 overlayEquipo">
+				<div class="tituloEquipo">Lorem ipsum dolor.</div>
+				<div class="descripcionEquipo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolor.</div>
+			</div>
+		</div><!-- 
+		 --><div id="equipo7" class="col-md-3 equipo">
+			<div class="overlay7 overlayEquipo">
+				<div class="tituloEquipo">Lorem ipsum dolor.</div>
+				<div class="descripcionEquipo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolor.</div>
+			</div>
+		</div><!-- 
+		 --><div id="equipo8" class="col-md-3 equipo">
+			<div class="overlay8 overlayEquipo">
+				<div class="tituloEquipo">Lorem ipsum dolor.</div>
+				<div class="descripcionEquipo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolor.</div>
+			</div>
+		</div>
+
 		</div>
 	</div>
 	<!-- END EQUIPO -->
@@ -352,7 +401,7 @@ $rowsAliados = $db -> select("SELECT * FROM `aliados` order by orden");
 			for ($i=0; $i < count($rowsAliados); $i++) {
 				$row = $rowsAliados[$i];
 				echo '<a href="'.$row["url"].'" target="_blank">';
-				echo '<div class="col-md-2 aliado" id="aliado'.($i+1).'" style=background-image: url(\"admin/aliados/uploads/'.$row["imagen"].'\")></div>';
+				echo '<div class="col-md-2 aliado" id="aliado'.($i+1).'" style=background-image:url(\'admin/aliados/uploads/'.$row["imagen"].'\')></div>';
 				echo '</a>';
 			}
 			?>
