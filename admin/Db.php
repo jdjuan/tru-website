@@ -38,7 +38,6 @@ class Db {
 
         // Query the database
         $result = $connection -> query($query);
-        ;
         if ($result === false) {
             file_put_contents("../log.txt", $db -> error(), FILE_APPEND | LOCK_EX);
             echo '<script language="javascript">';

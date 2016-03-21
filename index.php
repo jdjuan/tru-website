@@ -2,8 +2,8 @@
 include dirname(__FILE__) . '/admin/Db.php';
 $db = new Db();   
 $rowsSlider = $db -> select("SELECT * FROM `sliders` order by orden");
-$rowsProyectos = $db -> select("SELECT * FROM `proyectos` order by orden");
-$rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
+$rowsLineas = $db -> select("SELECT * FROM `lineas` order by orden");
+$rowsTrabajos = $db -> select("SELECT * FROM `trabajos` order by orden");
 ?>
 
 <!DOCTYPE html>
@@ -91,7 +91,7 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 	<!-- SLIDER -->
 	<div class="slider">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		<!-- <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false"> -->
+			<!-- <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false"> -->
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
 				<?php 
@@ -230,60 +230,35 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 		<div id="sliderClientes" class="sliderProyectos">
 			<ul id="owl-example" class="nav nav-pills owl-carousel">
 				<?php
-				for ($i=0; $i < count($rowsClientes); $i++) { 
-					$row = $rowsClientes[$i];
+				for ($i=0; $i < count($rowsLineas); $i++) { 
+					$row = $rowsLineas[$i];
 					if ($i==0) {
 						echo "<li class='proyecto active'><a data-toggle='pill' href='#menu".($i)."'>";
-						echo "<div style=\"";
-						echo "background:transparent url('admin/clientes/uploads/". $row["imagen"] ."') center top no-repeat; background-size: 9em;  -webkit-filter: grayscale(100%);  filter: grayscale(100%);";
-						echo "\" class='col-md-2 col-centered proyectoImg'></div>";
-						echo "</a></li>";
 					}else{
 						echo "<li class='proyecto'><a data-toggle='pill' href='#menu".($i)."'>";
-						echo "<div style=\"";
-						echo "background:transparent url('admin/clientes/uploads/". $row["imagen"] ."') center top no-repeat; background-size: 9em;  -webkit-filter: grayscale(100%);  filter: grayscale(100%);";
-						echo "\" class='col-md-2 col-centered proyectoImg'></div>";
-						echo "</a></li>";
 					}
+					echo "<div style=\"";
+					echo "background:transparent url('admin/lineas/uploads/". $row["icono"] ."') center top no-repeat; background-size: 9em;  -webkit-filter: grayscale(100%);  filter: grayscale(100%);";
+					echo "\" class='col-md-2 col-centered proyectoImg'></div>";
+					echo "</a></li>";
 				}
 				?>
 			</ul>
 			<div class="tab-content">
-				<div id="menu0" class="tab-pane fade in active">
-					<div class="textInside">
-						<h2 class="titleTextInside">Branding</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus minus veniam neque ipsam incidunt harum possimus inventore sapiente, aliquam laboriosam! Vel, eligendi provident nostrum itaque voluptate! Est totam, distinctio! Explicabo omnis labore, eveniet alias quos, libero aspernatur reiciendis. Laudantium, est.</p>
-					</div>
-					<div id="linea1" class="linea"></div>
-				</div>
-				<div id="menu1" class="tab-pane fade">
-					<div class="textInside">
-						<h2 class="titleTextInside">Branding</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus minus veniam neque ipsam incidunt harum possimus inventore sapiente, aliquam laboriosam! Vel, eligendi provident nostrum itaque voluptate! Est totam, distinctio! Explicabo omnis labore, eveniet alias quos, libero aspernatur reiciendis. Laudantium, est.</p>
-					</div>
-					<div id="linea2" class="linea"></div>
-				</div>
-				<div id="menu2" class="tab-pane fade">
-					<div class="textInside">
-						<h2 class="titleTextInside">Branding</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus minus veniam neque ipsam incidunt harum possimus inventore sapiente, aliquam laboriosam! Vel, eligendi provident nostrum itaque voluptate! Est totam, distinctio! Explicabo omnis labore, eveniet alias quos, libero aspernatur reiciendis. Laudantium, est.</p>
-					</div>
-					<div id="linea3" class="linea"></div>
-				</div>
-				<div id="menu3" class="tab-pane fade">
-					<div class="textInside">
-						<h2 class="titleTextInside">Branding</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus minus veniam neque ipsam incidunt harum possimus inventore sapiente, aliquam laboriosam! Vel, eligendi provident nostrum itaque voluptate! Est totam, distinctio! Explicabo omnis labore, eveniet alias quos, libero aspernatur reiciendis. Laudantium, est.</p>
-					</div>
-					<div id="linea4" class="linea"></div>
-				</div>
-				<div id="menu4" class="tab-pane fade">
-					<div class="textInside">
-						<h2 class="titleTextInside">Branding</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus minus veniam neque ipsam incidunt harum possimus inventore sapiente, aliquam laboriosam! Vel, eligendi provident nostrum itaque voluptate! Est totam, distinctio! Explicabo omnis labore, eveniet alias quos, libero aspernatur reiciendis. Laudantium, est.</p>
-					</div>
-					<div id="linea5" class="linea"></div>
-				</div>
+				<?php
+				for ($i=0; $i < count($rowsLineas); $i++) { 
+					$row = $rowsLineas[$i];
+					if ($i==0) {
+						echo '<div id="menu'.$i.'" class="tab-pane fade in active">';
+					}else{
+						echo '<div id="menu'.$i.'" class="tab-pane fade in">';
+					}
+					echo '<div class="textInside">';
+					echo '<h2 class="titleTextInside">'.$row["titulo"].'</h2>';
+					echo '<p>'.$row["descripcion"].'</p></div>';
+					echo '<div id="linea'.($i+1).'" class="linea"></div></div>';
+				}
+				?>
 			</div>
 		</div>
 	</div>
@@ -297,33 +272,28 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 			<div id="myCarousel2" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
-					<li data-target="#myCarousel2" data-slide-to="0" class="active control"></li>
-					<li data-target="#myCarousel2" data-slide-to="1" class="control"></li>
-					<li data-target="#myCarousel2" data-slide-to="2" class="control"></li>
-					<li data-target="#myCarousel2" data-slide-to="3" class="control"></li>
-					<li data-target="#myCarousel2" data-slide-to="4" class="control"></li>
-					<li data-target="#myCarousel2" data-slide-to="5" class="control"></li>
-					<li data-target="#myCarousel2" data-slide-to="6" class="control"></li>
-					<li data-target="#myCarousel2" data-slide-to="7" class="control"></li>
-					<li data-target="#myCarousel2" data-slide-to="8" class="control"></li>
-					<li data-target="#myCarousel2" data-slide-to="9" class="control"></li>
-					<li data-target="#myCarousel2" data-slide-to="10" class="control"></li>
-					<li data-target="#myCarousel2" data-slide-to="11" class="control"></li>
+					<?php
+					for ($i=0; $i < count($rowsTrabajos); $i++) { 
+						if ($i==0) {
+							echo '<li data-target="#myCarousel2" data-slide-to="'.$i.'" class="active control"></li>';
+						}else{
+							echo '<li data-target="#myCarousel2" data-slide-to="'.$i.'" class="control"></li>';
+						}
+					}
+					?>
 				</ol>
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner" role="listbox">
-					<div class="item active"><img src="images/trabajo1.png" alt="Chania"></div>
-					<div class="item"><img src="images/trabajo2.png" alt=""></div>
-					<div class="item"><img src="images/trabajo3.png" alt=""></div>
-					<div class="item"><img src="images/trabajo4.png" alt=""></div>
-					<div class="item"><img src="images/trabajo5.png" alt=""></div>
-					<div class="item"><img src="images/trabajo6.png" alt=""></div>
-					<div class="item"><img src="images/trabajo7.png" alt=""></div>
-					<div class="item"><img src="images/trabajo8.png" alt=""></div>
-					<div class="item"><img src="images/trabajo9.png" alt=""></div>
-					<div class="item"><img src="images/trabajo10.png" alt=""></div>
-					<div class="item"><img src="images/trabajo11.png" alt=""></div>
-					<div class="item"><img src="images/trabajo12.png" alt=""></div>
+					<?php
+					for ($i=0; $i < count($rowsTrabajos); $i++) { 
+						$row = $rowsTrabajos[$i];
+						if ($i==0) {
+							echo '<div class="item active"><img src="admin/trabajos/uploads/'.$row["imagen"].'"></div>';
+						}else{
+							echo '<div class="item"><img src="admin/trabajos/uploads/'.$row["imagen"].'"></div>';
+						}
+					}
+					?>
 				</div>
 				<!-- Left and right controls -->
 				<a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">

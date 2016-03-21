@@ -7,3 +7,8 @@
 img.backEndImage {
   width: 4em;
 }
+
+/* line 9, ../sass/backend.scss */
+.form-horizontal .radio, .form-horizontal .checkbox {
+  font-weight: 100;
+}
