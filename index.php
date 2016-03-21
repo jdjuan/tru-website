@@ -5,6 +5,7 @@ $rowsSlider = $db -> select("SELECT * FROM `sliders` order by orden");
 $rowsLineas = $db -> select("SELECT * FROM `lineas` order by orden");
 $rowsTrabajos = $db -> select("SELECT * FROM `trabajos` order by orden");
 $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
+$rowsAliados = $db -> select("SELECT * FROM `aliados` order by orden");
 ?>
 
 <!DOCTYPE html>
@@ -321,8 +322,11 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 		</div> 
 		<div class="row clienteRow">
 			<?php
-			for ($i=0; $i < count($rowsClientes); $i++) { 
-				echo '<div class="col-md-2 cliente" id="cliente'.($i+1).'" style=background-image: url(\"admin/clientes/uploads/'.$rowsClientes[$i]["imagen"].'\")></div>';
+			for ($i=0; $i < count($rowsClientes); $i++) {
+				$row = $rowsClientes[$i];
+				echo '<a href="'.$row["url"].'" target="_blank">';
+				echo '<div class="col-md-2 cliente" id="cliente'.($i+1).'" style=background-image: url(\"admin/clientes/uploads/'.$row["imagen"].'\")></div>';
+				echo '</a>';
 			}
 			?>
 		</div>
@@ -344,9 +348,14 @@ $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 			<h1 class="titleSection title">Nuestros Aliados</h1>
 		</div> 
 		<div class="row aliadoRow">
-			<a href="http://www.cinnco.co/" target="_blank"><div class="col-md-2 aliado" id="aliado1"></div></a>
-			<a href="http://supermarciano.com/amigos" target="_blank"><div class="col-md-2 aliado" id="aliado2"></div></a>
-			<a href="http://www.parquesoftmanizales.com/" target="_blank"><div class="col-md-2 aliado" id="aliado3"></div></a>
+			<?php
+			for ($i=0; $i < count($rowsAliados); $i++) {
+				$row = $rowsAliados[$i];
+				echo '<a href="'.$row["url"].'" target="_blank">';
+				echo '<div class="col-md-2 aliado" id="aliado'.($i+1).'" style=background-image: url(\"admin/aliados/uploads/'.$row["imagen"].'\")></div>';
+				echo '</a>';
+			}
+			?>
 		</div>
 	</div>
 	<!-- END NUESTROS ALIADOS -->
