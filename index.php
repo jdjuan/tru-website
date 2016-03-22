@@ -85,10 +85,12 @@ $rowsAliados = $db -> select("SELECT * FROM `aliados` order by orden");
 						<li class="navs"><a id="linkContacto" href="#">Contacto</a></li> 
 					</ul>
 					<ul class="nav navbar-nav navbar-right navSocial">
-						<li><a href="https://www.facebook.com/TRUDigitalM/" target="_blank"><span class="fa fa-facebook"></span></a></li>
-						<li><a href="#"><span class="fa fa-play"></span></a></li>
-						<li><a href="#"><span class="fa fa-twitter"></span></a></li>
-						<li><a href="#"><span class="fa fa-vimeo"></span></a></li>
+						<li><a class="socialLink" href="https://www.facebook.com/TRUDigitalM/" target="_blank"><span class="fa fa-facebook"></span></a></li>
+						<li><a class="socialLink" href="https://twitter.com/TruDigitalMedia" target="_blank"><span class="fa fa-twitter"></span></a></li>
+						<li><a class="socialLink" href="https://www.behance.net/TRUDigitalMedia" target="_blank"><span class="fa fa-behance"></span></a></li>
+						<li><a class="socialLink" href="https://www.instagram.com/trudigitalmedia/" target="_blank"><span class="fa fa-instagram"></span></a></li>
+						<li><a class="socialLink" href="https://vimeo.com/trudigitalmedia" target="_blank"><span class="fa fa-vimeo"></span></a></li>
+						<li><a class="socialLink" href="https://www.youtube.com/channel/UCtabL6elI86NL2XnbzM3yQg" target="_blank"><span class="fa fa-youtube"></span></a></li>
 					</ul>
 				</div>
 			</div>
