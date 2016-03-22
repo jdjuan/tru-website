@@ -82,7 +82,7 @@ ul.navbar-nav li.active{
 
 #myCarousel .carousel-inner .item{
 	width: 100%;
-	height: 58rem;
+	height: 90vh;
 	background-size: cover;
 	background-position: center top;
 	background-repeat: no-repeat;
@@ -429,7 +429,7 @@ li.active a div.proyectoImg{
 	color: $white;
 	padding: 4rem;
 	width: 40rem;
-	top: 7rem;
+	top: 20%;
 	left: 50%;
 	@include media("<=medium"){
 		left: 30%;
@@ -461,7 +461,7 @@ h2.titleTextInside{
 
 .linea {
 	width: 100%;
-	height: 53rem;
+	height: 74vh;
 	background-size: cover;
 	background-position: center top;
 	background-repeat: no-repeat;
