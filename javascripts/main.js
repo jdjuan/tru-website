@@ -104,7 +104,9 @@ $(function () {
 	//EQUIPO
 	$(".overlayEquipo").hide();
 	$(".equipo").hover(function() {
-		$(this).children().first().toggle("display");
+		$(this).children().first().stop(true, false).toggle("display");
+	}, function() {
+		$(this).children().first().stop(true, false).toggle("display");
 	});
 
 	$.ajax({

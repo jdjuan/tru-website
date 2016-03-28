@@ -79,7 +79,7 @@ $rowsAliados = $db -> select("SELECT * FROM `aliados` order by orden");
 					<ul class="nav navbar-nav navLinks">
 						<li class="navs active"><a id="linkNosotros" href="#">Filosofía</a></li>
 						<li class="navs"><a id="linkServicios" href="#">Inspiración</a></li> 
-						<li class="navs"><a id="linkProyectos" href="#">Líneas de Negocio</a></li> 
+						<li class="navs"><a id="linkProyectos" href="#">Servicios</a></li> 
 						<li class="navs"><a id="linkTrabajos" href="#">Trabajos</a></li> 
 						<li class="navs"><a id="linkEquipo" href="#">Equipo</a></li> 
 						<li class="navs"><a id="linkContacto" href="#">Contacto</a></li> 
@@ -234,7 +234,7 @@ $rowsAliados = $db -> select("SELECT * FROM `aliados` order by orden");
 	<!-- PROYECTOS -->
 	<div class="container proyectos">
 		<div class="wrapperTitle proyectosTopTitle">
-			<h1 class="titleSection title">Líneas de Negocio</h1>
+			<h1 class="titleSection title">Servicios</h1>
 		</div>
 		<div id="sliderClientes" class="sliderProyectos">
 			<ul id="owl-example" class="nav nav-pills owl-carousel">

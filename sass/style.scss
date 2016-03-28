@@ -313,8 +313,9 @@ h1.serviciosDescription {
 }
 
 .wrapperTitle.equipoTopTitle{
-	margin-top: -2rem;
-	margin-bottom: -1rem;
+	margin-top: 0rem;
+	margin-bottom: -5rem;
+	z-index: 60;
 }
 
 .wrapperTitle.trabajoTopTitle {
@@ -325,8 +326,12 @@ h1.serviciosDescription {
 }
 
 .wrapperTitle.clientesTopTitle, .wrapperTitle.aliadosTopTitle{
-	margin-top: -2rem;
+	margin-top: -6rem;
 	margin-bottom: 0rem;
+	z-index: 60;
+	@include media("<=very-small"){
+		margin-top: -5rem;
+	}
 }
 
 h1.titleSection {
@@ -548,6 +553,11 @@ div#menu4 div h2 { color: $white}
 		width: 50%;
 		height: 50vw;
 	}
+
+	// @include media("<=400px"){
+	// 	width: 100%;
+	// 	height: 100vw;
+	// }
 }
 
 .row.contactoRow {
@@ -684,6 +694,7 @@ img.logosEscribenos2 {
 }
 
 .tituloEquipo {
+	margin-top: 2rem;
 	font-size: 2.5rem;
 	padding: 1rem;
 	padding-top: 3rem;
