@@ -854,7 +854,7 @@ div#menu4 div h2 {
   display: inline-block;
   margin: 0 auto;
   float: none;
-  margin-bottom: -6px;
+  margin-bottom: -7px;
   height: 25vw;
   padding: 0;
   background-repeat: no-repeat;
@@ -875,31 +875,31 @@ div#menu4 div h2 {
   }
 }
 
-/* line 563, ../sass/style.scss */
+/* line 558, ../sass/style.scss */
 .row.contactoRow {
   background-color: #09324f;
   height: 39em;
 }
 @media (max-width: 993px) {
-  /* line 563, ../sass/style.scss */
+  /* line 558, ../sass/style.scss */
   .row.contactoRow {
     height: 48em;
   }
 }
 
-/* line 571, ../sass/style.scss */
+/* line 566, ../sass/style.scss */
 .titleH1Contacto.derecha {
   display: none;
 }
 @media (max-width: 990px) {
-  /* line 571, ../sass/style.scss */
+  /* line 566, ../sass/style.scss */
   .titleH1Contacto.derecha {
     display: block;
     margin-bottom: 0.5em;
   }
 }
 
-/* line 579, ../sass/style.scss */
+/* line 574, ../sass/style.scss */
 .titleH1Contacto {
   color: white;
   margin-top: 22%;
@@ -908,20 +908,20 @@ div#menu4 div h2 {
   font-size: 4em;
 }
 @media (max-width: 1200px) {
-  /* line 579, ../sass/style.scss */
+  /* line 574, ../sass/style.scss */
   .titleH1Contacto {
     margin-top: 30%;
   }
 }
 @media (max-width: 990px) {
-  /* line 579, ../sass/style.scss */
+  /* line 574, ../sass/style.scss */
   .titleH1Contacto {
     margin: 0 auto;
     margin-top: 2rem;
   }
 }
 
-/* line 594, ../sass/style.scss */
+/* line 589, ../sass/style.scss */
 .columnaContacto {
   z-index: 200;
   height: 100%;
@@ -929,7 +929,7 @@ div#menu4 div h2 {
   text-align: center;
 }
 
-/* line 601, ../sass/style.scss */
+/* line 596, ../sass/style.scss */
 .formulario {
   height: auto;
   padding: 3em;
@@ -939,25 +939,25 @@ div#menu4 div h2 {
   margin-top: 10%;
 }
 @media (max-width: 1300px) {
-  /* line 601, ../sass/style.scss */
+  /* line 596, ../sass/style.scss */
   .formulario {
     width: 90%;
   }
 }
 @media (max-width: 1200px) {
-  /* line 601, ../sass/style.scss */
+  /* line 596, ../sass/style.scss */
   .formulario {
     margin-top: 15%;
   }
 }
 @media (max-width: 1050px) {
-  /* line 601, ../sass/style.scss */
+  /* line 596, ../sass/style.scss */
   .formulario {
     width: 100%;
   }
 }
 @media (max-width: 990px) {
-  /* line 601, ../sass/style.scss */
+  /* line 596, ../sass/style.scss */
   .formulario {
     margin-top: 8em !important;
     width: 80%;
@@ -965,86 +965,86 @@ div#menu4 div h2 {
   }
 }
 @media (max-width: 550px) {
-  /* line 601, ../sass/style.scss */
+  /* line 596, ../sass/style.scss */
   .formulario {
     width: 100%;
   }
 }
 
-/* line 627, ../sass/style.scss */
+/* line 622, ../sass/style.scss */
 .form-control {
   background-color: #eee;
 }
 
-/* line 631, ../sass/style.scss */
+/* line 626, ../sass/style.scss */
 .buttonWrapper {
   text-align: right;
 }
 
-/* line 635, ../sass/style.scss */
+/* line 630, ../sass/style.scss */
 .contactoMoreInfo {
   margin-top: 3em;
   text-align: center;
 }
 @media (max-width: 1300px) {
-  /* line 635, ../sass/style.scss */
+  /* line 630, ../sass/style.scss */
   .contactoMoreInfo {
     margin-left: 0em;
   }
 }
 
-/* line 644, ../sass/style.scss */
+/* line 639, ../sass/style.scss */
 .col-md-4.contacto {
   width: 31%;
 }
 @media (max-width: 990px) {
-  /* line 644, ../sass/style.scss */
+  /* line 639, ../sass/style.scss */
   .col-md-4.contacto {
     display: inline-block;
   }
 }
 
 @media screen and (max-width: 990px) {
-  /* line 652, ../sass/style.scss */
+  /* line 647, ../sass/style.scss */
   .col-md-6.columnaContacto {
     width: 100%;
     position: absolute;
   }
 
-  /* line 656, ../sass/style.scss */
+  /* line 651, ../sass/style.scss */
   ul.footerLi {
     font-size: 10px !important;
   }
 }
-/* line 661, ../sass/style.scss */
+/* line 656, ../sass/style.scss */
 img.logosEscribenos {
   width: 30rem;
 }
 @media (max-width: 993px) {
-  /* line 661, ../sass/style.scss */
+  /* line 656, ../sass/style.scss */
   img.logosEscribenos {
     display: none;
   }
 }
 
-/* line 667, ../sass/style.scss */
+/* line 662, ../sass/style.scss */
 img.logosEscribenos2 {
   width: 38rem;
 }
 @media (min-width: 993px) {
-  /* line 667, ../sass/style.scss */
+  /* line 662, ../sass/style.scss */
   img.logosEscribenos2 {
     display: none;
   }
 }
 @media (max-width: 450px) {
-  /* line 667, ../sass/style.scss */
+  /* line 662, ../sass/style.scss */
   img.logosEscribenos2 {
     width: 30rem;
   }
 }
 
-/* line 677, ../sass/style.scss */
+/* line 672, ../sass/style.scss */
 .overlayEquipo {
   color: #FFF;
   height: 100%;
@@ -1055,32 +1055,46 @@ img.logosEscribenos2 {
   opacity: 0.7;
 }
 
-/* line 687, ../sass/style.scss */
+/* line 682, ../sass/style.scss */
 .descripcionEquipo {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   padding: 1rem;
 }
 @media (max-width: 500px) {
-  /* line 687, ../sass/style.scss */
+  /* line 682, ../sass/style.scss */
   .descripcionEquipo {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0.6rem;
   }
 }
 
-/* line 696, ../sass/style.scss */
-.tituloEquipo {
-  margin-top: 2rem;
-  font-size: 2.5rem;
+/* line 691, ../sass/style.scss */
+.cargoEquipo {
+  font-size: 1.7rem;
+  font-weight: bold;
   padding: 1rem;
-  padding-top: 3rem;
+}
+@media (max-width: 500px) {
+  /* line 691, ../sass/style.scss */
+  .cargoEquipo {
+    font-size: 1.1rem;
+    padding: 0.6rem;
+  }
+}
+
+/* line 701, ../sass/style.scss */
+.nombreEquipo {
+  margin-top: 1.8rem;
+  font-size: 2.3rem;
+  padding: 1rem;
+  padding-top: 2.5rem;
   font-weight: 600;
 }
 @media (max-width: 500px) {
-  /* line 696, ../sass/style.scss */
-  .tituloEquipo {
+  /* line 701, ../sass/style.scss */
+  .nombreEquipo {
     padding: 0.6rem;
     padding-top: 3rem;
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
 }

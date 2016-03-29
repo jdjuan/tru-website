@@ -6,6 +6,7 @@ $rowsLineas = $db -> select("SELECT * FROM `lineas` order by orden");
 $rowsTrabajos = $db -> select("SELECT * FROM `trabajos` order by orden");
 $rowsClientes = $db -> select("SELECT * FROM `clientes` order by orden");
 $rowsAliados = $db -> select("SELECT * FROM `aliados` order by orden");
+$rowsNosotros = $db -> select("SELECT * FROM `nosotros` order by orden");
 ?>
 
 <!DOCTYPE html>
@@ -45,7 +46,13 @@ $rowsAliados = $db -> select("SELECT * FROM `aliados` order by orden");
 			echo "#linea".($i+1)."{background-image: url('admin/lineas/uploads/".$row["slide"]."');}";
 			echo "@media (max-width: 1000px) { #linea".($i+1)." {background: ".$row["color"].";}}";
 		}
+		for ($i=0; $i < count($rowsNosotros); $i++) {
+			$row = $rowsNosotros[$i];
+			echo "#equipo".($i+1)."{background-image: url('admin/nosotros/uploads/".$row["imagen"]."');}";
+// 			echo "@media (max-width: 1000px) { #linea".($i+1)." {background: ".$row["color"].";}}";
+		}
 		?>
+
 	</style>
 
 	<!-- Jquery CDN -->
@@ -340,56 +347,19 @@ $rowsAliados = $db -> select("SELECT * FROM `aliados` order by orden");
 			<h1 class="titleSection title">Nuestro Equipo</h1>
 		</div>
 		<div class="row equipoRow">
-		<!-- #equipo$.col-md-3.equipo*8>.overlay$.overlayEquipo>.tituloEquipo{Lorem ipsum dolor.}+.descripcionEquipo{Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolor.} -->
-		<div id="equipo1" class="col-md-3 equipo">
-			<div class="overlay1 overlayEquipo">
-				<div class="tituloEquipo">Lorem ipsum dolor.</div>
-				<div class="descripcionEquipo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolor.</div>
-			</div>
-		</div><!-- 
-		 --><div id="equipo2" class="col-md-3 equipo">
-			<div class="overlay2 overlayEquipo">
-				<div class="tituloEquipo">Lorem ipsum dolor.</div>
-				<div class="descripcionEquipo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolor.</div>
-			</div>
-		</div><!-- 
-		 --><div id="equipo3" class="col-md-3 equipo">
-			<div class="overlay3 overlayEquipo">
-				<div class="tituloEquipo">Lorem ipsum dolor.</div>
-				<div class="descripcionEquipo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolor.</div>
-			</div>
-		</div><!-- 
-		 --><div id="equipo4" class="col-md-3 equipo">
-			<div class="overlay4 overlayEquipo">
-				<div class="tituloEquipo">Lorem ipsum dolor.</div>
-				<div class="descripcionEquipo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolor.</div>
-			</div>
-		</div><!-- 
-		 --><div id="equipo5" class="col-md-3 equipo">
-			<div class="overlay5 overlayEquipo">
-				<div class="tituloEquipo">Lorem ipsum dolor.</div>
-				<div class="descripcionEquipo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolor.</div>
-			</div>
-		</div><!-- 
-		 --><div id="equipo6" class="col-md-3 equipo">
-			<div class="overlay6 overlayEquipo">
-				<div class="tituloEquipo">Lorem ipsum dolor.</div>
-				<div class="descripcionEquipo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolor.</div>
-			</div>
-		</div><!-- 
-		 --><div id="equipo7" class="col-md-3 equipo">
-			<div class="overlay7 overlayEquipo">
-				<div class="tituloEquipo">Lorem ipsum dolor.</div>
-				<div class="descripcionEquipo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolor.</div>
-			</div>
-		</div><!-- 
-		 --><div id="equipo8" class="col-md-3 equipo">
-			<div class="overlay8 overlayEquipo">
-				<div class="tituloEquipo">Lorem ipsum dolor.</div>
-				<div class="descripcionEquipo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolor.</div>
-			</div>
-		</div>
-
+			<!-- #equipo$.col-md-3.equipo*8>.overlay$.overlayEquipo>.tituloEquipo{Lorem ipsum dolor.}+.descripcionEquipo{Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolor.} -->
+			<?php
+			for ($i=0; $i < count($rowsNosotros); $i++) {
+				$row = $rowsNosotros[$i];
+				echo '<div id="equipo'.($i+1).'" class="col-md-3 equipo">';
+				echo '<div class="overlay'.($i+1).' overlayEquipo">';
+				echo '<div class="nombreEquipo">'.$row["nombre"].'</div>';
+				echo '<div class="cargoEquipo">'.$row["cargo"].'</div>';
+				echo '<div class="descripcionEquipo">'.$row["info"].'</div>';
+				echo '<div class="descripcionEquipo">'.$row["correo"].'</div>';
+				echo '</div></div>';
+			}
+			?>
 		</div>
 	</div>
 	<!-- END EQUIPO -->

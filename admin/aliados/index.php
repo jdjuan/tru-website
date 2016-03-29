@@ -35,8 +35,8 @@ if (empty($_SESSION["user"]) || empty($_SESSION["pass"])) {
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 					<li><a href="../slider">Slider</a></li>
-					<li><a href="../proyectos">Proyectos</a></li>
-					<li><a href="../slidersproyectos">Slider (Proyectos)</a></li>
+					<li><a href="../lineas">Lineas</a></li>
+					<li><a href="../trabajos">Trabajos</a></li>
 					<li><a href="../clientes">Clientes</a></li>
 					<li><a href="../nosotros">Nosotros</a></li>
 					<li class="active"><a href="../aliados">Aliados</a></li>
