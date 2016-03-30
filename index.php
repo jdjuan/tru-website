@@ -385,7 +385,7 @@ $rowsNosotros = $db -> select("SELECT * FROM `nosotros` order by orden");
 		<div class="row contactoRow">
 			<div class="col-md-6 columnaContacto izquierda">
 				<div class="wrapTitleContacto"><h1 class="titleH1Contacto">Escríbenos.</h1></div>
-				<div class="emailContacto" style="color: white;font-weight: 600;text-align: center;">contacto@trudigitalmedia.co</div>
+				<div class="emailContacto" style="color: white;font-weight: 600;text-align: center;">hola@trudigitalmedia.co</div>
 				<div class="contactoMoreInfo">
 					<ul class="footerLi">
 						<li><strong>Manizales:</strong></li>

@@ -107,19 +107,19 @@ $(function () {
 		$(this).children().first().stop(true, false).toggle("display");
 	});
 
-	$.ajax({
-		url: 'https://randomuser.me/api/?results=10',
-		dataType: 'json',
-		success: function(data){
-			for (var i = 0; i <= 8; i++) {
+	// $.ajax({
+	// 	url: 'https://randomuser.me/api/?results=10',
+	// 	dataType: 'json',
+	// 	success: function(data){
+	// 		for (var i = 0; i <= 8; i++) {
 				// $("#equipo"+i).css("background-image","url("+data.results[i].user.picture.large+")");
 				// $(".overlay"+i+" .nombreEquipo").text(data.results[i].user.name.first +" "+ data.results[i].user.name.last);
 				// $(".overlay"+i+" .descripcionEquipo").append("<br><br>"+data.results[i].user.email);
 				// $(".overlay"+i+" .nombreEquipo").css('textTransform', 'capitalize');
 				// $(".overlay"+i+" .descripcionEquipo").css('textTransform', 'capitalize');
-			}
-		}
-	});
+	// 		}
+	// 	}
+	// });
 	
 });
 
