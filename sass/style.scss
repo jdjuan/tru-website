@@ -324,6 +324,9 @@ h1.serviciosDescription {
 		margin-bottom: -2.9rem;
 	}
 }
+.wrapperTitle.clientesTopTitle h1, .wrapperTitle.trabajoTopTitle h1{ 
+	color: $white;
+}
 
 .wrapperTitle.clientesTopTitle, .wrapperTitle.aliadosTopTitle{
 	margin-top: -6rem;
@@ -557,9 +560,9 @@ div#menu4 div h2 { color: $white}
 
 .row.contactoRow {
 	background-color: $darkBlue;
-	height: 39em;
+	height: 36em;
 	@include media("<=serviciosBreak"){
-		height: 48em;
+		height: 45em;
 	}
 }
 
@@ -610,7 +613,7 @@ div#menu4 div h2 { color: $white}
 		width: 100%;
 	}
 	@include media("<=990px"){
-		margin-top: 8em !important;
+		margin-top: 5em !important;
 		width: 80%;
 		margin: 0 auto;
 	}
@@ -709,4 +712,15 @@ img.logosEscribenos2 {
 		padding-top: 3rem;
 		font-size: 1.3rem;
 	}
+}
+
+footer{
+	background-color: $darkBlue;
+	text-align: center;
+	color: $white;
+	padding-bottom: 1rem;
+}
+
+.city{
+	font-weight: bold;
 }
