@@ -28,16 +28,16 @@ $mailer->MsgHTML('
 // Set up our connection information.
 $mailer->IsSMTP();
 $mailer->SMTPAuth = true;
-$mailer->SMTPSecure = 'tls';
-$mailer->Port = 587;
+$mailer->SMTPSecure = 'ssl';
+$mailer->Port = 465;
 $mailer->Host = 'smtp.gmail.com';
 $config = parse_ini_file(dirname(__FILE__) . '/../../mail.ini');
-$mailer->SMTPDebug = 2; 
+// $mailer->SMTPDebug = 2; 
 $mailer->Username = $config['username']."";
 $mailer->Password = $config['password']."";
 // echo $config['username']."";
 // echo $config['password']."";
 // // All done!
 $mailer->Send();
-// header("Location: ../index.php?message=true");
+header("Location: ../index.php?message=true");
 ?>
