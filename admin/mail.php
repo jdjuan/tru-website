@@ -34,9 +34,9 @@ $mailer->Host = 'smtp.gmail.com';
 $config = parse_ini_file(dirname(__FILE__) . '/../../mail.ini');
 $mailer->Username = $config['username']."";
 $mailer->Password = $config['password']."";
-echo $config['username']."";
-echo $config['password']."";
+// echo $config['username']."";
+// echo $config['password']."";
 // // All done!
-// $mailer->Send();
-// header("Location: ../index.php?message=true");
+$mailer->Send();
+header("Location: ../index.php?message=true");
 ?>
