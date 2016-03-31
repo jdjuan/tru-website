@@ -558,8 +558,18 @@ div#menu4 div h2 { color: $white}
 	}
 }
 
+.container.contacto{
+	background-image: url('../images/escribenos1.png');
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+	@include media("<=serviciosBreak"){
+		background-image: url('../images/escribenos2.png');
+	}
+}
+
+
 .row.contactoRow {
-	background-color: $darkBlue;
 	height: 36em;
 	@include media("<=serviciosBreak"){
 		height: 45em;
@@ -715,12 +725,13 @@ img.logosEscribenos2 {
 }
 
 footer{
-	background-color: $darkBlue;
-	text-align: center;
-	color: $white;
 	padding-bottom: 1rem;
+	font-size: 1.3rem;
+	text-align: center;
+	font-weight: bold;
+	color: $white;
 }
 
-.city{
-	font-weight: bold;
+.city{	
+	font-size: 1.5rem;
 }

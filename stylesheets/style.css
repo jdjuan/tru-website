@@ -881,30 +881,43 @@ div#menu4 div h2 {
 }
 
 /* line 561, ../sass/style.scss */
-.row.contactoRow {
-  background-color: #09324f;
-  height: 36em;
+.container.contacto {
+  background-image: url("../images/escribenos1.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 @media (max-width: 993px) {
   /* line 561, ../sass/style.scss */
+  .container.contacto {
+    background-image: url("../images/escribenos2.png");
+  }
+}
+
+/* line 572, ../sass/style.scss */
+.row.contactoRow {
+  height: 36em;
+}
+@media (max-width: 993px) {
+  /* line 572, ../sass/style.scss */
   .row.contactoRow {
     height: 45em;
   }
 }
 
-/* line 569, ../sass/style.scss */
+/* line 579, ../sass/style.scss */
 .titleH1Contacto.derecha {
   display: none;
 }
 @media (max-width: 990px) {
-  /* line 569, ../sass/style.scss */
+  /* line 579, ../sass/style.scss */
   .titleH1Contacto.derecha {
     display: block;
     margin-bottom: 0.5em;
   }
 }
 
-/* line 577, ../sass/style.scss */
+/* line 587, ../sass/style.scss */
 .titleH1Contacto {
   color: white;
   margin-top: 22%;
@@ -913,20 +926,20 @@ div#menu4 div h2 {
   font-size: 4em;
 }
 @media (max-width: 1200px) {
-  /* line 577, ../sass/style.scss */
+  /* line 587, ../sass/style.scss */
   .titleH1Contacto {
     margin-top: 30%;
   }
 }
 @media (max-width: 990px) {
-  /* line 577, ../sass/style.scss */
+  /* line 587, ../sass/style.scss */
   .titleH1Contacto {
     margin: 0 auto;
     margin-top: 2rem;
   }
 }
 
-/* line 592, ../sass/style.scss */
+/* line 602, ../sass/style.scss */
 .columnaContacto {
   z-index: 200;
   height: 100%;
@@ -934,7 +947,7 @@ div#menu4 div h2 {
   text-align: center;
 }
 
-/* line 599, ../sass/style.scss */
+/* line 609, ../sass/style.scss */
 .formulario {
   height: auto;
   padding: 3em;
@@ -944,25 +957,25 @@ div#menu4 div h2 {
   margin-top: 10%;
 }
 @media (max-width: 1300px) {
-  /* line 599, ../sass/style.scss */
+  /* line 609, ../sass/style.scss */
   .formulario {
     width: 90%;
   }
 }
 @media (max-width: 1200px) {
-  /* line 599, ../sass/style.scss */
+  /* line 609, ../sass/style.scss */
   .formulario {
     margin-top: 15%;
   }
 }
 @media (max-width: 1050px) {
-  /* line 599, ../sass/style.scss */
+  /* line 609, ../sass/style.scss */
   .formulario {
     width: 100%;
   }
 }
 @media (max-width: 990px) {
-  /* line 599, ../sass/style.scss */
+  /* line 609, ../sass/style.scss */
   .formulario {
     margin-top: 5em !important;
     width: 80%;
@@ -970,86 +983,86 @@ div#menu4 div h2 {
   }
 }
 @media (max-width: 550px) {
-  /* line 599, ../sass/style.scss */
+  /* line 609, ../sass/style.scss */
   .formulario {
     width: 100%;
   }
 }
 
-/* line 625, ../sass/style.scss */
+/* line 635, ../sass/style.scss */
 .form-control {
   background-color: #eee;
 }
 
-/* line 629, ../sass/style.scss */
+/* line 639, ../sass/style.scss */
 .buttonWrapper {
   text-align: right;
 }
 
-/* line 633, ../sass/style.scss */
+/* line 643, ../sass/style.scss */
 .contactoMoreInfo {
   margin-top: 3em;
   text-align: center;
 }
 @media (max-width: 1300px) {
-  /* line 633, ../sass/style.scss */
+  /* line 643, ../sass/style.scss */
   .contactoMoreInfo {
     margin-left: 0em;
   }
 }
 
-/* line 642, ../sass/style.scss */
+/* line 652, ../sass/style.scss */
 .col-md-4.contacto {
   width: 31%;
 }
 @media (max-width: 990px) {
-  /* line 642, ../sass/style.scss */
+  /* line 652, ../sass/style.scss */
   .col-md-4.contacto {
     display: inline-block;
   }
 }
 
 @media screen and (max-width: 990px) {
-  /* line 650, ../sass/style.scss */
+  /* line 660, ../sass/style.scss */
   .col-md-6.columnaContacto {
     width: 100%;
     position: absolute;
   }
 
-  /* line 654, ../sass/style.scss */
+  /* line 664, ../sass/style.scss */
   ul.footerLi {
     font-size: 10px !important;
   }
 }
-/* line 659, ../sass/style.scss */
+/* line 669, ../sass/style.scss */
 img.logosEscribenos {
   width: 30rem;
 }
 @media (max-width: 993px) {
-  /* line 659, ../sass/style.scss */
+  /* line 669, ../sass/style.scss */
   img.logosEscribenos {
     display: none;
   }
 }
 
-/* line 665, ../sass/style.scss */
+/* line 675, ../sass/style.scss */
 img.logosEscribenos2 {
   width: 38rem;
 }
 @media (min-width: 993px) {
-  /* line 665, ../sass/style.scss */
+  /* line 675, ../sass/style.scss */
   img.logosEscribenos2 {
     display: none;
   }
 }
 @media (max-width: 450px) {
-  /* line 665, ../sass/style.scss */
+  /* line 675, ../sass/style.scss */
   img.logosEscribenos2 {
     width: 30rem;
   }
 }
 
-/* line 675, ../sass/style.scss */
+/* line 685, ../sass/style.scss */
 .overlayEquipo {
   color: #FFF;
   height: 100%;
@@ -1060,34 +1073,34 @@ img.logosEscribenos2 {
   opacity: 0.7;
 }
 
-/* line 685, ../sass/style.scss */
+/* line 695, ../sass/style.scss */
 .descripcionEquipo {
   font-size: 1.5rem;
   padding: 1rem;
 }
 @media (max-width: 500px) {
-  /* line 685, ../sass/style.scss */
+  /* line 695, ../sass/style.scss */
   .descripcionEquipo {
     font-size: 1rem;
     padding: 0.6rem;
   }
 }
 
-/* line 694, ../sass/style.scss */
+/* line 704, ../sass/style.scss */
 .cargoEquipo {
   font-size: 1.7rem;
   font-weight: bold;
   padding: 1rem;
 }
 @media (max-width: 500px) {
-  /* line 694, ../sass/style.scss */
+  /* line 704, ../sass/style.scss */
   .cargoEquipo {
     font-size: 1.1rem;
     padding: 0.6rem;
   }
 }
 
-/* line 704, ../sass/style.scss */
+/* line 714, ../sass/style.scss */
 .nombreEquipo {
   margin-top: 1.8rem;
   font-size: 2.3rem;
@@ -1096,7 +1109,7 @@ img.logosEscribenos2 {
   font-weight: 600;
 }
 @media (max-width: 500px) {
-  /* line 704, ../sass/style.scss */
+  /* line 714, ../sass/style.scss */
   .nombreEquipo {
     padding: 0.6rem;
     padding-top: 3rem;
@@ -1104,15 +1117,16 @@ img.logosEscribenos2 {
   }
 }
 
-/* line 717, ../sass/style.scss */
+/* line 727, ../sass/style.scss */
 footer {
-  background-color: #09324f;
-  text-align: center;
-  color: #FFF;
   padding-bottom: 1rem;
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: bold;
+  color: #FFF;
 }
 
-/* line 724, ../sass/style.scss */
+/* line 735, ../sass/style.scss */
 .city {
-  font-weight: bold;
+  font-size: 1.5rem;
 }
