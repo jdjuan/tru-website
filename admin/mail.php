@@ -28,8 +28,8 @@ $mailer->MsgHTML('
 // Set up our connection information.
 $mailer->IsSMTP();
 $mailer->SMTPAuth = true;
-$mailer->SMTPSecure = 'ssl';
-$mailer->Port = 465;
+$mailer->SMTPSecure = 'tls';
+$mailer->Port = 587;
 $mailer->Host = 'smtp.gmail.com';
 $config = parse_ini_file(dirname(__FILE__) . '/../../mail.ini');
 $mailer->Username = $config['username']."";
