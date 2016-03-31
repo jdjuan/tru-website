@@ -16,8 +16,8 @@ $mensaje = $_POST["mensaje"];
 $mailer->Sender = 'trucontacto@gmail.com';
 $mailer->AddReplyTo('trucontacto@gmail.com', 'Tru Digital Media');
 $mailer->SetFrom('trucontacto@gmail.com', 'True Digital Media');
-$mailer->AddAddress('david.juanherrera@gmail.com');
-// $mailer->AddAddress('hola@trudigitalmedia.co');
+// $mailer->AddAddress('david.juanherrera@gmail.com');
+$mailer->AddAddress('hola@trudigitalmedia.co');
 $mailer->Subject = 'Contacto Tru Digital Media ';
 $mailer->MsgHTML('
 	<p>Nombre: '.$nombre .'</p>
