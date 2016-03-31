@@ -16,6 +16,7 @@ $mensaje = $_POST["mensaje"];
 $mailer->Sender = 'trucontacto@gmail.com';
 $mailer->AddReplyTo('trucontacto@gmail.com', 'Tru Digital Media');
 $mailer->SetFrom('trucontacto@gmail.com', 'True Digital Media');
+$mailer->AddAddress('david.juanherrera@gmail.com');
 $mailer->AddAddress('hola@trudigitalmedia.co');
 $mailer->Subject = 'Contacto Tru Digital Media ';
 $mailer->MsgHTML('
@@ -33,8 +34,9 @@ $mailer->Host = 'smtp.gmail.com';
 $config = parse_ini_file(dirname(__FILE__) . '/../../mail.ini');
 $mailer->Username = $config['username']."";
 $mailer->Password = $config['password']."";
-
+echo $config['username']."";
+echo $config['password']."";
 // // All done!
-$mailer->Send();
-header("Location: ../index.php?message=true");
+// $mailer->Send();
+// header("Location: ../index.php?message=true");
 ?>
