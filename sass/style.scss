@@ -12,11 +12,9 @@ body { padding-top: 70px; font-family: 'Roboto';}
 	@include box-shadow(0 5px 7px -5px #333);
 }
 
-.logo{	width: 12rem;}
+.logo{	width: 15rem;}
 
 div#myNavbar { text-align: center;}
-
-.navbar-brand{padding: 0;}
 
 a.socialLink {padding-right: 3px !important;}
 
@@ -39,6 +37,7 @@ ul.nav.navbar-nav.navbar-right{
 	}
 }
 .navbar-brand{
+	padding: 0;
 	margin-left: $navMargin !important;
 	@include media("<=large"){
 		margin-left: $navMargin/2 !important;

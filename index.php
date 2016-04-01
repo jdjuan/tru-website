@@ -54,7 +54,6 @@ $rowsNosotros = $db -> select("SELECT * FROM `nosotros` order by orden");
 		?>
 
 	</style>
-
 	<!-- Jquery CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<!-- Latest compiled and minified Bootstrap JavaScript -->
@@ -78,9 +77,9 @@ $rowsNosotros = $db -> select("SELECT * FROM `nosotros` order by orden");
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span> 
 					</button>
-					<a class="navbar-brand" href="#">
+					<div class="navbar-brand">
 						<a id="linkSlider" style="cursor:pointer"><img alt="TRU Digital Media" class="logo" src="images/logo.png"></a>
-					</a>
+					</div>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav navLinks">
@@ -418,7 +417,7 @@ $rowsNosotros = $db -> select("SELECT * FROM `nosotros` order by orden");
 			</div>
 		</div>
 		<footer>
-			<div class="phone">Cel: +57 3177006697</div>
+			<div class="phone">Cel: +57 321 810 3018 / +57 3177006697</div>
 			<div class="city">Manizales - Colombia</div>
 		</footer>
 	</div>
