@@ -417,7 +417,7 @@ $rowsNosotros = $db -> select("SELECT * FROM `nosotros` order by orden");
 			</div>
 		</div>
 		<footer>
-			<div class="phone">Cel: +57 321 810 3018 / +57 3177006697</div>
+			<div class="phone">Cel: +57 321 810 3018 / +57 317 700 6697</div>
 			<div class="city">Manizales - Colombia</div>
 		</footer>
 	</div>
