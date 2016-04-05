@@ -16,7 +16,7 @@ $rowsNosotros = $db -> select("SELECT * FROM `nosotros` order by orden");
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
 	<meta charset="UTF-8">
 	<!-- FavIcon -->
-	<!-- <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32"> -->
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
 	<!-- Default Compass Styles -->
 	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />	

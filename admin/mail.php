@@ -26,7 +26,7 @@ $mailer->MsgHTML('
 	<p>Mensaje: '.$mensaje .'</p>');
 
 // Set up our connection information.
-$mailer->IsSMTP();
+// $mailer->IsSMTP();
 $mailer->SMTPAuth = true;
 $mailer->SMTPSecure = 'ssl';
 $mailer->Port = 465;
